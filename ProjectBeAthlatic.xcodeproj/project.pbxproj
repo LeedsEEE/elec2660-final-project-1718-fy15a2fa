@@ -19,6 +19,7 @@
 		6145D3A71FC411340049CFEB /* MaleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6145D3A61FC411340049CFEB /* MaleTableViewController.m */; };
 		6145D3AA1FC412720049CFEB /* MaleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6145D3A91FC412720049CFEB /* MaleViewController.m */; };
 		6145D3AD1FC4131F0049CFEB /* MaleProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 6145D3AC1FC4131F0049CFEB /* MaleProperties.m */; };
+		6145D3B01FC4143E0049CFEB /* MaleData.m in Sources */ = {isa = PBXBuildFile; fileRef = 6145D3AF1FC4143E0049CFEB /* MaleData.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,8 @@
 		6145D3A91FC412720049CFEB /* MaleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MaleViewController.m; sourceTree = "<group>"; };
 		6145D3AB1FC4131F0049CFEB /* MaleProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MaleProperties.h; sourceTree = "<group>"; };
 		6145D3AC1FC4131F0049CFEB /* MaleProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MaleProperties.m; sourceTree = "<group>"; };
+		6145D3AE1FC4143E0049CFEB /* MaleData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MaleData.h; sourceTree = "<group>"; };
+		6145D3AF1FC4143E0049CFEB /* MaleData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MaleData.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +127,8 @@
 				6145D3A61FC411340049CFEB /* MaleTableViewController.m */,
 				6145D3AB1FC4131F0049CFEB /* MaleProperties.h */,
 				6145D3AC1FC4131F0049CFEB /* MaleProperties.m */,
+				6145D3AE1FC4143E0049CFEB /* MaleData.h */,
+				6145D3AF1FC4143E0049CFEB /* MaleData.m */,
 				6145D3A81FC412720049CFEB /* MaleViewController.h */,
 				6145D3A91FC412720049CFEB /* MaleViewController.m */,
 				6145D37C1FC4063F0049CFEB /* Assets.xcassets */,
@@ -291,6 +296,7 @@
 				6145D3A71FC411340049CFEB /* MaleTableViewController.m in Sources */,
 				6145D3AA1FC412720049CFEB /* MaleViewController.m in Sources */,
 				6145D3831FC4063F0049CFEB /* main.m in Sources */,
+				6145D3B01FC4143E0049CFEB /* MaleData.m in Sources */,
 				6145D3751FC4063F0049CFEB /* FirstViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
