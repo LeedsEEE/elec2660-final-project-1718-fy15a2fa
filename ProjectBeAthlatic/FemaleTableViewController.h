@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "FemaleData.h"
+#import "FemaleViewController.h"
 
 @interface FemaleTableViewController : UITableViewController
 

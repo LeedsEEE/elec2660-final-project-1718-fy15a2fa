@@ -84,7 +84,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="SyY-Nm-ToN" kind="show" id="Hpa-aO-7Wi"/>
+                                    <segue destination="SyY-Nm-ToN" kind="show" identifier="ShowWorkoutFemale" id="Hpa-aO-7Wi"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

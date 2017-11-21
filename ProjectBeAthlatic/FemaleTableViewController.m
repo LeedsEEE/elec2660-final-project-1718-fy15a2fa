@@ -139,14 +139,51 @@
 }
 */
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+    
+    if ([[segue identifier] isEqualToString:@"ShowWorkoutFemale"]) {
+        
+        FemaleViewController *recievedViewController = [segue destinationViewController];
+        
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        
+        if (indexPath.section == 0) {
+            
+            FemaleProperties *temporary = [self.WorkoutForFemale.ShouldersFemale objectAtIndex:indexPath.row];
+            recievedViewController.FemaleData = temporary;
+            
+        } if (indexPath.section == 1) {
+            
+            FemaleProperties *temporary = [self.WorkoutForFemale.ArmsFeamle objectAtIndex:indexPath.row];
+            recievedViewController.FemaleData = temporary;
+            
+        } if (indexPath.section == 2) {
+            
+            FemaleProperties *temporary = [self.WorkoutForFemale.LegsFemale objectAtIndex:indexPath.row];
+            recievedViewController.FemaleData = temporary;
+            
+        } if (indexPath.section == 3) {
+            
+            FemaleProperties *temporary = [self.WorkoutForFemale.ChestFemale objectAtIndex:indexPath.row];
+            recievedViewController.FemaleData = temporary;
+            
+        } if (indexPath.section == 4) {
+            
+            FemaleProperties *temporary = [self.WorkoutForFemale.ABSFemale objectAtIndex:indexPath.row];
+            recievedViewController.FemaleData = temporary;
+            
+        }
+        
+    }
+    
+    
 }
-*/
+
 
 @end
