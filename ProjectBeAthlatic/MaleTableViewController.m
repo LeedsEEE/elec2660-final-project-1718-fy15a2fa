@@ -39,8 +39,22 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    
+    NSInteger numberOfWorkout = 0;
+    
+    if (section == 0) {
+        numberOfWorkout = self.WorkoutForMale.ShouldersMale.count;
+    } if (section == 1) {
+        numberOfWorkout = self.WorkoutForMale.ArmsMale.count;
+    } if (section == 2) {
+        numberOfWorkout = self.WorkoutForMale.LegsMale.count;
+    } if (section == 3) {
+        numberOfWorkout = self.WorkoutForMale.ChestMale.count;
+    } if (section == 4) {
+        numberOfWorkout = self.WorkoutForMale.ABSMale.count;
+    }
 
-    return 1;
+    return numberOfWorkout;
 }
 
 
