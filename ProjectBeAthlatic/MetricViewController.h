@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MetricViewController : UIViewController
+@interface MetricViewController : UIViewController <UIPickerViewDataSource, UIPickerViewDelegate>
 
 @end
