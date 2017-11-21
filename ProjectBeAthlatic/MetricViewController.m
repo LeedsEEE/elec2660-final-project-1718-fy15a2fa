@@ -59,7 +59,55 @@
 - (NSInteger)pickerView:(UIPickerView *)pickerView
 numberOfRowsInComponent:(NSInteger)component; {
     
-    return 2;
+    if (pickerView == self.MetricHeightPicker && component == 0) {
+        return 10;
+    }
+    
+    else if (pickerView == self.MetricHeightPicker && component == 1) {
+        return 1;
+    }
+    
+    else if (pickerView == self.MetricHeightPicker && component == 2) {
+        return 10;
+    }
+    
+    else if (pickerView == self.MetricHeightPicker && component == 3) {
+        return 10;
+    }
+    
+    else if (pickerView == self.MetricHeightPicker && component == 4) {
+        return 1;
+    }
+    
+    else if (pickerView == self.MetricWeightPicker && component == 0) {
+        return 10;
+    }
+    
+    else if (pickerView == self.MetricWeightPicker && component == 1) {
+        return 10;
+    }
+    
+    else if (pickerView == self.MetricWeightPicker && component == 2) {
+        return 10;
+    }
+    
+    else if (pickerView == self.MetricWeightPicker && component == 3) {
+        return 1;
+    }
+    
+    else if (pickerView == self.MetricWeightPicker && component == 4) {
+        return 10;
+    }
+    
+    else if (pickerView == self.MetricWeightPicker && component == 5) {
+        return 10;
+    }
+    
+    else {
+        return 1;
+    }
+    
+    
 }
 
 /*
