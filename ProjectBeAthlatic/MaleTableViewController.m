@@ -63,6 +63,43 @@
     
     // Configure the cell...
     
+    if (indexPath.section == 0) {
+        
+        MaleProperties *temprory = [self.WorkoutForMale.ShouldersMale objectAtIndex:indexPath.row];
+        
+        cell.detailTextLabel.text = temprory.NameWorkoutMale;
+        cell.textLabel.text = temprory.LevelMale;
+        
+    } if (indexPath.section == 1) {
+        
+        MaleProperties *temprory = [self.WorkoutForMale.ArmsMale objectAtIndex:indexPath.row];
+        
+        cell.detailTextLabel.text = temprory.NameWorkoutMale;
+        cell.textLabel.text = temprory.LevelMale;
+        
+    } if (indexPath.section == 2) {
+        
+        MaleProperties *temprory = [self.WorkoutForMale.LegsMale objectAtIndex:indexPath.row];
+        
+        cell.detailTextLabel.text = temprory.NameWorkoutMale;
+        cell.textLabel.text = temprory.LevelMale;
+        
+    } if (indexPath.section == 3) {
+        
+        MaleProperties *temprory = [self.WorkoutForMale.ChestMale objectAtIndex:indexPath.row];
+        
+        cell.detailTextLabel.text = temprory.NameWorkoutMale;
+        cell.textLabel.text = temprory.LevelMale;
+        
+    } if (indexPath.section == 4) {
+        
+        MaleProperties *temprory = [self.WorkoutForMale.ABSMale objectAtIndex:indexPath.row];
+        
+        cell.detailTextLabel.text = temprory.NameWorkoutMale;
+        cell.textLabel.text = temprory.LevelMale;
+        
+    }
+    
     return cell;
 }
 
