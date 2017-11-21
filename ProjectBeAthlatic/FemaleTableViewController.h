@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FemaleData.h"
 
 @interface FemaleTableViewController : UITableViewController
+
+@property (strong, nonatomic) FemaleData *WorkoutForFemale;
 
 @end
