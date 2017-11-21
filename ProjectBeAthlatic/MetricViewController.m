@@ -35,9 +35,73 @@
 - (NSString *)pickerView:(UIPickerView *)pickerView
              titleForRow:(NSInteger)row
             forComponent:(NSInteger)component; {
-    NSString *coordinate = [NSString stringWithFormat:@"%li", (long)row];
+    
+    NSString *coordinate;
+    
+    
+    
+    if (pickerView == self.MetricHeightPicker && component == 0 && row == 0) {
+        coordinate = [NSString stringWithFormat:@"1"];
+    }
+    
+    else if (pickerView == self.MetricHeightPicker && component == 0 && row == 1) {
+        coordinate = [NSString stringWithFormat:@"2"];
+    }
+    
+    else if (pickerView == self.MetricHeightPicker && component ==1) {
+        coordinate = [NSString stringWithFormat:@"."];
+    }
+    
+    else if (pickerView == self.MetricHeightPicker && component == 2) {
+        coordinate = [NSString stringWithFormat:@"%li",row];
+    }
+    
+    else if (pickerView == self.MetricHeightPicker && component == 3) {
+        coordinate = [NSString stringWithFormat:@"%li",row];
+    }
+    
+    else if (pickerView == self.MetricHeightPicker && component == 4) {
+        coordinate = [NSString stringWithFormat:@"m"];
+    }
+    
+    else if (pickerView == self.MetricWeightPicker && component == 0 && row == 0) {
+        coordinate = [NSString stringWithFormat:@"0"];
+    }
+    
+    else if (pickerView == self.MetricWeightPicker && component == 0 && row == 1) {
+        coordinate = [NSString stringWithFormat:@"1"];
+    }
+    
+    else if (pickerView == self.MetricWeightPicker && component == 0 && row == 2) {
+        coordinate = [NSString stringWithFormat:@"2"];
+    }
+    
+    else if (pickerView == self.MetricWeightPicker && component == 1) {
+        coordinate = [NSString stringWithFormat:@"%li",row];
+    }
+    
+    else if (pickerView == self.MetricWeightPicker && component == 2) {
+        coordinate = [NSString stringWithFormat:@"%li",row];
+    }
+    
+    else if (pickerView == self.MetricWeightPicker && component == 3) {
+        coordinate = [NSString stringWithFormat:@"."];
+    }
+    
+    else if (pickerView == self.MetricWeightPicker && component == 4) {
+        coordinate = [NSString stringWithFormat:@"%li",row];
+    }
+    
+    else if (pickerView == self.MetricWeightPicker && component == 5) {
+        coordinate = [NSString stringWithFormat:@"%li",row];
+    }
+    
+    else {
+        coordinate = [NSString stringWithFormat:@"kg"];
+    }
     
     return coordinate;
+    
 }
 
 - (void)pickerView:(UIPickerView *)pickerView
@@ -60,7 +124,7 @@
 numberOfRowsInComponent:(NSInteger)component; {
     
     if (pickerView == self.MetricHeightPicker && component == 0) {
-        return 10;
+        return 2;
     }
     
     else if (pickerView == self.MetricHeightPicker && component == 1) {
@@ -80,7 +144,7 @@ numberOfRowsInComponent:(NSInteger)component; {
     }
     
     else if (pickerView == self.MetricWeightPicker && component == 0) {
-        return 10;
+        return 3;
     }
     
     else if (pickerView == self.MetricWeightPicker && component == 1) {
