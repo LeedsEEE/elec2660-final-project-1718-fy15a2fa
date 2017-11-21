@@ -64,6 +64,43 @@
     
     // Configure the cell...
     
+    if (indexPath.section == 0) {
+        
+        FemaleProperties *temprory = [self.WorkoutForFemale.ShouldersFemale objectAtIndex:indexPath.row];
+        
+        cell.detailTextLabel.text = temprory.NameWorkoutFemale;
+        cell.textLabel.text = temprory.LevelFemale;
+        
+    } if (indexPath.section == 1) {
+        
+        FemaleProperties *temprory = [self.WorkoutForFemale.ArmsFeamle objectAtIndex:indexPath.row];
+        
+        cell.detailTextLabel.text = temprory.NameWorkoutFemale;
+        cell.textLabel.text = temprory.LevelFemale;
+        
+    } if (indexPath.section == 2) {
+        
+        FemaleProperties *temprory = [self.WorkoutForFemale.LegsFemale objectAtIndex:indexPath.row];
+        
+        cell.detailTextLabel.text = temprory.NameWorkoutFemale;
+        cell.textLabel.text = temprory.LevelFemale;
+        
+    } if (indexPath.section == 3) {
+        
+        FemaleProperties *temprory = [self.WorkoutForFemale.ChestFemale objectAtIndex:indexPath.row];
+        
+        cell.detailTextLabel.text = temprory.NameWorkoutFemale;
+        cell.textLabel.text = temprory.LevelFemale;
+        
+    } if (indexPath.section == 4) {
+        
+        FemaleProperties *temprory = [self.WorkoutForFemale.ABSFemale objectAtIndex:indexPath.row];
+        
+        cell.detailTextLabel.text = temprory.NameWorkoutFemale;
+        cell.textLabel.text = temprory.LevelFemale;
+        
+    }
+    
     return cell;
 }
 
