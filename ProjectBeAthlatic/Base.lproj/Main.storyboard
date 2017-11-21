@@ -67,6 +67,9 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="SyY-Nm-ToN" kind="show" id="Hpa-aO-7Wi"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -78,6 +81,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fpt-WA-lu0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2382" y="-217"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="cTd-60-N6m">
+            <objects>
+                <viewController id="SyY-Nm-ToN" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rIe-B5-ZhR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="ZSC-B1-t4X"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zdd-tt-iqy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3190" y="-217"/>
         </scene>
         <!--Male Table View Controller-->
         <scene sceneID="ACA-Xn-t24">
@@ -167,7 +185,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rEc-Pq-39d" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3318" y="-879"/>
+            <point key="canvasLocation" x="3190" y="-879"/>
         </scene>
         <!--Item-->
         <scene sceneID="Zf5-SI-aYS">
