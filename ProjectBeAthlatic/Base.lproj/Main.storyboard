@@ -74,10 +74,10 @@
             </objects>
             <point key="canvasLocation" x="2372" y="-314"/>
         </scene>
-        <!--View Controller-->
+        <!--Male View Controller-->
         <scene sceneID="LpI-oO-lAA">
             <objects>
-                <viewController id="QMn-aR-cP1" sceneMemberID="viewController">
+                <viewController id="QMn-aR-cP1" customClass="MaleViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BPS-sK-tOs">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
