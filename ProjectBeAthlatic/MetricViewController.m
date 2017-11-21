@@ -123,6 +123,8 @@
     MetricWeightValue = (([self.MetricWeightPicker selectedRowInComponent:0])*100.0f) + (([self.MetricWeightPicker selectedRowInComponent:1])*10.0f) + (([self.MetricWeightPicker selectedRowInComponent:2])*1.0f) + (([self.MetricWeightPicker selectedRowInComponent:4])*100.0f) + (([self.MetricWeightPicker selectedRowInComponent:5])/100.0f) ;
     NSLog(@"Weight = %.2f", MetricWeightValue);
     
+    float MetricBMIValue = MetricWeightValue/(MetricHeightValue*MetricHeightValue);
+    NSLog(@"BMI value = %.2f", MetricBMIValue);
     
 }
 
