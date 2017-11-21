@@ -82,10 +82,10 @@
             </objects>
             <point key="canvasLocation" x="2382" y="-217"/>
         </scene>
-        <!--View Controller-->
+        <!--Female View Controller-->
         <scene sceneID="cTd-60-N6m">
             <objects>
-                <viewController id="SyY-Nm-ToN" sceneMemberID="viewController">
+                <viewController id="SyY-Nm-ToN" customClass="FemaleViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rIe-B5-ZhR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
