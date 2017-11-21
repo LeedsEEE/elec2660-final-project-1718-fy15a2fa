@@ -40,18 +40,10 @@
     
     
     
-    if (pickerView == self.MetricHeightPicker && component == 0 && row == 0) {
-        coordinate = [NSString stringWithFormat:@"0"];
+    if (pickerView == self.MetricHeightPicker && component == 0) {
+        coordinate = [NSString stringWithFormat:@"%li",row];
     }
     
-    else if (pickerView == self.MetricHeightPicker && component == 0 && row == 1) {
-        coordinate = [NSString stringWithFormat:@"1"];
-    }
-    
-    else if (pickerView == self.MetricHeightPicker && component == 0 && row == 2) {
-        coordinate = [NSString stringWithFormat:@"2"];
-    }
-        
     else if (pickerView == self.MetricHeightPicker && component ==1) {
         coordinate = [NSString stringWithFormat:@"."];
     }
@@ -68,16 +60,8 @@
         coordinate = [NSString stringWithFormat:@"m"];
     }
     
-    else if (pickerView == self.MetricWeightPicker && component == 0 && row == 0) {
-        coordinate = [NSString stringWithFormat:@"0"];
-    }
-    
-    else if (pickerView == self.MetricWeightPicker && component == 0 && row == 1) {
-        coordinate = [NSString stringWithFormat:@"1"];
-    }
-    
-    else if (pickerView == self.MetricWeightPicker && component == 0 && row == 2) {
-        coordinate = [NSString stringWithFormat:@"2"];
+    else if (pickerView == self.MetricWeightPicker && component == 0) {
+        coordinate = [NSString stringWithFormat:@"%li",row];
     }
     
     else if (pickerView == self.MetricWeightPicker && component == 1) {
