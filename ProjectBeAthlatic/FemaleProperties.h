@@ -10,4 +10,9 @@
 
 @interface FemaleProperties : NSObject
 
+@property (nonatomic, strong) NSString *NameWorkoutFemale;
+@property (nonatomic, strong) NSString *LevelFemale;
+@property (nonatomic, strong) NSString *TimeFemale;
+@property (nonatomic, strong) NSString *DiscriptionFemale;
+
 @end
