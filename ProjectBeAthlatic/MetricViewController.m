@@ -41,13 +41,17 @@
     
     
     if (pickerView == self.MetricHeightPicker && component == 0 && row == 0) {
-        coordinate = [NSString stringWithFormat:@"1"];
+        coordinate = [NSString stringWithFormat:@"0"];
     }
     
     else if (pickerView == self.MetricHeightPicker && component == 0 && row == 1) {
-        coordinate = [NSString stringWithFormat:@"2"];
+        coordinate = [NSString stringWithFormat:@"1"];
     }
     
+    else if (pickerView == self.MetricHeightPicker && component == 0 && row == 2) {
+        coordinate = [NSString stringWithFormat:@"2"];
+    }
+        
     else if (pickerView == self.MetricHeightPicker && component ==1) {
         coordinate = [NSString stringWithFormat:@"."];
     }
@@ -108,6 +112,18 @@
       didSelectRow:(NSInteger)row
        inComponent:(NSInteger)component; {
     
+    
+    
+    float MetricHeightValue;
+    float MetricWeightValue;
+    
+    MetricHeightValue = (([self.MetricHeightPicker selectedRowInComponent:0])*1.0f) + (([self.MetricHeightPicker selectedRowInComponent:2])/10.0f) + (([self.MetricHeightPicker selectedRowInComponent:3])/100.0f);
+    NSLog(@"Height = %.2f",MetricHeightValue);
+    
+    MetricWeightValue = (([self.MetricWeightPicker selectedRowInComponent:0])*100.0f) + (([self.MetricWeightPicker selectedRowInComponent:1])*10.0f) + (([self.MetricWeightPicker selectedRowInComponent:2])*1.0f) + (([self.MetricWeightPicker selectedRowInComponent:4])*100.0f) + (([self.MetricWeightPicker selectedRowInComponent:5])/100.0f) ;
+    NSLog(@"Weight = %.2f", MetricWeightValue);
+    
+    
 }
 
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView; {
@@ -124,7 +140,7 @@
 numberOfRowsInComponent:(NSInteger)component; {
     
     if (pickerView == self.MetricHeightPicker && component == 0) {
-        return 2;
+        return 3;
     }
     
     else if (pickerView == self.MetricHeightPicker && component == 1) {
