@@ -7,7 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "MaleProperties.h"
 
 @interface MaleData : NSObject
+
+@property (nonatomic, strong) NSMutableArray *ShouldersMale;
+@property (nonatomic, strong) NSMutableArray *ArmsMale;
+@property (nonatomic, strong) NSMutableArray *LegsMale;
+@property (nonatomic, strong) NSMutableArray *ChestMale;
+@property (nonatomic, strong) NSMutableArray *ABSMale;
 
 @end
