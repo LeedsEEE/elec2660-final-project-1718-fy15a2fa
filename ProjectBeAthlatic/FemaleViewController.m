@@ -17,6 +17,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    self.LevelFemaleLabel.text = self.FemaleData.LevelFemale;
+    self.TimeFemaleLabel.text = self.FemaleData.TimeFemale;
+    self.DiscriptionFemaleLabel.text = self.FemaleData.DiscriptionFemale;
+    
 }
 
 - (void)didReceiveMemoryWarning {
