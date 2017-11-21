@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MaleData.h"
 
 @interface MaleTableViewController : UITableViewController
+
+@property (nonatomic, strong) MaleData *WorkoutForMale;
 
 @end
