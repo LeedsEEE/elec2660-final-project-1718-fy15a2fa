@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MaleProperties.h"
 
 @interface MaleViewController : UIViewController
+
+@property (weak, nonatomic) IBOutlet UILabel *LevelMaleLabel;
+@property (weak, nonatomic) IBOutlet UILabel *TimeMaleLabel;
+@property (weak, nonatomic) IBOutlet UILabel *DiscriptionMaleLabel;
+
+@property (strong, nonatomic) MaleProperties *MaleData;
 
 @end

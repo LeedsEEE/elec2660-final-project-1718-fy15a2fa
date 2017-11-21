@@ -123,6 +123,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="dJA-up-faq"/>
                     </view>
+                    <connections>
+                        <outlet property="DiscriptionMaleLabel" destination="MeV-ss-AiP" id="yFs-TN-WGK"/>
+                        <outlet property="LevelMaleLabel" destination="1RZ-Sg-a8D" id="BNY-fq-89X"/>
+                        <outlet property="TimeMaleLabel" destination="yLD-Wo-bmq" id="1tK-K4-vZi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rEc-Pq-39d" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
