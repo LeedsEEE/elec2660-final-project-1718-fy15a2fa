@@ -10,4 +10,9 @@
 
 @interface MaleProperties : NSObject
 
+@property (nonatomic, strong) NSString *NameWorkoutMale;
+@property (nonatomic, strong) NSString *LevelMale;
+@property (nonatomic, strong) NSString *TimeMale;
+@property (nonatomic, strong) NSString *DiscriptionMale;
+
 @end
