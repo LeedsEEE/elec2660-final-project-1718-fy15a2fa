@@ -43,10 +43,10 @@
             </objects>
             <point key="canvasLocation" x="1581.5999999999999" y="-314.39280359820094"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Male Table View Controller-->
         <scene sceneID="ACA-Xn-t24">
             <objects>
-                <tableViewController id="Fkt-uo-u1g" sceneMemberID="viewController">
+                <tableViewController id="Fkt-uo-u1g" customClass="MaleTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="cjG-wY-tm3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
