@@ -115,34 +115,42 @@
     if (MetricBMIValue < 15.0) {
         
         self.BMICategoryMetric.text = @"Very severly underweight";
+        NSLog(@"The category is %@",self.BMICategoryMetric.text);
         
     } else if (MetricBMIValue >= 15.0 && MetricBMIValue < 16.0) {
         
         self.BMICategoryMetric.text = @"Severly underweight";
+        NSLog(@"The category is %@",self.BMICategoryMetric.text);
         
     } else if (MetricBMIValue >= 16.0 && MetricBMIValue < 18.5) {
         
         self.BMICategoryMetric.text = @"Undetweight";
+        NSLog(@"The category is %@",self.BMICategoryMetric.text);
         
     } else if (MetricBMIValue >= 18.5 && MetricBMIValue < 25.0) {
         
         self.BMICategoryMetric.text = @"Normal (Healthy)";
+        NSLog(@"The category is %@",self.BMICategoryMetric.text);
         
     } else if (MetricBMIValue >= 25.0 && MetricBMIValue < 30.0) {
         
         self.BMICategoryMetric.text = @"Overweight";
+        NSLog(@"The category is %@",self.BMICategoryMetric.text);
         
     } else if (MetricBMIValue >= 30.0 && MetricBMIValue < 35.0) {
         
         self.BMICategoryMetric.text = @"Obese Class I (Moderately obese)";
+        NSLog(@"The category is %@",self.BMICategoryMetric.text);
         
     } else if (MetricBMIValue >= 35.0 && MetricBMIValue < 40.0) {
         
         self.BMICategoryMetric.text = @"Obese Class II (Severely obese)";
+        NSLog(@"The category is %@",self.BMICategoryMetric.text);
         
     } else  {
         
         self.BMICategoryMetric.text = @"Obese Class III (Very severly obese)";
+        NSLog(@"The category is %@",self.BMICategoryMetric.text);
     }
     
 }
