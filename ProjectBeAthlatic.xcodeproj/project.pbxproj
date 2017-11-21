@@ -24,6 +24,7 @@
 		6145D3B61FC42C320049CFEB /* FemaleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6145D3B51FC42C320049CFEB /* FemaleViewController.m */; };
 		6145D3B91FC42D540049CFEB /* FemaleProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 6145D3B81FC42D540049CFEB /* FemaleProperties.m */; };
 		6145D3BC1FC42E230049CFEB /* FemaleData.m in Sources */ = {isa = PBXBuildFile; fileRef = 6145D3BB1FC42E230049CFEB /* FemaleData.m */; };
+		61AAB7701FC4841900AFC62A /* MetricViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61AAB76F1FC4841900AFC62A /* MetricViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,8 @@
 		6145D3B81FC42D540049CFEB /* FemaleProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FemaleProperties.m; sourceTree = "<group>"; };
 		6145D3BA1FC42E230049CFEB /* FemaleData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FemaleData.h; sourceTree = "<group>"; };
 		6145D3BB1FC42E230049CFEB /* FemaleData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FemaleData.m; sourceTree = "<group>"; };
+		61AAB76E1FC4841900AFC62A /* MetricViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MetricViewController.h; sourceTree = "<group>"; };
+		61AAB76F1FC4841900AFC62A /* MetricViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MetricViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,11 +133,9 @@
 			children = (
 				6145D3701FC4063F0049CFEB /* AppDelegate.h */,
 				6145D3711FC4063F0049CFEB /* AppDelegate.m */,
+				6145D3791FC4063F0049CFEB /* Main.storyboard */,
 				6145D3731FC4063F0049CFEB /* FirstViewController.h */,
 				6145D3741FC4063F0049CFEB /* FirstViewController.m */,
-				6145D3761FC4063F0049CFEB /* SecondViewController.h */,
-				6145D3771FC4063F0049CFEB /* SecondViewController.m */,
-				6145D3791FC4063F0049CFEB /* Main.storyboard */,
 				6145D3A51FC411340049CFEB /* MaleTableViewController.h */,
 				6145D3A61FC411340049CFEB /* MaleTableViewController.m */,
 				6145D3AB1FC4131F0049CFEB /* MaleProperties.h */,
@@ -151,6 +152,10 @@
 				6145D3BB1FC42E230049CFEB /* FemaleData.m */,
 				6145D3B41FC42C320049CFEB /* FemaleViewController.h */,
 				6145D3B51FC42C320049CFEB /* FemaleViewController.m */,
+				6145D3761FC4063F0049CFEB /* SecondViewController.h */,
+				6145D3771FC4063F0049CFEB /* SecondViewController.m */,
+				61AAB76E1FC4841900AFC62A /* MetricViewController.h */,
+				61AAB76F1FC4841900AFC62A /* MetricViewController.m */,
 				6145D37C1FC4063F0049CFEB /* Assets.xcassets */,
 				6145D37E1FC4063F0049CFEB /* LaunchScreen.storyboard */,
 				6145D3811FC4063F0049CFEB /* Info.plist */,
@@ -319,6 +324,7 @@
 				6145D3B31FC42B230049CFEB /* FemaleTableViewController.m in Sources */,
 				6145D3831FC4063F0049CFEB /* main.m in Sources */,
 				6145D3B01FC4143E0049CFEB /* MaleData.m in Sources */,
+				61AAB7701FC4841900AFC62A /* MetricViewController.m in Sources */,
 				6145D3B61FC42C320049CFEB /* FemaleViewController.m in Sources */,
 				6145D3751FC4063F0049CFEB /* FirstViewController.m in Sources */,
 				6145D3BC1FC42E230049CFEB /* FemaleData.m in Sources */,
