@@ -23,6 +23,7 @@
 		6145D3B31FC42B230049CFEB /* FemaleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6145D3B21FC42B230049CFEB /* FemaleTableViewController.m */; };
 		6145D3B61FC42C320049CFEB /* FemaleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6145D3B51FC42C320049CFEB /* FemaleViewController.m */; };
 		6145D3B91FC42D540049CFEB /* FemaleProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 6145D3B81FC42D540049CFEB /* FemaleProperties.m */; };
+		6145D3BC1FC42E230049CFEB /* FemaleData.m in Sources */ = {isa = PBXBuildFile; fileRef = 6145D3BB1FC42E230049CFEB /* FemaleData.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,8 @@
 		6145D3B51FC42C320049CFEB /* FemaleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FemaleViewController.m; sourceTree = "<group>"; };
 		6145D3B71FC42D540049CFEB /* FemaleProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FemaleProperties.h; sourceTree = "<group>"; };
 		6145D3B81FC42D540049CFEB /* FemaleProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FemaleProperties.m; sourceTree = "<group>"; };
+		6145D3BA1FC42E230049CFEB /* FemaleData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FemaleData.h; sourceTree = "<group>"; };
+		6145D3BB1FC42E230049CFEB /* FemaleData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FemaleData.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +147,8 @@
 				6145D3B21FC42B230049CFEB /* FemaleTableViewController.m */,
 				6145D3B41FC42C320049CFEB /* FemaleViewController.h */,
 				6145D3B71FC42D540049CFEB /* FemaleProperties.h */,
+				6145D3BA1FC42E230049CFEB /* FemaleData.h */,
+				6145D3BB1FC42E230049CFEB /* FemaleData.m */,
 				6145D3B81FC42D540049CFEB /* FemaleProperties.m */,
 				6145D3B51FC42C320049CFEB /* FemaleViewController.m */,
 				6145D37C1FC4063F0049CFEB /* Assets.xcassets */,
@@ -316,6 +321,7 @@
 				6145D3B01FC4143E0049CFEB /* MaleData.m in Sources */,
 				6145D3B61FC42C320049CFEB /* FemaleViewController.m in Sources */,
 				6145D3751FC4063F0049CFEB /* FirstViewController.m in Sources */,
+				6145D3BC1FC42E230049CFEB /* FemaleData.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
