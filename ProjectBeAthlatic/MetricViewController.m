@@ -17,6 +17,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    self.MetricHeightPicker.delegate = self;
+    self.MetricHeightPicker.dataSource = self;
+    
+    self.MetricWeightPicker.delegate = self;
+    self.MetricWeightPicker.dataSource = self;
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -38,6 +45,13 @@
 
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView; {
     
+    NSInteger numberOfComponent = 0;
+    
+    if (_MetricHeightPicker) {
+        numberOfComponent = 5;
+    }
+    
+    return numberOfComponent;
 }
 
 - (NSInteger)pickerView:(UIPickerView *)pickerView
