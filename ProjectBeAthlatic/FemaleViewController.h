@@ -7,12 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "FemaleProperties.h"
 
 @interface FemaleViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UILabel *LevelFemaleLabel;
 @property (weak, nonatomic) IBOutlet UILabel *TimeFemaleLabel;
 @property (weak, nonatomic) IBOutlet UILabel *DiscriptionFemaleLabel;
+
+@property (strong, nonatomic) FemaleProperties *FemaleData;
 
 @end
