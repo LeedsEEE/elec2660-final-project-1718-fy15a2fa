@@ -11,6 +11,11 @@
 
 @interface FemaleData : NSObject
 
+@property (nonatomic, strong) NSMutableArray *ShouldersFemale;
+@property (nonatomic, strong) NSMutableArray *ArmsFeamle;
+@property (nonatomic, strong) NSMutableArray *LegsFemale;
+@property (nonatomic, strong) NSMutableArray *ChestFemale;
+@property (nonatomic, strong) NSMutableArray *ABSFemale;
 
 
 @end
