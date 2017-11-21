@@ -17,6 +17,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.WorkoutForFemale = [[FemaleData alloc] init];
+    
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -37,23 +39,23 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    /*
+    
     NSInteger numberOfWorkout = 0;
     
     if (section == 0) {
-        numberOfWorkout = self.WorkoutForMale.ShouldersMale.count;
+        numberOfWorkout = self.WorkoutForFemale.ShouldersFemale.count;
     } if (section == 1) {
-        numberOfWorkout = self.WorkoutForMale.ArmsMale.count;
+        numberOfWorkout = self.WorkoutForFemale.ArmsFeamle.count;
     } if (section == 2) {
-        numberOfWorkout = self.WorkoutForMale.LegsMale.count;
+        numberOfWorkout = self.WorkoutForFemale.LegsFemale.count;
     } if (section == 3) {
-        numberOfWorkout = self.WorkoutForMale.ChestMale.count;
+        numberOfWorkout = self.WorkoutForFemale.ChestFemale.count;
     } if (section == 4) {
-        numberOfWorkout = self.WorkoutForMale.ABSMale.count;
+        numberOfWorkout = self.WorkoutForFemale.ABSFemale.count;
     }
     
-    return numberOfWorkout;*/
-    return 5;
+    return numberOfWorkout;
+    
 }
 
 
