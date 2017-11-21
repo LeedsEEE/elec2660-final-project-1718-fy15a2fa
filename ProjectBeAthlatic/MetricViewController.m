@@ -120,11 +120,46 @@
     MetricHeightValue = (([self.MetricHeightPicker selectedRowInComponent:0])*1.0f) + (([self.MetricHeightPicker selectedRowInComponent:2])/10.0f) + (([self.MetricHeightPicker selectedRowInComponent:3])/100.0f);
     NSLog(@"Height = %.2f",MetricHeightValue);
     
-    MetricWeightValue = (([self.MetricWeightPicker selectedRowInComponent:0])*100.0f) + (([self.MetricWeightPicker selectedRowInComponent:1])*10.0f) + (([self.MetricWeightPicker selectedRowInComponent:2])*1.0f) + (([self.MetricWeightPicker selectedRowInComponent:4])*100.0f) + (([self.MetricWeightPicker selectedRowInComponent:5])/100.0f) ;
+    MetricWeightValue = (([self.MetricWeightPicker selectedRowInComponent:0])*100.0f) + (([self.MetricWeightPicker selectedRowInComponent:1])*10.0f) + (([self.MetricWeightPicker selectedRowInComponent:2])*1.0f) + (([self.MetricWeightPicker selectedRowInComponent:4])/10.0f) + (([self.MetricWeightPicker selectedRowInComponent:5])/100.0f) ;
     NSLog(@"Weight = %.2f", MetricWeightValue);
     
     float MetricBMIValue = MetricWeightValue/(MetricHeightValue*MetricHeightValue);
     NSLog(@"BMI value = %.2f", MetricBMIValue);
+    
+    self.BMIValueMetric.text = [NSString stringWithFormat:@"%.2f",MetricBMIValue];
+    
+    if (MetricBMIValue < 15.0) {
+        
+        self.BMICategoryMetric.text = @"Very severly underweight";
+        
+    } else if (MetricBMIValue >= 15.0 && MetricBMIValue < 16.0) {
+        
+        self.BMICategoryMetric.text = @"Severly underweight";
+        
+    } else if (MetricBMIValue >= 16.0 && MetricBMIValue < 18.5) {
+        
+        self.BMICategoryMetric.text = @"Undetweight";
+        
+    } else if (MetricBMIValue >= 18.5 && MetricBMIValue < 25.0) {
+        
+        self.BMICategoryMetric.text = @"Normal (Healthy)";
+        
+    } else if (MetricBMIValue >= 25.0 && MetricBMIValue < 30.0) {
+        
+        self.BMICategoryMetric.text = @"Overweight";
+        
+    } else if (MetricBMIValue >= 30.0 && MetricBMIValue < 35.0) {
+        
+        self.BMICategoryMetric.text = @"Obese Class I (Moderately obese)";
+        
+    } else if (MetricBMIValue >= 35.0 && MetricBMIValue < 40.0) {
+        
+        self.BMICategoryMetric.text = @"Obese Class II (Severely obese)";
+        
+    } else  {
+        
+        self.BMICategoryMetric.text = @"Obese Class III (Very severly obese)";
+    }
     
 }
 
