@@ -157,11 +157,29 @@
             MaleProperties *temporary = [self.WorkoutForMale.ShouldersMale objectAtIndex:indexPath.row];
             recievedViewController.MaleData = temporary;
             
-        } 
+        } if (indexPath.section == 1) {
+            
+            MaleProperties *temporary = [self.WorkoutForMale.ArmsMale objectAtIndex:indexPath.row];
+            recievedViewController.MaleData = temporary;
+            
+        } if (indexPath.section == 2) {
+            
+            MaleProperties *temporary = [self.WorkoutForMale.LegsMale objectAtIndex:indexPath.row];
+            recievedViewController.MaleData = temporary;
+            
+        } if (indexPath.section == 3) {
+            
+            MaleProperties *temporary = [self.WorkoutForMale.ChestMale objectAtIndex:indexPath.row];
+            recievedViewController.MaleData = temporary;
         
+        } if (indexPath.section == 4) {
+            
+            MaleProperties *temporary = [self.WorkoutForMale.ABSMale objectAtIndex:indexPath.row];
+            recievedViewController.MaleData = temporary;
+            
+        }
+    
     }
-    
-    
     
 }
 
