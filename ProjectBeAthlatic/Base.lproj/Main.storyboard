@@ -76,7 +76,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="QMn-aR-cP1" kind="show" id="qOv-Xl-nFh"/>
+                                    <segue destination="QMn-aR-cP1" kind="show" identifier="ShowWorkoutMale" id="qOv-Xl-nFh"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

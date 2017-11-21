@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "MaleData.h"
+#import "MaleViewController.h"
 
 @interface MaleTableViewController : UITableViewController
 
