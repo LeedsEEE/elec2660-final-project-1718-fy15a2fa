@@ -10,4 +10,10 @@
 
 @interface MetricViewController : UIViewController <UIPickerViewDataSource, UIPickerViewDelegate>
 
+@property (weak, nonatomic) IBOutlet UILabel *BMIValueMetric;
+@property (weak, nonatomic) IBOutlet UILabel *BMICategoryMetric;
+
+@property (weak, nonatomic) IBOutlet UIPickerView *MetricHeightPicker;
+@property (weak, nonatomic) IBOutlet UIPickerView *MetricWeightPicker;
+
 @end

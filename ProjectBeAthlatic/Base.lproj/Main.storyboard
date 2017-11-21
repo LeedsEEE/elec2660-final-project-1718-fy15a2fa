@@ -146,6 +146,12 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="yIp-7c-vc6"/>
                     </view>
+                    <connections>
+                        <outlet property="BMICategoryMetric" destination="j0U-h8-nzD" id="b6W-4J-qiU"/>
+                        <outlet property="BMIValueMetric" destination="04G-PF-BMI" id="PXf-j9-uvB"/>
+                        <outlet property="MetricHeightPicker" destination="nue-bV-Qg7" id="2eD-X3-dkY"/>
+                        <outlet property="MetricWeightPicker" destination="zuf-6u-aCy" id="gaV-nJ-rdj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d8d-NB-XkE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
