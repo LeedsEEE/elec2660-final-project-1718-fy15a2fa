@@ -21,6 +21,7 @@
 		6145D3AD1FC4131F0049CFEB /* MaleProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 6145D3AC1FC4131F0049CFEB /* MaleProperties.m */; };
 		6145D3B01FC4143E0049CFEB /* MaleData.m in Sources */ = {isa = PBXBuildFile; fileRef = 6145D3AF1FC4143E0049CFEB /* MaleData.m */; };
 		6145D3B31FC42B230049CFEB /* FemaleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6145D3B21FC42B230049CFEB /* FemaleTableViewController.m */; };
+		6145D3B61FC42C320049CFEB /* FemaleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6145D3B51FC42C320049CFEB /* FemaleViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,8 @@
 		6145D3AF1FC4143E0049CFEB /* MaleData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MaleData.m; sourceTree = "<group>"; };
 		6145D3B11FC42B230049CFEB /* FemaleTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FemaleTableViewController.h; sourceTree = "<group>"; };
 		6145D3B21FC42B230049CFEB /* FemaleTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FemaleTableViewController.m; sourceTree = "<group>"; };
+		6145D3B41FC42C320049CFEB /* FemaleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FemaleViewController.h; sourceTree = "<group>"; };
+		6145D3B51FC42C320049CFEB /* FemaleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FemaleViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +139,8 @@
 				6145D3A91FC412720049CFEB /* MaleViewController.m */,
 				6145D3B11FC42B230049CFEB /* FemaleTableViewController.h */,
 				6145D3B21FC42B230049CFEB /* FemaleTableViewController.m */,
+				6145D3B41FC42C320049CFEB /* FemaleViewController.h */,
+				6145D3B51FC42C320049CFEB /* FemaleViewController.m */,
 				6145D37C1FC4063F0049CFEB /* Assets.xcassets */,
 				6145D37E1FC4063F0049CFEB /* LaunchScreen.storyboard */,
 				6145D3811FC4063F0049CFEB /* Info.plist */,
@@ -303,6 +308,7 @@
 				6145D3B31FC42B230049CFEB /* FemaleTableViewController.m in Sources */,
 				6145D3831FC4063F0049CFEB /* main.m in Sources */,
 				6145D3B01FC4143E0049CFEB /* MaleData.m in Sources */,
+				6145D3B61FC42C320049CFEB /* FemaleViewController.m in Sources */,
 				6145D3751FC4063F0049CFEB /* FirstViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
