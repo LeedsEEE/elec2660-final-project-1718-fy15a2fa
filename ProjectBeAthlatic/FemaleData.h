@@ -7,7 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "FemaleProperties.h"
 
 @interface FemaleData : NSObject
+
+
 
 @end
