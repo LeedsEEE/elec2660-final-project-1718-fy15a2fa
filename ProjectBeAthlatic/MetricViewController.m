@@ -36,6 +36,15 @@
     
 }
 
+- (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView; {
+    
+}
+
+- (NSInteger)pickerView:(UIPickerView *)pickerView
+numberOfRowsInComponent:(NSInteger)component; {
+    
+}
+
 /*
 #pragma mark - Navigation
 
