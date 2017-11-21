@@ -33,6 +33,25 @@
 
 #pragma mark - Table view data source
 
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section; {
+    
+    NSString *HeaderFemale;
+    
+    if (section == 0) {
+        HeaderFemale = [NSString stringWithFormat:@"Shoulder"];
+    } if (section == 1) {
+        HeaderFemale = [NSString stringWithFormat:@"Arms"];
+    } if (section == 2) {
+        HeaderFemale = [NSString stringWithFormat:@"Legs"];
+    } if (section == 3) {
+        HeaderFemale = [NSString stringWithFormat:@"Chest"];
+    } if (section == 4) {
+        HeaderFemale = [NSString stringWithFormat:@"ABS"];
+    }
+    
+    return HeaderFemale;
+}
+
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 
     return 5;
