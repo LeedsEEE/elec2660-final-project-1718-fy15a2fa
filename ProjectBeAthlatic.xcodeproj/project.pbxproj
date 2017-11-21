@@ -17,6 +17,7 @@
 		6145D38D1FC4063F0049CFEB /* ProjectBeAthlaticTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6145D38C1FC4063F0049CFEB /* ProjectBeAthlaticTests.m */; };
 		6145D3981FC4063F0049CFEB /* ProjectBeAthlaticUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6145D3971FC4063F0049CFEB /* ProjectBeAthlaticUITests.m */; };
 		6145D3A71FC411340049CFEB /* MaleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6145D3A61FC411340049CFEB /* MaleTableViewController.m */; };
+		6145D3AA1FC412720049CFEB /* MaleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6145D3A91FC412720049CFEB /* MaleViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,8 @@
 		6145D3991FC4063F0049CFEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6145D3A51FC411340049CFEB /* MaleTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MaleTableViewController.h; sourceTree = "<group>"; };
 		6145D3A61FC411340049CFEB /* MaleTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MaleTableViewController.m; sourceTree = "<group>"; };
+		6145D3A81FC412720049CFEB /* MaleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MaleViewController.h; sourceTree = "<group>"; };
+		6145D3A91FC412720049CFEB /* MaleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MaleViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +119,8 @@
 				6145D3A51FC411340049CFEB /* MaleTableViewController.h */,
 				6145D3A61FC411340049CFEB /* MaleTableViewController.m */,
 				6145D3791FC4063F0049CFEB /* Main.storyboard */,
+				6145D3A81FC412720049CFEB /* MaleViewController.h */,
+				6145D3A91FC412720049CFEB /* MaleViewController.m */,
 				6145D37C1FC4063F0049CFEB /* Assets.xcassets */,
 				6145D37E1FC4063F0049CFEB /* LaunchScreen.storyboard */,
 				6145D3811FC4063F0049CFEB /* Info.plist */,
@@ -278,6 +283,7 @@
 				6145D3781FC4063F0049CFEB /* SecondViewController.m in Sources */,
 				6145D3721FC4063F0049CFEB /* AppDelegate.m in Sources */,
 				6145D3A71FC411340049CFEB /* MaleTableViewController.m in Sources */,
+				6145D3AA1FC412720049CFEB /* MaleViewController.m in Sources */,
 				6145D3831FC4063F0049CFEB /* main.m in Sources */,
 				6145D3751FC4063F0049CFEB /* FirstViewController.m in Sources */,
 			);
