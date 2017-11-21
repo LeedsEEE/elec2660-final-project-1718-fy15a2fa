@@ -23,6 +23,7 @@
     
     self.MetricWeightPicker.delegate = self;
     self.MetricWeightPicker.dataSource = self;
+
     
 }
 
@@ -34,7 +35,9 @@
 - (NSString *)pickerView:(UIPickerView *)pickerView
              titleForRow:(NSInteger)row
             forComponent:(NSInteger)component; {
+    NSString *coordinate = [NSString stringWithFormat:@"%li", (long)row];
     
+    return coordinate;
 }
 
 - (void)pickerView:(UIPickerView *)pickerView
@@ -44,19 +47,19 @@
 }
 
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView; {
-    
-    NSInteger numberOfComponent = 0;
-    
-    if (_MetricHeightPicker) {
-        numberOfComponent = 5;
+ 
+    if (pickerView == self.MetricHeightPicker) {
+        return 5;
+    } else {
+        return 7;
     }
     
-    return numberOfComponent;
 }
 
 - (NSInteger)pickerView:(UIPickerView *)pickerView
 numberOfRowsInComponent:(NSInteger)component; {
     
+    return 2;
 }
 
 /*
