@@ -24,6 +24,18 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (NSString *)pickerView:(UIPickerView *)pickerView
+             titleForRow:(NSInteger)row
+            forComponent:(NSInteger)component; {
+    
+}
+
+- (void)pickerView:(UIPickerView *)pickerView
+      didSelectRow:(NSInteger)row
+       inComponent:(NSInteger)component; {
+    
+}
+
 /*
 #pragma mark - Navigation
 
