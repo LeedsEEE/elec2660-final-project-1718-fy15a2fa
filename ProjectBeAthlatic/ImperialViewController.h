@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ImperialViewController : UIViewController
+@interface ImperialViewController : UIViewController <UIPickerViewDataSource, UIPickerViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UILabel *BMIValueImperial;
 @property (weak, nonatomic) IBOutlet UILabel *BMICategoryImperial;
