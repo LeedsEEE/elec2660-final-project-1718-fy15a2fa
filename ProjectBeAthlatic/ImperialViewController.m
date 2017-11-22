@@ -97,6 +97,18 @@
       didSelectRow:(NSInteger)row
        inComponent:(NSInteger)component; {
     
+    float ImperialHeightValue;
+    float ImperialWeightValue;
+    
+    ImperialHeightValue = (([self.ImperialHeightPicker selectedRowInComponent:0])*1.0f) + (([self.ImperialHeightPicker selectedRowInComponent:2])/10.0f) + (([self.ImperialHeightPicker selectedRowInComponent:3])/100.0f);
+    
+    NSLog(@"Height = %.2f",ImperialHeightValue);
+    
+    
+    ImperialWeightValue = (([self.ImperialWeightPicker selectedRowInComponent:0])*100.0f) + (([self.ImperialWeightPicker selectedRowInComponent:1])*10.0f) + (([self.ImperialWeightPicker selectedRowInComponent:2])*1.0f) + (([self.ImperialWeightPicker selectedRowInComponent:4])/10.0f) + (([self.ImperialWeightPicker selectedRowInComponent:5])/100.0f) ;
+    
+    NSLog(@"Weight = %.2f", ImperialWeightValue);
+    
 }
 
 

@@ -36,59 +36,59 @@
              titleForRow:(NSInteger)row
             forComponent:(NSInteger)component; {
     
-    NSString *coordinate;
+    NSString *MetricCoordinate;
     
     
     
     if (pickerView == self.MetricHeightPicker && component == 0) {
-        coordinate = [NSString stringWithFormat:@"%li",row];
+        MetricCoordinate = [NSString stringWithFormat:@"%li",row];
     }
     
     else if (pickerView == self.MetricHeightPicker && component ==1) {
-        coordinate = [NSString stringWithFormat:@"."];
+        MetricCoordinate = [NSString stringWithFormat:@"."];
     }
     
     else if (pickerView == self.MetricHeightPicker && component == 2) {
-        coordinate = [NSString stringWithFormat:@"%li",row];
+        MetricCoordinate = [NSString stringWithFormat:@"%li",row];
     }
     
     else if (pickerView == self.MetricHeightPicker && component == 3) {
-        coordinate = [NSString stringWithFormat:@"%li",row];
+        MetricCoordinate = [NSString stringWithFormat:@"%li",row];
     }
     
     else if (pickerView == self.MetricHeightPicker && component == 4) {
-        coordinate = [NSString stringWithFormat:@"m"];
+        MetricCoordinate = [NSString stringWithFormat:@"m"];
     }
     
     else if (pickerView == self.MetricWeightPicker && component == 0) {
-        coordinate = [NSString stringWithFormat:@"%li",row];
+        MetricCoordinate = [NSString stringWithFormat:@"%li",row];
     }
     
     else if (pickerView == self.MetricWeightPicker && component == 1) {
-        coordinate = [NSString stringWithFormat:@"%li",row];
+        MetricCoordinate = [NSString stringWithFormat:@"%li",row];
     }
     
     else if (pickerView == self.MetricWeightPicker && component == 2) {
-        coordinate = [NSString stringWithFormat:@"%li",row];
+        MetricCoordinate = [NSString stringWithFormat:@"%li",row];
     }
     
     else if (pickerView == self.MetricWeightPicker && component == 3) {
-        coordinate = [NSString stringWithFormat:@"."];
+        MetricCoordinate = [NSString stringWithFormat:@"."];
     }
     
     else if (pickerView == self.MetricWeightPicker && component == 4) {
-        coordinate = [NSString stringWithFormat:@"%li",row];
+        MetricCoordinate = [NSString stringWithFormat:@"%li",row];
     }
     
     else if (pickerView == self.MetricWeightPicker && component == 5) {
-        coordinate = [NSString stringWithFormat:@"%li",row];
+        MetricCoordinate = [NSString stringWithFormat:@"%li",row];
     }
     
     else {
-        coordinate = [NSString stringWithFormat:@"kg"];
+        MetricCoordinate = [NSString stringWithFormat:@"kg"];
     }
     
-    return coordinate;
+    return MetricCoordinate;
     
 }
 
