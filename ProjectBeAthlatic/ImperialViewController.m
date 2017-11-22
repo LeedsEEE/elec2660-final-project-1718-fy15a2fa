@@ -115,6 +115,8 @@
     
     NSLog(@"BMI value = %.2f", ImperailBMIValue);
     
+    self.BMIValueImperial.text = [NSString stringWithFormat:@"%.2f",ImperailBMIValue];
+    
 }
 
 
