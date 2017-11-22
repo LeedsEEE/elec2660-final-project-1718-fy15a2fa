@@ -17,6 +17,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    self.ImperialHeightPicker.delegate = self;
+    self.ImperialHeightPicker.dataSource = self;
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -39,6 +43,15 @@
 }
 
 
+- (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView; {
+    
+}
+
+
+- (NSInteger)pickerView:(UIPickerView *)pickerView
+numberOfRowsInComponent:(NSInteger)component; {
+    
+}
 
 
 /*
