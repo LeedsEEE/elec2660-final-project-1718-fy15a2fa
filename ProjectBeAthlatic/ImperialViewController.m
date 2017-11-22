@@ -40,7 +40,7 @@
     
     
     
-    if (pickerView == self.ImperialWeightPicker && component == 0) {
+    if (pickerView == self.ImperialHeightPicker && component == 0) {
         ImperialCoordinate = [NSString stringWithFormat:@"%li",row];
     }
     
@@ -85,7 +85,7 @@
     }
     
     else {
-        ImperialCoordinate = [NSString stringWithFormat:@"kg"];
+        ImperialCoordinate = [NSString stringWithFormat:@"Ib"];
     }
     
     return ImperialCoordinate;

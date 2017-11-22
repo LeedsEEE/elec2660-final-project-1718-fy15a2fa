@@ -100,14 +100,20 @@
     
     float MetricHeightValue;
     float MetricWeightValue;
+    float MetricBMIValue;
     
     MetricHeightValue = (([self.MetricHeightPicker selectedRowInComponent:0])*1.0f) + (([self.MetricHeightPicker selectedRowInComponent:2])/10.0f) + (([self.MetricHeightPicker selectedRowInComponent:3])/100.0f);
+    
     NSLog(@"Height = %.2f",MetricHeightValue);
     
+    
     MetricWeightValue = (([self.MetricWeightPicker selectedRowInComponent:0])*100.0f) + (([self.MetricWeightPicker selectedRowInComponent:1])*10.0f) + (([self.MetricWeightPicker selectedRowInComponent:2])*1.0f) + (([self.MetricWeightPicker selectedRowInComponent:4])/10.0f) + (([self.MetricWeightPicker selectedRowInComponent:5])/100.0f) ;
+    
     NSLog(@"Weight = %.2f", MetricWeightValue);
     
-    float MetricBMIValue = MetricWeightValue/(MetricHeightValue*MetricHeightValue);
+    
+    MetricBMIValue = MetricWeightValue/(MetricHeightValue*MetricHeightValue);
+    
     NSLog(@"BMI value = %.2f", MetricBMIValue);
     
     self.BMIValueMetric.text = [NSString stringWithFormat:@"%.2f",MetricBMIValue];
