@@ -117,6 +117,47 @@
     
     self.BMIValueImperial.text = [NSString stringWithFormat:@"%.2f",ImperailBMIValue];
     
+    if (ImperailBMIValue < 15.0) {
+        
+        self.BMICategoryImperial.text = @"Very severly underweight";
+        NSLog(@"The category is %@",self.BMICategoryImperial.text);
+        
+    } else if (ImperailBMIValue >= 15.0 && ImperailBMIValue < 16.0) {
+        
+        self.BMICategoryImperial.text = @"Severly underweight";
+        NSLog(@"The category is %@",self.BMICategoryImperial.text);
+        
+    } else if (ImperailBMIValue >= 16.0 && ImperailBMIValue < 18.5) {
+        
+        self.BMICategoryImperial.text = @"Undetweight";
+        NSLog(@"The category is %@",self.BMICategoryImperial.text);
+        
+    } else if (ImperailBMIValue >= 18.5 && ImperailBMIValue < 25.0) {
+        
+        self.BMICategoryImperial.text = @"Normal (Healthy)";
+        NSLog(@"The category is %@",self.BMICategoryImperial.text);
+        
+    } else if (ImperailBMIValue >= 25.0 && ImperailBMIValue < 30.0) {
+        
+        self.BMICategoryImperial.text = @"Overweight";
+        NSLog(@"The category is %@",self.BMICategoryImperial.text);
+        
+    } else if (ImperailBMIValue >= 30.0 && ImperailBMIValue < 35.0) {
+        
+        self.BMICategoryImperial.text = @"Obese Class I (Moderately obese)";
+        NSLog(@"The category is %@",self.BMICategoryImperial.text);
+        
+    } else if (ImperailBMIValue >= 35.0 && ImperailBMIValue < 40.0) {
+        
+        self.BMICategoryImperial.text = @"Obese Class II (Severely obese)";
+        NSLog(@"The category is %@",self.BMICategoryImperial.text);
+        
+    } else  {
+        
+        self.BMICategoryImperial.text = @"Obese Class III (Very severly obese)";
+        NSLog(@"The category is %@",self.BMICategoryImperial.text);
+    }
+    
 }
 
 
