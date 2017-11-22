@@ -10,4 +10,10 @@
 
 @interface ImperialViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UILabel *BMIValueImperial;
+@property (weak, nonatomic) IBOutlet UILabel *BMICategoryImperial;
+
+@property (weak, nonatomic) IBOutlet UIPickerView *ImperialHeightPicker;
+@property (weak, nonatomic) IBOutlet UIPickerView *ImperialWeightPicker;
+
 @end

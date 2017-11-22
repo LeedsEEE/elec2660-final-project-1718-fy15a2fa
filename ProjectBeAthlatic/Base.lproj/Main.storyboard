@@ -414,6 +414,12 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="zwY-dJ-dk0"/>
                     </view>
+                    <connections>
+                        <outlet property="BMICategoryImperial" destination="P4D-Uj-1ag" id="FQg-UC-Pjc"/>
+                        <outlet property="BMIValueImperial" destination="Fm8-Ah-GFQ" id="FVx-5t-AQt"/>
+                        <outlet property="ImperialHeightPicker" destination="A31-YX-8Rd" id="dQc-fn-m1w"/>
+                        <outlet property="ImperialWeightPicker" destination="fKs-tE-EEe" id="heN-zk-0Gl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fay-e5-nFc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
