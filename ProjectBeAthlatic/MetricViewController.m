@@ -158,9 +158,13 @@
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView; {
  
     if (pickerView == self.MetricHeightPicker) {
+        
         return 5;
+        
     } else {
+        
         return 7;
+        
     }
     
 }
