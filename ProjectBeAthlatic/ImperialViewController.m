@@ -64,47 +64,47 @@
 - (NSInteger)pickerView:(UIPickerView *)pickerView
 numberOfRowsInComponent:(NSInteger)component; {
     
-    if (pickerView == self.MetricHeightPicker && component == 0) {
-        return 3;
+    if (pickerView == self.ImperialHeightPicker && component == 0) {
+        return 8;
     }
     
-    else if (pickerView == self.MetricHeightPicker && component == 1) {
+    else if (pickerView == self.ImperialHeightPicker && component == 1) {
         return 1;
     }
     
-    else if (pickerView == self.MetricHeightPicker && component == 2) {
+    else if (pickerView == self.ImperialHeightPicker && component == 2) {
         return 10;
     }
     
-    else if (pickerView == self.MetricHeightPicker && component == 3) {
+    else if (pickerView == self.ImperialHeightPicker && component == 3) {
         return 10;
     }
     
-    else if (pickerView == self.MetricHeightPicker && component == 4) {
+    else if (pickerView == self.ImperialHeightPicker && component == 4) {
         return 1;
     }
     
-    else if (pickerView == self.MetricWeightPicker && component == 0) {
-        return 3;
-    }
-    
-    else if (pickerView == self.MetricWeightPicker && component == 1) {
+    else if (pickerView == self.ImperialWeightPicker && component == 0) {
         return 10;
     }
     
-    else if (pickerView == self.MetricWeightPicker && component == 2) {
+    else if (pickerView == self.ImperialWeightPicker && component == 1) {
         return 10;
     }
     
-    else if (pickerView == self.MetricWeightPicker && component == 3) {
+    else if (pickerView == self.ImperialWeightPicker && component == 2) {
+        return 10;
+    }
+    
+    else if (pickerView == self.ImperialWeightPicker && component == 3) {
         return 1;
     }
     
-    else if (pickerView == self.MetricWeightPicker && component == 4) {
+    else if (pickerView == self.ImperialWeightPicker && component == 4) {
         return 10;
     }
     
-    else if (pickerView == self.MetricWeightPicker && component == 5) {
+    else if (pickerView == self.ImperialWeightPicker && component == 5) {
         return 10;
     }
     
