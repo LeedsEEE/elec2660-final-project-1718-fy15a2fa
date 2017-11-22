@@ -24,6 +24,7 @@
 		6145D3B61FC42C320049CFEB /* FemaleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6145D3B51FC42C320049CFEB /* FemaleViewController.m */; };
 		6145D3B91FC42D540049CFEB /* FemaleProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 6145D3B81FC42D540049CFEB /* FemaleProperties.m */; };
 		6145D3BC1FC42E230049CFEB /* FemaleData.m in Sources */ = {isa = PBXBuildFile; fileRef = 6145D3BB1FC42E230049CFEB /* FemaleData.m */; };
+		619F680F1FC60B1900561FCF /* ImperialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 619F680E1FC60B1900561FCF /* ImperialViewController.m */; };
 		61AAB7701FC4841900AFC62A /* MetricViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61AAB76F1FC4841900AFC62A /* MetricViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -79,6 +80,8 @@
 		6145D3B81FC42D540049CFEB /* FemaleProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FemaleProperties.m; sourceTree = "<group>"; };
 		6145D3BA1FC42E230049CFEB /* FemaleData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FemaleData.h; sourceTree = "<group>"; };
 		6145D3BB1FC42E230049CFEB /* FemaleData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FemaleData.m; sourceTree = "<group>"; };
+		619F680D1FC60B1900561FCF /* ImperialViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImperialViewController.h; sourceTree = "<group>"; };
+		619F680E1FC60B1900561FCF /* ImperialViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImperialViewController.m; sourceTree = "<group>"; };
 		61AAB76E1FC4841900AFC62A /* MetricViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MetricViewController.h; sourceTree = "<group>"; };
 		61AAB76F1FC4841900AFC62A /* MetricViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MetricViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -156,6 +159,8 @@
 				6145D3771FC4063F0049CFEB /* SecondViewController.m */,
 				61AAB76E1FC4841900AFC62A /* MetricViewController.h */,
 				61AAB76F1FC4841900AFC62A /* MetricViewController.m */,
+				619F680D1FC60B1900561FCF /* ImperialViewController.h */,
+				619F680E1FC60B1900561FCF /* ImperialViewController.m */,
 				6145D37C1FC4063F0049CFEB /* Assets.xcassets */,
 				6145D37E1FC4063F0049CFEB /* LaunchScreen.storyboard */,
 				6145D3811FC4063F0049CFEB /* Info.plist */,
@@ -316,6 +321,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6145D3781FC4063F0049CFEB /* SecondViewController.m in Sources */,
+				619F680F1FC60B1900561FCF /* ImperialViewController.m in Sources */,
 				6145D3AD1FC4131F0049CFEB /* MaleProperties.m in Sources */,
 				6145D3721FC4063F0049CFEB /* AppDelegate.m in Sources */,
 				6145D3B91FC42D540049CFEB /* FemaleProperties.m in Sources */,

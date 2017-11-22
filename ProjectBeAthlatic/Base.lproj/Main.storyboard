@@ -366,10 +366,10 @@
             </objects>
             <point key="canvasLocation" x="1589.5999999999999" y="843.32833583208401"/>
         </scene>
-        <!--View Controller-->
+        <!--Imperial View Controller-->
         <scene sceneID="YUM-rf-dfU">
             <objects>
-                <viewController id="TmC-A6-Bkd" sceneMemberID="viewController">
+                <viewController id="TmC-A6-Bkd" customClass="ImperialViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NLM-lk-uHJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
