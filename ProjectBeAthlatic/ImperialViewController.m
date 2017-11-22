@@ -21,6 +21,9 @@
     self.ImperialHeightPicker.delegate = self;
     self.ImperialHeightPicker.dataSource = self;
     
+    self.ImperialWeightPicker.delegate = self;
+    self.ImperialWeightPicker.dataSource = self;
+    
 }
 
 - (void)didReceiveMemoryWarning {
