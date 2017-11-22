@@ -99,15 +99,21 @@
     
     float ImperialHeightValue;
     float ImperialWeightValue;
+    float ImperailBMIValue;
     
     ImperialHeightValue = (([self.ImperialHeightPicker selectedRowInComponent:0])*1.0f) + (([self.ImperialHeightPicker selectedRowInComponent:2])/10.0f) + (([self.ImperialHeightPicker selectedRowInComponent:3])/100.0f);
     
-    NSLog(@"Height = %.2f",ImperialHeightValue);
+    NSLog(@"Height = %.2f ft",ImperialHeightValue);
     
     
     ImperialWeightValue = (([self.ImperialWeightPicker selectedRowInComponent:0])*100.0f) + (([self.ImperialWeightPicker selectedRowInComponent:1])*10.0f) + (([self.ImperialWeightPicker selectedRowInComponent:2])*1.0f) + (([self.ImperialWeightPicker selectedRowInComponent:4])/10.0f) + (([self.ImperialWeightPicker selectedRowInComponent:5])/100.0f) ;
     
-    NSLog(@"Weight = %.2f", ImperialWeightValue);
+    NSLog(@"Weight = %.2f Ib", ImperialWeightValue);
+    
+    
+    ImperailBMIValue = (4.88f)*(ImperialWeightValue)/(ImperialHeightValue*ImperialHeightValue);
+    
+    NSLog(@"BMI value = %.2f", ImperailBMIValue);
     
 }
 
