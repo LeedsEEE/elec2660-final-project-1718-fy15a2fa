@@ -36,6 +36,60 @@
              titleForRow:(NSInteger)row
             forComponent:(NSInteger)component; {
     
+    NSString *ImperialCoordinate;
+    
+    
+    
+    if (pickerView == self.ImperialWeightPicker && component == 0) {
+        ImperialCoordinate = [NSString stringWithFormat:@"%li",row];
+    }
+    
+    else if (pickerView == self.ImperialHeightPicker && component ==1) {
+        ImperialCoordinate = [NSString stringWithFormat:@"."];
+    }
+    
+    else if (pickerView == self.ImperialHeightPicker && component == 2) {
+        ImperialCoordinate = [NSString stringWithFormat:@"%li",row];
+    }
+    
+    else if (pickerView == self.ImperialHeightPicker && component == 3) {
+        ImperialCoordinate = [NSString stringWithFormat:@"%li",row];
+    }
+    
+    else if (pickerView == self.ImperialHeightPicker && component == 4) {
+        ImperialCoordinate = [NSString stringWithFormat:@"ft"];
+    }
+    
+    else if (pickerView == self.ImperialWeightPicker && component == 0) {
+        ImperialCoordinate = [NSString stringWithFormat:@"%li",row];
+    }
+    
+    else if (pickerView == self.ImperialWeightPicker && component == 1) {
+        ImperialCoordinate = [NSString stringWithFormat:@"%li",row];
+    }
+    
+    else if (pickerView == self.ImperialWeightPicker && component == 2) {
+        ImperialCoordinate = [NSString stringWithFormat:@"%li",row];
+    }
+    
+    else if (pickerView == self.ImperialWeightPicker && component == 3) {
+        ImperialCoordinate = [NSString stringWithFormat:@"."];
+    }
+    
+    else if (pickerView == self.ImperialWeightPicker && component == 4) {
+        ImperialCoordinate = [NSString stringWithFormat:@"%li",row];
+    }
+    
+    else if (pickerView == self.ImperialWeightPicker && component == 5) {
+        ImperialCoordinate = [NSString stringWithFormat:@"%li",row];
+    }
+    
+    else {
+        ImperialCoordinate = [NSString stringWithFormat:@"kg"];
+    }
+    
+    return ImperialCoordinate;
+    
 }
 
 
