@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "FemaleProperties.h"
+#import "FemaleProperties.h" //import this class in order to get male properties for the workouts
 
 @interface FemaleData : NSObject
 
