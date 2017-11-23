@@ -14,6 +14,8 @@
 
 @implementation MaleTableViewController
 
+#pragma mark viewDidLoad
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
