@@ -11,11 +11,13 @@
 
 @interface FemaleData : NSObject
 
-@property (nonatomic, strong) NSMutableArray *ShouldersFemale;
-@property (nonatomic, strong) NSMutableArray *ArmsFeamle;
-@property (nonatomic, strong) NSMutableArray *LegsFemale;
-@property (nonatomic, strong) NSMutableArray *ChestFemale;
-@property (nonatomic, strong) NSMutableArray *ABSFemale;
+//creating an array for each body parts by using NSMutableArray
+//in order to add the workouts in their appropriate arrays
+@property (nonatomic, strong) NSMutableArray *ShouldersFemale; //shoulders array
+@property (nonatomic, strong) NSMutableArray *ArmsFeamle; //arms array
+@property (nonatomic, strong) NSMutableArray *LegsFemale; //legs array
+@property (nonatomic, strong) NSMutableArray *ChestFemale; //chest array
+@property (nonatomic, strong) NSMutableArray *ABSFemale; //ABS array
 
 
 @end
