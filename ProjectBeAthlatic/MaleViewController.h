@@ -7,14 +7,20 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "MaleProperties.h"
+#import "MaleProperties.h" //import this class in order to create an object and recieve data
 
 @interface MaleViewController : UIViewController
 
+//show level of workout
 @property (weak, nonatomic) IBOutlet UILabel *LevelMaleLabel;
+//show time of workout
 @property (weak, nonatomic) IBOutlet UILabel *TimeMaleLabel;
+//show discription of workout
 @property (weak, nonatomic) IBOutlet UILabel *DiscriptionMaleLabel;
 
+
+
+// create a property in order to create an object in the implementation
 @property (strong, nonatomic) MaleProperties *MaleData;
 
 @end
