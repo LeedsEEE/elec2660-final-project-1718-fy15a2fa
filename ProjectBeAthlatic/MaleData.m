@@ -49,7 +49,7 @@
         //in addition, allocate memory for the workout
         MaleProperties *rrr = [[MaleProperties alloc] init];
         rrr.NameWorkoutMale = @"rrr"; //set workout name
-        rrr.LevelMale = @"beginner"; //set the level of workout
+        rrr.LevelMale = @"Beginner"; //set the level of workout
         rrr.TimeMale = @"5 minutes"; //set the time of workout
         rrr.DiscriptionMale = @"fjkjsdfk gjdklahf hdaufh hshd dushuis hsusf shusy suishisiu hisiu sius hgur suis his shsis shiuss pfjsoio fsius oisie hro g sosioser"; //set the discription of workout
         
@@ -70,7 +70,7 @@
         //in addition, allocate memory for the workout
         MaleProperties *ggg = [[MaleProperties alloc] init];
         ggg.NameWorkoutMale = @"ggg"; //set workout name
-        ggg.LevelMale = @"beginner"; //set the level of workout
+        ggg.LevelMale = @"Beginner"; //set the level of workout
         ggg.TimeMale = @"5 minutes"; //set the time of workout
         ggg.DiscriptionMale = @"fjkjsdfk gjdklahf hdaufh hshd dushuis hsusf shusy suishisiu hisiu sius hgur suis his shsis shiuss pfjsoio fsius oisie hro g sosioser"; //set the discription of workout
         
