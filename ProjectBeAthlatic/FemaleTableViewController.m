@@ -32,26 +32,46 @@
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark - Table view data source
+#pragma mark header for each body parts
 
+//this method is used in order to add headrs to each body parts
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section; {
     
+    //identify HeaderFemale as NSString in order to header as text
     NSString *HeaderFemale;
     
+    //I used if statements many times in order to set the titles for each group of workouts
     if (section == 0) {
+        
+        // type header for first section
         HeaderFemale = [NSString stringWithFormat:@"Shoulder"];
+        
     } if (section == 1) {
+        
+        // type header for second section
         HeaderFemale = [NSString stringWithFormat:@"Arms"];
+        
     } if (section == 2) {
+        
+        // type header for third section
         HeaderFemale = [NSString stringWithFormat:@"Legs"];
+        
     } if (section == 3) {
+        
+        // type header for fourth section
         HeaderFemale = [NSString stringWithFormat:@"Chest"];
+        
     } if (section == 4) {
+        
+        // type header for fifth section
         HeaderFemale = [NSString stringWithFormat:@"ABS"];
+        
     }
     
-    return HeaderFemale;
+    return HeaderFemale; // return HeaderFemale in order to get the titles
 }
+
+#pragma mark numberOfSectionsInTableView
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 

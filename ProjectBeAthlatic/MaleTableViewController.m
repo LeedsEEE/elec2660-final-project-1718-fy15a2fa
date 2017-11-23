@@ -40,28 +40,34 @@
     //identify HeaderMale as NSString in order to header as text
     NSString *HeaderMale;
     
+    //I used if statements many times in order to set the titles for each group of workouts
     if (section == 0) {
         
+        // type header for first section
         HeaderMale = [NSString stringWithFormat:@"Shoulder"];
         
     } if (section == 1) {
         
+        // type header for third section
         HeaderMale = [NSString stringWithFormat:@"Arms"];
         
     } if (section == 2) {
         
+        // type header for third section
         HeaderMale = [NSString stringWithFormat:@"Legs"];
         
     } if (section == 3) {
         
+        // type header for third section
         HeaderMale = [NSString stringWithFormat:@"Chest"];
         
     } if (section == 4) {
         
+        // type header for third section
         HeaderMale = [NSString stringWithFormat:@"ABS"];
     }
     
-    return HeaderMale;
+    return HeaderMale; // return HeaderFemale in order to get the titles
 }
 
 #pragma mark numberOfSectionsInTableView
