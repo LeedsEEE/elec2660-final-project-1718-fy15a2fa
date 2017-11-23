@@ -20,9 +20,11 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    //tell the MetricHeightPicker to use a controller as its delegate and data source
     self.MetricHeightPicker.delegate = self;
     self.MetricHeightPicker.dataSource = self;
     
+    //tell the MetricWeightPicker to use a controller as its delegate and data source
     self.MetricWeightPicker.delegate = self;
     self.MetricWeightPicker.dataSource = self;
 
@@ -38,63 +40,65 @@
 
 #pragma mark titleForRow forComponent method
 
+//this method is used in order to set the titles for each row and component such as numbers and symbols
 - (NSString *)pickerView:(UIPickerView *)pickerView
              titleForRow:(NSInteger)row
             forComponent:(NSInteger)component; {
     
+    // I identified MetricCoorddinate as NSSTring in order to an array for component
     NSString *MetricCoordinate;
     
+    // if and else if statements are used in order to set the arrays for each components
     
-    
-    if (pickerView == self.MetricHeightPicker && component == 0) {
+    if (pickerView == self.MetricHeightPicker && component == 0) { // set an array of numbers in this component
         MetricCoordinate = [NSString stringWithFormat:@"%li",row];
     }
     
-    else if (pickerView == self.MetricHeightPicker && component ==1) {
+    else if (pickerView == self.MetricHeightPicker && component ==1) { // set a point (.)
         MetricCoordinate = [NSString stringWithFormat:@"."];
     }
-    
-    else if (pickerView == self.MetricHeightPicker && component == 2) {
+
+    else if (pickerView == self.MetricHeightPicker && component == 2) { // set an array of numbers in this component
         MetricCoordinate = [NSString stringWithFormat:@"%li",row];
     }
     
-    else if (pickerView == self.MetricHeightPicker && component == 3) {
+    else if (pickerView == self.MetricHeightPicker && component == 3) { // set an array of numbers in this component
         MetricCoordinate = [NSString stringWithFormat:@"%li",row];
     }
     
-    else if (pickerView == self.MetricHeightPicker && component == 4) {
+    else if (pickerView == self.MetricHeightPicker && component == 4) { // set (m) which represents a symbol of meter
         MetricCoordinate = [NSString stringWithFormat:@"m"];
     }
     
-    else if (pickerView == self.MetricWeightPicker && component == 0) {
+    else if (pickerView == self.MetricWeightPicker && component == 0) { // set an array of numbers in this component
         MetricCoordinate = [NSString stringWithFormat:@"%li",row];
     }
     
-    else if (pickerView == self.MetricWeightPicker && component == 1) {
+    else if (pickerView == self.MetricWeightPicker && component == 1) { // set an array of numbers in this component
         MetricCoordinate = [NSString stringWithFormat:@"%li",row];
     }
     
-    else if (pickerView == self.MetricWeightPicker && component == 2) {
+    else if (pickerView == self.MetricWeightPicker && component == 2) { // set an array of numbers in this component
         MetricCoordinate = [NSString stringWithFormat:@"%li",row];
     }
     
-    else if (pickerView == self.MetricWeightPicker && component == 3) {
+    else if (pickerView == self.MetricWeightPicker && component == 3) { // set a point (.)
         MetricCoordinate = [NSString stringWithFormat:@"."];
     }
     
-    else if (pickerView == self.MetricWeightPicker && component == 4) {
+    else if (pickerView == self.MetricWeightPicker && component == 4) { // set an array of numbers in this component
         MetricCoordinate = [NSString stringWithFormat:@"%li",row];
     }
     
-    else if (pickerView == self.MetricWeightPicker && component == 5) {
+    else if (pickerView == self.MetricWeightPicker && component == 5) { // set an array of numbers in this component
         MetricCoordinate = [NSString stringWithFormat:@"%li",row];
     }
     
     else {
-        MetricCoordinate = [NSString stringWithFormat:@"kg"];
+        MetricCoordinate = [NSString stringWithFormat:@"kg"]; // set (kg) which represents a symbol of kilogram
     }
     
-    return MetricCoordinate;
+    return MetricCoordinate; // return MetricCoordniate in order to get the arrays in their compoenets
     
 }
 

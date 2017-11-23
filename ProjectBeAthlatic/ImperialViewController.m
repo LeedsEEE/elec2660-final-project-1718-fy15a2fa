@@ -20,9 +20,11 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    //tell the ImperialHeightPicker to use a controller as its delegate and data source
     self.ImperialHeightPicker.delegate = self;
     self.ImperialHeightPicker.dataSource = self;
     
+    //tell the ImperialWeightPicker to use a controller as its delegate and data source
     self.ImperialWeightPicker.delegate = self;
     self.ImperialWeightPicker.dataSource = self;
     
@@ -37,63 +39,66 @@
 
 #pragma mark titleForRow forComponent method
 
+//this method is used in order to set the titles for each row and component such as numbers and symbols
 - (NSString *)pickerView:(UIPickerView *)pickerView
              titleForRow:(NSInteger)row
             forComponent:(NSInteger)component; {
     
+    // I identified ImperialCoorddinate as NSSTring in order to an array for component
     NSString *ImperialCoordinate;
     
+    // if and else if statements are used in order to set the arrays for each components
     
     
-    if (pickerView == self.ImperialHeightPicker && component == 0) {
+    if (pickerView == self.ImperialHeightPicker && component == 0) { // set an array of numbers in this component
         ImperialCoordinate = [NSString stringWithFormat:@"%li",row];
     }
     
-    else if (pickerView == self.ImperialHeightPicker && component ==1) {
+    else if (pickerView == self.ImperialHeightPicker && component ==1) { // set a point (.)
         ImperialCoordinate = [NSString stringWithFormat:@"."];
     }
     
-    else if (pickerView == self.ImperialHeightPicker && component == 2) {
+    else if (pickerView == self.ImperialHeightPicker && component == 2) { // set an array of numbers in this component
         ImperialCoordinate = [NSString stringWithFormat:@"%li",row];
     }
     
-    else if (pickerView == self.ImperialHeightPicker && component == 3) {
+    else if (pickerView == self.ImperialHeightPicker && component == 3) { // set an array of numbers in this component
         ImperialCoordinate = [NSString stringWithFormat:@"%li",row];
     }
     
-    else if (pickerView == self.ImperialHeightPicker && component == 4) {
+    else if (pickerView == self.ImperialHeightPicker && component == 4) { // set (ft) which represents a symbol of foot
         ImperialCoordinate = [NSString stringWithFormat:@"ft"];
     }
     
-    else if (pickerView == self.ImperialWeightPicker && component == 0) {
+    else if (pickerView == self.ImperialWeightPicker && component == 0) { // set an array of numbers in this component
         ImperialCoordinate = [NSString stringWithFormat:@"%li",row];
     }
     
-    else if (pickerView == self.ImperialWeightPicker && component == 1) {
+    else if (pickerView == self.ImperialWeightPicker && component == 1) { // set an array of numbers in this component
         ImperialCoordinate = [NSString stringWithFormat:@"%li",row];
     }
     
-    else if (pickerView == self.ImperialWeightPicker && component == 2) {
+    else if (pickerView == self.ImperialWeightPicker && component == 2) { // set an array of numbers in this component
         ImperialCoordinate = [NSString stringWithFormat:@"%li",row];
     }
     
-    else if (pickerView == self.ImperialWeightPicker && component == 3) {
+    else if (pickerView == self.ImperialWeightPicker && component == 3) { // set a point (.)
         ImperialCoordinate = [NSString stringWithFormat:@"."];
     }
     
-    else if (pickerView == self.ImperialWeightPicker && component == 4) {
+    else if (pickerView == self.ImperialWeightPicker && component == 4) { // set an array of numbers in this component
         ImperialCoordinate = [NSString stringWithFormat:@"%li",row];
     }
     
-    else if (pickerView == self.ImperialWeightPicker && component == 5) {
+    else if (pickerView == self.ImperialWeightPicker && component == 5) { // set an array of numbers in this component
         ImperialCoordinate = [NSString stringWithFormat:@"%li",row];
     }
     
     else {
-        ImperialCoordinate = [NSString stringWithFormat:@"Ib"];
+        ImperialCoordinate = [NSString stringWithFormat:@"Ib"]; // set (Ib) which represents a symbol of pound
     }
     
-    return ImperialCoordinate;
+    return ImperialCoordinate; // return ImperialCoordniate in order to get the arrays in their compoenets
     
 }
 
