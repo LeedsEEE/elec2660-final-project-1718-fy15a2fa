@@ -18,9 +18,13 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    self.LevelMaleLabel.text = self.MaleData.LevelMale;
-    self.TimeMaleLabel.text = self.MaleData.TimeMale;
-    self.DiscriptionMaleLabel.text = self.MaleData.DiscriptionMale;
+    
+    //creating an object in order to display that recieved data on the labels
+    //I create an this object in viewDidLoad to ensure it will updates as soon as possible
+    //when the viewcontroller opens
+    self.LevelMaleLabel.text = self.MaleData.LevelMale; //show level
+    self.TimeMaleLabel.text = self.MaleData.TimeMale; //show time
+    self.DiscriptionMaleLabel.text = self.MaleData.DiscriptionMale; //show discription
     
 }
 
