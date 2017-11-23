@@ -216,40 +216,57 @@
 
 #pragma mark - Navigation
 
+//uncomment this method in order to navigate the information of the workouts to the viewcontroller
+//when the user click on one of the workouts
+
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
     
+    // I used if statement in order to check that we are connected to the segue that we want
     if ([[segue identifier] isEqualToString:@"ShowWorkoutFemale"]) {
         
+        // I created a local copy of destinationViewController
         FemaleViewController *recievedViewController = [segue destinationViewController];
         
+        //I used NSIndexPath in order to make sure that we get the right information when the users select one of the cells in the table view
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
         
-        if (indexPath.section == 0) {
+        // I used many if statements in order to show the information for each cell in each section
+        if (indexPath.section == 0) { // this repesents shoulders section
             
+            // I created temmporary object in order to hold information for each cell in section 0
             FemaleProperties *temporary = [self.WorkoutForFemale.ShouldersFemale objectAtIndex:indexPath.row];
+            // I set the temporary information as object  in the recievedViewController
             recievedViewController.FemaleData = temporary;
             
-        } if (indexPath.section == 1) {
+        } if (indexPath.section == 1) { // this represents arms section
             
+            // I created temmporary object in order to hold information for each cell in section 1
             FemaleProperties *temporary = [self.WorkoutForFemale.ArmsFeamle objectAtIndex:indexPath.row];
+            // I set the temporary information as object  in the recievedViewController
             recievedViewController.FemaleData = temporary;
             
-        } if (indexPath.section == 2) {
+        } if (indexPath.section == 2) { // this represents legs section
             
+            // I created temmporary object in order to hold information for each cell in section 2
             FemaleProperties *temporary = [self.WorkoutForFemale.LegsFemale objectAtIndex:indexPath.row];
+            // I set the temporary information as object  in the recievedViewController
             recievedViewController.FemaleData = temporary;
             
-        } if (indexPath.section == 3) {
+        } if (indexPath.section == 3) { // this represents chest section
             
+            // I created temmporary object in order to hold information for each cell in section 3
             FemaleProperties *temporary = [self.WorkoutForFemale.ChestFemale objectAtIndex:indexPath.row];
+            // I set the temporary information as object  in the recievedViewController
             recievedViewController.FemaleData = temporary;
             
-        } if (indexPath.section == 4) {
+        } if (indexPath.section == 4) { // this represetns ABS section
             
+            // I created temmporary object in order to hold information for each cell in section 4
             FemaleProperties *temporary = [self.WorkoutForFemale.ABSFemale objectAtIndex:indexPath.row];
+            // I set the temporary information as object  in the recievedViewController
             recievedViewController.FemaleData = temporary;
             
         }
