@@ -14,7 +14,7 @@
 
 @implementation FemaleTableViewController
 
-#pragma mark viewDidLoad
+#pragma mark viewDidLoad method
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -28,6 +28,8 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
+
+#pragma mark didReceiveMemoryWarning method
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

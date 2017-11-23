@@ -14,6 +14,8 @@
 
 @implementation MetricViewController
 
+#pragma mark viewDidLoad method
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
@@ -27,10 +29,14 @@
     
 }
 
+#pragma mark didRecieveMemoryWarning method
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+#pragma mark titleForRow forComponent method
 
 - (NSString *)pickerView:(UIPickerView *)pickerView
              titleForRow:(NSInteger)row
@@ -91,6 +97,8 @@
     return MetricCoordinate;
     
 }
+
+#pragma mark didSelectedRowinComponent mehtod
 
 - (void)pickerView:(UIPickerView *)pickerView
       didSelectRow:(NSInteger)row
@@ -161,6 +169,8 @@
     
 }
 
+#pragma mark numberOfComponentsInPickerView
+
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView; {
  
     if (pickerView == self.MetricHeightPicker) {
@@ -174,6 +184,8 @@
     }
     
 }
+
+#pragma mark numberOfRowsInComponent method
 
 - (NSInteger)pickerView:(UIPickerView *)pickerView
 numberOfRowsInComponent:(NSInteger)component; {
