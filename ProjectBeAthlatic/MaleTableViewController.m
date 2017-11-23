@@ -72,28 +72,49 @@
 
 #pragma mark numberOfSectionsInTableView
 
+//this method is used to set the number of sections in the table view
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 
-    return 5;
+    return 5; // return 5 in order to get 5 sections in the table view
 }
 
+#pragma mark numberOfRowsInSection
+
+//this mehtod is used in order to set the number of rows in section
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
+    //identify numberOfWorkout as integer in order to set number of rows
     NSInteger numberOfWorkout = 0;
     
+    //use if many if statements in order to set number of rows in each section
     if (section == 0) {
+        
+        //use count command in order to calculate number rows in this section
         numberOfWorkout = self.WorkoutForMale.ShouldersMale.count;
+        
     } if (section == 1) {
+        
+        //use count command in order to calculate number rows in this section
         numberOfWorkout = self.WorkoutForMale.ArmsMale.count;
+        
     } if (section == 2) {
+        
+        //use count command in order to calculate number rows in this section
         numberOfWorkout = self.WorkoutForMale.LegsMale.count;
+        
     } if (section == 3) {
+        
+        //use count command in order to calculate number rows in this section
         numberOfWorkout = self.WorkoutForMale.ChestMale.count;
+        
     } if (section == 4) {
+        
+        //use count command in order to calculate number rows in this section
         numberOfWorkout = self.WorkoutForMale.ABSMale.count;
+        
     }
 
-    return numberOfWorkout;
+    return numberOfWorkout; // numberOfWorkout in order to get the right number of rows in each section
 }
 
 
