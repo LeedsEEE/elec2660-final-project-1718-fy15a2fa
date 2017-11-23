@@ -109,66 +109,70 @@
        inComponent:(NSInteger)component; {
     
     
-    
+    // I identified three float variables in order to get BMI vlaue and category
     float MetricHeightValue;
     float MetricWeightValue;
     float MetricBMIValue;
     
+    // I finded the height value by adding the pikcer's value together
     MetricHeightValue = (([self.MetricHeightPicker selectedRowInComponent:0])*1.0f) + (([self.MetricHeightPicker selectedRowInComponent:2])/10.0f) + (([self.MetricHeightPicker selectedRowInComponent:3])/100.0f);
     
-    NSLog(@"Height = %.2f m",MetricHeightValue);
+    NSLog(@"Height = %.2f m",MetricHeightValue); // I use NSLog in order to check the height value before go on
     
     
+    // I finded the weight value by adding the pikcer's value together
     MetricWeightValue = (([self.MetricWeightPicker selectedRowInComponent:0])*100.0f) + (([self.MetricWeightPicker selectedRowInComponent:1])*10.0f) + (([self.MetricWeightPicker selectedRowInComponent:2])*1.0f) + (([self.MetricWeightPicker selectedRowInComponent:4])/10.0f) + (([self.MetricWeightPicker selectedRowInComponent:5])/100.0f) ;
     
-    NSLog(@"Weight = %.2f kg", MetricWeightValue);
+    NSLog(@"Weight = %.2f kg", MetricWeightValue); // I use NSLog in order to check the weight value before go on
     
     
-    MetricBMIValue = MetricWeightValue/(MetricHeightValue*MetricHeightValue);
+    MetricBMIValue = MetricWeightValue/(MetricHeightValue*MetricHeightValue); //Calculate BMI value
     
-    NSLog(@"BMI value = %.2f", MetricBMIValue);
+    NSLog(@"BMI value = %.2f", MetricBMIValue); // I use NSLog in order to check the BMI value before go on
     
-    self.BMIValueMetric.text = [NSString stringWithFormat:@"%.2f",MetricBMIValue];
+    self.BMIValueMetric.text = [NSString stringWithFormat:@"%.2f",MetricBMIValue]; //show BMI value on its label
+    
+    // I used if and else if statements in order to show BMI category
     
     if (MetricBMIValue < 15.0) {
         
-        self.BMICategoryMetric.text = @"Very severly underweight";
-        NSLog(@"The category is %@",self.BMICategoryMetric.text);
+        self.BMICategoryMetric.text = @"Very severly underweight"; //show BMI category on its label
+        NSLog(@"The category is %@",self.BMICategoryMetric.text); // I used NSLog to make couble check that I got the right category
         
     } else if (MetricBMIValue >= 15.0 && MetricBMIValue < 16.0) {
         
-        self.BMICategoryMetric.text = @"Severly underweight";
-        NSLog(@"The category is %@",self.BMICategoryMetric.text);
+        self.BMICategoryMetric.text = @"Severly underweight"; //show BMI category on its label
+        NSLog(@"The category is %@",self.BMICategoryMetric.text); // I used NSLog to make couble check that I got the right category
         
     } else if (MetricBMIValue >= 16.0 && MetricBMIValue < 18.5) {
         
-        self.BMICategoryMetric.text = @"Undetweight";
-        NSLog(@"The category is %@",self.BMICategoryMetric.text);
+        self.BMICategoryMetric.text = @"Undetweight"; //show BMI category on its label
+        NSLog(@"The category is %@",self.BMICategoryMetric.text); // I used NSLog to make couble check that I got the right category
         
     } else if (MetricBMIValue >= 18.5 && MetricBMIValue < 25.0) {
         
-        self.BMICategoryMetric.text = @"Normal (Healthy)";
-        NSLog(@"The category is %@",self.BMICategoryMetric.text);
+        self.BMICategoryMetric.text = @"Normal (Healthy)"; //show BMI category on its label
+        NSLog(@"The category is %@",self.BMICategoryMetric.text); // I used NSLog to make couble check that I got the right category
         
     } else if (MetricBMIValue >= 25.0 && MetricBMIValue < 30.0) {
         
-        self.BMICategoryMetric.text = @"Overweight";
-        NSLog(@"The category is %@",self.BMICategoryMetric.text);
+        self.BMICategoryMetric.text = @"Overweight"; //show BMI category on its label
+        NSLog(@"The category is %@",self.BMICategoryMetric.text); // I used NSLog to make couble check that I got the right category
         
     } else if (MetricBMIValue >= 30.0 && MetricBMIValue < 35.0) {
         
-        self.BMICategoryMetric.text = @"Obese Class I (Moderately obese)";
-        NSLog(@"The category is %@",self.BMICategoryMetric.text);
+        self.BMICategoryMetric.text = @"Obese Class I (Moderately obese)"; //show BMI category on its label
+        NSLog(@"The category is %@",self.BMICategoryMetric.text); // I used NSLog to make couble check that I got the right category
         
     } else if (MetricBMIValue >= 35.0 && MetricBMIValue < 40.0) {
         
-        self.BMICategoryMetric.text = @"Obese Class II (Severely obese)";
-        NSLog(@"The category is %@",self.BMICategoryMetric.text);
+        self.BMICategoryMetric.text = @"Obese Class II (Severely obese)"; //show BMI category on its label
+        NSLog(@"The category is %@",self.BMICategoryMetric.text); // I used NSLog to make couble check that I got the right category
         
     } else  {
         
-        self.BMICategoryMetric.text = @"Obese Class III (Very severly obese)";
-        NSLog(@"The category is %@",self.BMICategoryMetric.text);
+        self.BMICategoryMetric.text = @"Obese Class III (Very severly obese)"; //show BMI category on its label
+        NSLog(@"The category is %@",self.BMICategoryMetric.text); // I used NSLog to make couble check that I got the right category
     }
     
 }

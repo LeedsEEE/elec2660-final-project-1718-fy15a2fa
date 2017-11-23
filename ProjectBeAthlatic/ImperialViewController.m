@@ -108,65 +108,71 @@
       didSelectRow:(NSInteger)row
        inComponent:(NSInteger)component; {
     
+    
+    // I identified three float variables in order to get BMI vlaue and category
     float ImperialHeightValue;
     float ImperialWeightValue;
     float ImperailBMIValue;
     
+    // I finded the height value by adding the pikcer's value together
     ImperialHeightValue = (([self.ImperialHeightPicker selectedRowInComponent:0])*1.0f) + (([self.ImperialHeightPicker selectedRowInComponent:2])/10.0f) + (([self.ImperialHeightPicker selectedRowInComponent:3])/100.0f);
     
-    NSLog(@"Height = %.2f ft",ImperialHeightValue);
+    NSLog(@"Height = %.2f ft",ImperialHeightValue); // I use NSLog in order to check the height value before go on
     
     
+    // I finded the height value by adding the pikcer's value together
     ImperialWeightValue = (([self.ImperialWeightPicker selectedRowInComponent:0])*100.0f) + (([self.ImperialWeightPicker selectedRowInComponent:1])*10.0f) + (([self.ImperialWeightPicker selectedRowInComponent:2])*1.0f) + (([self.ImperialWeightPicker selectedRowInComponent:4])/10.0f) + (([self.ImperialWeightPicker selectedRowInComponent:5])/100.0f) ;
     
-    NSLog(@"Weight = %.2f Ib", ImperialWeightValue);
+    NSLog(@"Weight = %.2f Ib", ImperialWeightValue); // I use NSLog in order to check the height value before go on
     
     
-    ImperailBMIValue = (4.88f)*(ImperialWeightValue)/(ImperialHeightValue*ImperialHeightValue);
+    ImperailBMIValue = (4.88f)*(ImperialWeightValue)/(ImperialHeightValue*ImperialHeightValue); // calculate BMI vlaue
     
-    NSLog(@"BMI value = %.2f", ImperailBMIValue);
+    NSLog(@"BMI value = %.2f", ImperailBMIValue); // I use NSLog in order to check the BMI value before go on
     
-    self.BMIValueImperial.text = [NSString stringWithFormat:@"%.2f",ImperailBMIValue];
+    self.BMIValueImperial.text = [NSString stringWithFormat:@"%.2f",ImperailBMIValue]; // show BMI value on its label
+    
+    // I used if and else if statements in order to show BMI category
     
     if (ImperailBMIValue < 15.0) {
         
-        self.BMICategoryImperial.text = @"Very severly underweight";
-        NSLog(@"The category is %@",self.BMICategoryImperial.text);
+        self.BMICategoryImperial.text = @"Very severly underweight"; //show BMI category on its label
+        NSLog(@"The category is %@",self.BMICategoryImperial.text); // I used NSLog to make couble check that I got the right category
         
     } else if (ImperailBMIValue >= 15.0 && ImperailBMIValue < 16.0) {
         
-        self.BMICategoryImperial.text = @"Severly underweight";
-        NSLog(@"The category is %@",self.BMICategoryImperial.text);
+        self.BMICategoryImperial.text = @"Severly underweight"; //show BMI category on its label
+        NSLog(@"The category is %@",self.BMICategoryImperial.text); // I used NSLog to make couble check that I got the right category
         
     } else if (ImperailBMIValue >= 16.0 && ImperailBMIValue < 18.5) {
         
-        self.BMICategoryImperial.text = @"Undetweight";
-        NSLog(@"The category is %@",self.BMICategoryImperial.text);
+        self.BMICategoryImperial.text = @"Undetweight"; //show BMI category on its label
+        NSLog(@"The category is %@",self.BMICategoryImperial.text); // I used NSLog to make couble check that I got the right category
         
     } else if (ImperailBMIValue >= 18.5 && ImperailBMIValue < 25.0) {
         
-        self.BMICategoryImperial.text = @"Normal (Healthy)";
-        NSLog(@"The category is %@",self.BMICategoryImperial.text);
+        self.BMICategoryImperial.text = @"Normal (Healthy)"; //show BMI category on its label
+        NSLog(@"The category is %@",self.BMICategoryImperial.text); // I used NSLog to make couble check that I got the right category
         
     } else if (ImperailBMIValue >= 25.0 && ImperailBMIValue < 30.0) {
         
-        self.BMICategoryImperial.text = @"Overweight";
-        NSLog(@"The category is %@",self.BMICategoryImperial.text);
+        self.BMICategoryImperial.text = @"Overweight"; //show BMI category on its label
+        NSLog(@"The category is %@",self.BMICategoryImperial.text); // I used NSLog to make couble check that I got the right category
         
     } else if (ImperailBMIValue >= 30.0 && ImperailBMIValue < 35.0) {
         
-        self.BMICategoryImperial.text = @"Obese Class I (Moderately obese)";
-        NSLog(@"The category is %@",self.BMICategoryImperial.text);
+        self.BMICategoryImperial.text = @"Obese Class I (Moderately obese)"; //show BMI category on its label
+        NSLog(@"The category is %@",self.BMICategoryImperial.text); // I used NSLog to make couble check that I got the right category
         
     } else if (ImperailBMIValue >= 35.0 && ImperailBMIValue < 40.0) {
         
-        self.BMICategoryImperial.text = @"Obese Class II (Severely obese)";
-        NSLog(@"The category is %@",self.BMICategoryImperial.text);
+        self.BMICategoryImperial.text = @"Obese Class II (Severely obese)"; //show BMI category on its label
+        NSLog(@"The category is %@",self.BMICategoryImperial.text); // I used NSLog to make couble check that I got the right category
         
     } else  {
         
-        self.BMICategoryImperial.text = @"Obese Class III (Very severly obese)";
-        NSLog(@"The category is %@",self.BMICategoryImperial.text);
+        self.BMICategoryImperial.text = @"Obese Class III (Very severly obese)"; //show BMI category on its label
+        NSLog(@"The category is %@",self.BMICategoryImperial.text); // I used NSLog to make couble check that I got the right category
     }
     
 }
