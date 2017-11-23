@@ -104,6 +104,7 @@
 
 #pragma mark didSelectedRowinComponent mehtod
 
+//this mehtod is used in order to some operations such as calculating BMI value and finding BMI category
 - (void)pickerView:(UIPickerView *)pickerView
       didSelectRow:(NSInteger)row
        inComponent:(NSInteger)component; {
@@ -179,15 +180,17 @@
 
 #pragma mark numberOfComponentsInPickerView
 
+//this mehtod is used to set the number of components
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView; {
     
+    //if and else statements are used in order to set different components for each picker
     if (pickerView == self.ImperialHeightPicker) {
         
-        return 5;
+        return 5; // 5 componets for height picker
         
     } else {
         
-        return 7;
+        return 7; // 7 components for weight picker
         
     }
     
@@ -195,55 +198,57 @@
 
 #pragma mark numberOfRowsInComponent method
 
+// this mehtod is used in order to set the number rows in each component
 - (NSInteger)pickerView:(UIPickerView *)pickerView
 numberOfRowsInComponent:(NSInteger)component; {
     
+    // if and else if statements are used to set number of rows in each component
     if (pickerView == self.ImperialHeightPicker && component == 0) {
-        return 8;
+        return 8; // providing 8 rows
     }
     
     else if (pickerView == self.ImperialHeightPicker && component == 1) {
-        return 1;
+        return 1; // providing a row
     }
     
     else if (pickerView == self.ImperialHeightPicker && component == 2) {
-        return 10;
+        return 10; // providing 10 rows
     }
     
     else if (pickerView == self.ImperialHeightPicker && component == 3) {
-        return 10;
+        return 10; // providing 10 rows
     }
     
     else if (pickerView == self.ImperialHeightPicker && component == 4) {
-        return 1;
+        return 1; // providng a row
     }
     
     else if (pickerView == self.ImperialWeightPicker && component == 0) {
-        return 10;
+        return 10; // providing 10 rows
     }
     
     else if (pickerView == self.ImperialWeightPicker && component == 1) {
-        return 10;
+        return 10; // providing 10 rows
     }
     
     else if (pickerView == self.ImperialWeightPicker && component == 2) {
-        return 10;
+        return 10; // providing 10 rows
     }
     
     else if (pickerView == self.ImperialWeightPicker && component == 3) {
-        return 1;
+        return 1; // providing a row
     }
     
     else if (pickerView == self.ImperialWeightPicker && component == 4) {
-        return 10;
+        return 10; // providing 10 rows
     }
     
     else if (pickerView == self.ImperialWeightPicker && component == 5) {
-        return 10;
+        return 10; // providing 10 rows
     }
     
     else {
-        return 1;
+        return 1; // providing a row
     }
     
 }

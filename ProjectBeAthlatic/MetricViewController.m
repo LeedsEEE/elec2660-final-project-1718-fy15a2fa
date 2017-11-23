@@ -104,6 +104,7 @@
 
 #pragma mark didSelectedRowinComponent mehtod
 
+//this mehtod is used in order to some operations such as calculating BMI value and finding BMI category
 - (void)pickerView:(UIPickerView *)pickerView
       didSelectRow:(NSInteger)row
        inComponent:(NSInteger)component; {
@@ -179,15 +180,17 @@
 
 #pragma mark numberOfComponentsInPickerView
 
+//this mehtod is used to set the number of components
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView; {
  
+    //if and else statements are used in order to set different components for each picker
     if (pickerView == self.MetricHeightPicker) {
         
-        return 5;
+        return 5; // 5 components for height picker
         
     } else {
         
-        return 7;
+        return 7; // 7 compoents for weight picker
         
     }
     
@@ -195,55 +198,57 @@
 
 #pragma mark numberOfRowsInComponent method
 
+// this mehtod is used in order to set the number rows in each component
 - (NSInteger)pickerView:(UIPickerView *)pickerView
 numberOfRowsInComponent:(NSInteger)component; {
     
+    // if and else if statements are used to set number of rows in each component
     if (pickerView == self.MetricHeightPicker && component == 0) {
-        return 3;
+        return 3; //providing 3 rows
     }
     
     else if (pickerView == self.MetricHeightPicker && component == 1) {
-        return 1;
+        return 1; // providing a row
     }
     
     else if (pickerView == self.MetricHeightPicker && component == 2) {
-        return 10;
+        return 10; // providing 10 rows
     }
     
     else if (pickerView == self.MetricHeightPicker && component == 3) {
-        return 10;
+        return 10; // providing 10 rows
     }
     
     else if (pickerView == self.MetricHeightPicker && component == 4) {
-        return 1;
+        return 1; // providing a row
     }
     
     else if (pickerView == self.MetricWeightPicker && component == 0) {
-        return 3;
+        return 3; // providing 3 rows
     }
     
     else if (pickerView == self.MetricWeightPicker && component == 1) {
-        return 10;
+        return 10; // providing 10 rows
     }
     
     else if (pickerView == self.MetricWeightPicker && component == 2) {
-        return 10;
+        return 10; // providing 10 rows
     }
     
     else if (pickerView == self.MetricWeightPicker && component == 3) {
-        return 1;
+        return 1; // providing a row
     }
     
     else if (pickerView == self.MetricWeightPicker && component == 4) {
-        return 10;
+        return 10; // providing 10 rows
     }
     
     else if (pickerView == self.MetricWeightPicker && component == 5) {
-        return 10;
+        return 10; // providing 10 rows
     }
     
     else {
-        return 1;
+        return 1; // providing a row
     }
     
     
