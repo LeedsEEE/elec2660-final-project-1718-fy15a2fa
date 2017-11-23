@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-// I
+// I assigned a delegat and a data source to both pickers
 @interface MetricViewController : UIViewController <UIPickerViewDataSource, UIPickerViewDelegate>
 
 // I connected BMI Value label in order to show BMI value for the users (As outlet)

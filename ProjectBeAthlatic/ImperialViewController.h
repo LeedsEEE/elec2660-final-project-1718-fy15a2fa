@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
+// I assigned a delegat and a data source to both pickers
 @interface ImperialViewController : UIViewController <UIPickerViewDataSource, UIPickerViewDelegate>
 
 // I connected BMI Value label in order to show BMI value for the users (As outlet)
