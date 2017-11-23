@@ -117,50 +117,63 @@
     return numberOfWorkout; // numberOfWorkout in order to get the right number of rows in each section
 }
 
+#pragma mark cellForRowAtIndexPath
 
+/* uncomment this method because it provides the data source with a cell to use
+ change the identifier name to MaleCell in order to update the workout in each body parts */
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MaleCell" forIndexPath:indexPath];
     
     // Configure the cell...
     
+    // cell location is defined by indexPath command which works like coordinate
     if (indexPath.section == 0) {
         
+        //create temprory object in order to hold the information that appear in the cell
         MaleProperties *temprory = [self.WorkoutForMale.ShouldersMale objectAtIndex:indexPath.row];
         
-        cell.detailTextLabel.text = temprory.NameWorkoutMale;
-        cell.textLabel.text = temprory.LevelMale;
+        cell.detailTextLabel.text = temprory.NameWorkoutMale; //set the information that appears in the detail text label
+        cell.textLabel.text = temprory.LevelMale; //set the information that appears in the text label
         
+        // cell location is defined by indexPath command which works like coordinate
     } if (indexPath.section == 1) {
         
+        //create temprory object in order to hold the information that appear in the cell
         MaleProperties *temprory = [self.WorkoutForMale.ArmsMale objectAtIndex:indexPath.row];
         
-        cell.detailTextLabel.text = temprory.NameWorkoutMale;
-        cell.textLabel.text = temprory.LevelMale;
+        cell.detailTextLabel.text = temprory.NameWorkoutMale; //set the information that appears in the detail text label
+        cell.textLabel.text = temprory.LevelMale; //set the information that appears in the text label
         
+        // cell location is defined by indexPath command which works like coordinate
     } if (indexPath.section == 2) {
         
+        //create temprory object in order to hold the information that appear in the cell
         MaleProperties *temprory = [self.WorkoutForMale.LegsMale objectAtIndex:indexPath.row];
         
-        cell.detailTextLabel.text = temprory.NameWorkoutMale;
-        cell.textLabel.text = temprory.LevelMale;
+        cell.detailTextLabel.text = temprory.NameWorkoutMale; //set the information that appears in the detail text label
+        cell.textLabel.text = temprory.LevelMale; //set the information that appears in the text label
         
+        // cell location is defined by indexPath command which works like coordinate
     } if (indexPath.section == 3) {
         
+        //create temprory object in order to hold the information that appear in the cell
         MaleProperties *temprory = [self.WorkoutForMale.ChestMale objectAtIndex:indexPath.row];
         
-        cell.detailTextLabel.text = temprory.NameWorkoutMale;
-        cell.textLabel.text = temprory.LevelMale;
+        cell.detailTextLabel.text = temprory.NameWorkoutMale; //set the information that appears in the detail text label
+        cell.textLabel.text = temprory.LevelMale; //set the information that appears in the text label
         
+        // cell location is defined by indexPath command which works like coordinate
     } if (indexPath.section == 4) {
         
+        //create temprory object in order to hold the information that appear in the cell
         MaleProperties *temprory = [self.WorkoutForMale.ABSMale objectAtIndex:indexPath.row];
         
-        cell.detailTextLabel.text = temprory.NameWorkoutMale;
-        cell.textLabel.text = temprory.LevelMale;
+        cell.detailTextLabel.text = temprory.NameWorkoutMale; //set the information that appears in the detail text label
+        cell.textLabel.text = temprory.LevelMale; //set the information that appears in the text label
         
     }
     
-    return cell;
+    return cell; //return cell in order to get all the information that required in the cell
 }
 
 

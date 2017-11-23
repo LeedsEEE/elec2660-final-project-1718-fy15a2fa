@@ -119,50 +119,63 @@
     
 }
 
+#pragma mark cellForRowAtIndexPath
 
+/* uncomment this method because it provides the data source with a cell to use
+ change the identifier name to FemaleCell in order to update the workout in each body parts */
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"FemaleCell" forIndexPath:indexPath];
     
     // Configure the cell...
     
-    if (indexPath.section == 0) {
+    // cell location is defined by indexPath command which works like coordinate
+    if (indexPath.section == 0) { //this section represents shoulders section
         
+        //create temprory object in order to hold the information that appear in the cell
         FemaleProperties *temprory = [self.WorkoutForFemale.ShouldersFemale objectAtIndex:indexPath.row];
         
-        cell.detailTextLabel.text = temprory.NameWorkoutFemale;
-        cell.textLabel.text = temprory.LevelFemale;
+        cell.detailTextLabel.text = temprory.NameWorkoutFemale; //set the information that appears in the detail text label
+        cell.textLabel.text = temprory.LevelFemale; //set the information that appears in the text label
         
+        // cell location is defined by indexPath command which works like coordinate
     } if (indexPath.section == 1) {
         
+        //create temprory object in order to hold the information that appear in the cell
         FemaleProperties *temprory = [self.WorkoutForFemale.ArmsFeamle objectAtIndex:indexPath.row];
         
-        cell.detailTextLabel.text = temprory.NameWorkoutFemale;
-        cell.textLabel.text = temprory.LevelFemale;
+        cell.detailTextLabel.text = temprory.NameWorkoutFemale; //set the information that appears in the detail text label
+        cell.textLabel.text = temprory.LevelFemale; //set the information that appears in the text label
         
+        // cell location is defined by indexPath command which works like coordinate
     } if (indexPath.section == 2) {
         
+        //create temprory object in order to hold the information that appear in the cell
         FemaleProperties *temprory = [self.WorkoutForFemale.LegsFemale objectAtIndex:indexPath.row];
         
-        cell.detailTextLabel.text = temprory.NameWorkoutFemale;
-        cell.textLabel.text = temprory.LevelFemale;
+        cell.detailTextLabel.text = temprory.NameWorkoutFemale; //set the information that appears in the detail text label
+        cell.textLabel.text = temprory.LevelFemale; //set the information that appears in the text label
         
+        // cell location is defined by indexPath command which works like coordinate
     } if (indexPath.section == 3) {
         
+        //create temprory object in order to hold the information that appear in the cell
         FemaleProperties *temprory = [self.WorkoutForFemale.ChestFemale objectAtIndex:indexPath.row];
         
-        cell.detailTextLabel.text = temprory.NameWorkoutFemale;
-        cell.textLabel.text = temprory.LevelFemale;
+        cell.detailTextLabel.text = temprory.NameWorkoutFemale; //set the information that appears in the detail text label
+        cell.textLabel.text = temprory.LevelFemale; //set the information that appears in the text label
         
+        // cell location is defined by indexPath command which works like coordinate
     } if (indexPath.section == 4) {
         
+        //create temprory object in order to hold the information that appear in the cell
         FemaleProperties *temprory = [self.WorkoutForFemale.ABSFemale objectAtIndex:indexPath.row];
         
-        cell.detailTextLabel.text = temprory.NameWorkoutFemale;
-        cell.textLabel.text = temprory.LevelFemale;
+        cell.detailTextLabel.text = temprory.NameWorkoutFemale; //set the information that appears in the detail text label
+        cell.textLabel.text = temprory.LevelFemale; //set the information that appears in the text label
         
     }
     
-    return cell;
+    return cell; //return cell in order to get all the information that required in the cell
 }
 
 
