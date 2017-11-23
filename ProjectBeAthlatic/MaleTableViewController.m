@@ -17,6 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    //creating an object for male's workouts in order to get access to get access to all stored workouts and data
     self.WorkoutForMale = [[MaleData alloc] init];
     
     // Uncomment the following line to preserve selection between presentations.
@@ -31,26 +32,39 @@
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark - Table view data source
+#pragma mark header for each body parts
 
+//this method is used in order to add headrs to each body parts
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section; {
     
+    //identify HeaderMale as NSString in order to header as text
     NSString *HeaderMale;
     
     if (section == 0) {
+        
         HeaderMale = [NSString stringWithFormat:@"Shoulder"];
+        
     } if (section == 1) {
+        
         HeaderMale = [NSString stringWithFormat:@"Arms"];
+        
     } if (section == 2) {
+        
         HeaderMale = [NSString stringWithFormat:@"Legs"];
+        
     } if (section == 3) {
+        
         HeaderMale = [NSString stringWithFormat:@"Chest"];
+        
     } if (section == 4) {
+        
         HeaderMale = [NSString stringWithFormat:@"ABS"];
     }
     
     return HeaderMale;
 }
+
+#pragma mark numberOfSectionsInTableView
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 

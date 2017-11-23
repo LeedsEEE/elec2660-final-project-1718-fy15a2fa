@@ -17,6 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    //creating an object for female's workouts in order to get access to get access to all stored workouts and data
     self.WorkoutForFemale = [[FemaleData alloc] init];
     
     // Uncomment the following line to preserve selection between presentations.
