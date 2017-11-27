@@ -94,14 +94,26 @@
 }
 
 - (IBAction)ToTheGym:(id)sender {
+    
+    NSLog(@"ToTheGym button pressed"); // just for checking if it works
+    
 }
 
 - (IBAction)ToPureGym:(id)sender {
+    
+    NSLog(@"TOPureGym button pressed"); // just for checking if it works
+    
 }
 
 - (IBAction)ToSipritGym:(id)sender {
+    
+    NSLog(@"ToSipritGym button pressed"); // just for checking if it works
+    
 }
 
 - (IBAction)ToNuffieldGym:(id)sender {
+    
+    NSLog(@"ToNuffieldGym button pressed"); // just for checking if it works
+    
 }
 @end
