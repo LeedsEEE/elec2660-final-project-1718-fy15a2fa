@@ -46,6 +46,10 @@
     
     NSLog(@" I am in = %f (latitude), %f (longitude)", userLocation.coordinate.latitude, userLocation.coordinate.longitude);
     
+    MKCoordinateRegion place = MKCoordinateRegionMake(userLocation.coordinate, MKCoordinateSpanMake(0.15, 0.15));
+    
+    [self.GymMapView setRegion:place animated: YES];
+    
 }
 
 
