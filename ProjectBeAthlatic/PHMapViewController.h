@@ -10,16 +10,19 @@
 #import "MapKit/MapKit.h" //import MapKit in order to use it
 #import "CoreLocation/CoreLocation.h" //import CoreLocation in order to use it
 
+// I set view controller to be Map View's delegate and Location Manager's delegate
 @interface PHMapViewController : UIViewController <MKMapViewDelegate, CLLocationManagerDelegate>
 
-@property (weak, nonatomic) IBOutlet MKMapView *PHMapView;
+@property (weak, nonatomic) IBOutlet MKMapView *PHMapView; // Map view (outlet)
 
-- (IBAction)selecteMapTypes:(id)sender;
+@property (nonatomic, strong) CLLocationManager *Mylocation; // create this property to get my location on the map (CLLocationManager)
 
-- (IBAction)ToPhoenixCenter:(id)sender;
-- (IBAction)ToWYCenter:(id)sender;
-- (IBAction)ToWestPCenter:(id)sender;
-- (IBAction)ToPWCenter:(id)sender;
+- (IBAction)selecteMapTypes:(id)sender; // segemnt control in order to the map type (action
+
+- (IBAction)ToPhoenixCenter:(id)sender; // button shows the route to the Pheonix center (action)
+- (IBAction)ToWYCenter:(id)sender; // button shows the route to the WestYorkshire center (action)
+- (IBAction)ToWestPCenter:(id)sender; // button shows the route to the West Point center (action)
+- (IBAction)ToPWCenter:(id)sender; // button shows the route to the PhysioWorld center (action)
 
 
 
