@@ -37,9 +37,27 @@
     
 }
 
+#pragma mark didReciveMemoryWarning method
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark didUpdatedUserLocation method
+
+//this mehtod allows to update my location on the map
+- (void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation; {
+    
+    //use NSLog in order to check that the method is working
+    NSLog(@" I am in = %f (latitude), %f (longitude)", userLocation.coordinate.latitude, userLocation.coordinate.longitude);
+    
+    //create varible  in order to update span and and center of map in order to allow the user to move
+    MKCoordinateRegion place = MKCoordinateRegionMake(userLocation.coordinate, MKCoordinateSpanMake(0.15, 0.15));
+    
+    //showing the updated location on the map by using animated way
+    [self.PHMapView setRegion:place animated: YES];
+    
 }
 
 /*
