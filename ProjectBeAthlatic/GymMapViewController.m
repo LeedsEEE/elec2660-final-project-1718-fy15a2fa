@@ -190,27 +190,36 @@
 
 #pragma mark buttons
 
+// this button shows direction to Implexus Gym
 - (IBAction)ToTheGym:(id)sender {
     
-    NSLog(@"ToTheGym button pressed"); // just for checking if it works
+    NSLog(@"Show direction to Implexus Gym"); // just for checking if it works
+    
+    // use apple map, and set the longitude latitude
+    NSString *way = @"http://maps.apple.com/maps?daddr=53.799068,-1.581800";
+    //this command open URL in order to get the direction
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:way]];
     
 }
 
+// this button shows direction to Pure Gym
 - (IBAction)ToPureGym:(id)sender {
     
-    NSLog(@"TOPureGym button pressed"); // just for checking if it works
+    NSLog(@"Show direction to Pure Gym"); // just for checking if it works
     
 }
 
+// this button shows direction to Siprit Gym
 - (IBAction)ToSipritGym:(id)sender {
     
-    NSLog(@"ToSipritGym button pressed"); // just for checking if it works
+    NSLog(@"Show direction to Siprit Gym"); // just for checking if it works
     
 }
 
+// this button shows direction to Leodis Gym
 - (IBAction)ToNuffieldGym:(id)sender {
     
-    NSLog(@"ToNuffieldGym button pressed"); // just for checking if it works
+    NSLog(@"Show direction to Leodis Gym"); // just for checking if it works
     
 }
 @end

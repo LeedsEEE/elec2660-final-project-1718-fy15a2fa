@@ -508,9 +508,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bdU-Yy-R9z">
-                                <rect key="frame" x="16" y="527" width="104" height="30"/>
+                                <rect key="frame" x="16" y="527" width="138" height="30"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
-                                <state key="normal" title="Go to The Gym"/>
+                                <state key="normal" title="Go to Implexus Gym"/>
                                 <connections>
                                     <action selector="ToTheGym:" destination="xOz-O4-tM2" eventType="touchUpInside" id="ghT-Yy-cLg"/>
                                 </connections>
@@ -524,9 +524,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WMh-B7-MR7">
-                                <rect key="frame" x="227" y="573" width="132" height="30"/>
+                                <rect key="frame" x="237" y="573" width="122" height="30"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
-                                <state key="normal" title="Go to Nuffield Gym"/>
+                                <state key="normal" title="Go to Leodis Gym"/>
                                 <connections>
                                     <action selector="ToNuffieldGym:" destination="xOz-O4-tM2" eventType="touchUpInside" id="ARQ-fj-wtN"/>
                                 </connections>
