@@ -209,6 +209,11 @@
     
     NSLog(@"Show direction to West YorkShire Center"); // just for checking if it works
     
+    // use apple map, and set the longitude latitude
+    NSString *way = @"http://maps.apple.com/maps?daddr=53.782439,-1.578856";
+    //this command open URL in order to get the direction
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:way]];
+    
 }
 
 // this button shows direction to The West Point Practice Center
