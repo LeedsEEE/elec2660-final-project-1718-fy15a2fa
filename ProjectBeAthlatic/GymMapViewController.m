@@ -56,21 +56,21 @@
             
             NSLog(@"Standard Map"); // just for checking if it works
             
-            //_GymMapView.mapType = MKMapTypeStandard;
+            _GymMapView.mapType = MKMapTypeStandard;
             
             break;
         case 1:
             
             NSLog(@"Satellite Map"); // just for checking if it works
             
-           // _GymMapView.mapType = MKMapTypeSatellite;
+            _GymMapView.mapType = MKMapTypeSatellite;
             
             break;
         case 2:
             
             NSLog(@"Hybrid Map"); // just for checking if it works
             
-            //_GymMapView.mapType = MKMapTypeHybrid;
+            _GymMapView.mapType = MKMapTypeHybrid;
             
             break;
         default:
