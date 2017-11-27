@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "MapKit/MapKit.h" //import MapKit in order to use it
 #import "CoreLocation/CoreLocation.h" //import CoreLocation in order to use it
+#import "PhysicalTherapyPins.h" //import this class in order to get physical therapy centers data
 
 // I set view controller to be Map View's delegate and Location Manager's delegate
 @interface PHMapViewController : UIViewController <MKMapViewDelegate, CLLocationManagerDelegate>

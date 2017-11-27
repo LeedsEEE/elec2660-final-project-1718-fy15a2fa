@@ -21,7 +21,7 @@
     // Do any additional setup after loading the view.
     
     
-    
+    // adding the location for the Implexus Gym to show it on the map
     MKCoordinateRegion ImplexusGym = { {0.0, 0.0}, {0.0, 0.0}};
     
     ImplexusGym.center.longitude = -1.581800; //set the longitude
@@ -35,13 +35,13 @@
     GymPins *firstgym = [[GymPins alloc] init]; //create object for the first gym to set its information
     
     firstgym.gymName = @"The Implexus Gym"; //set gym name
-    firstgym.gymStreet = @"Pickering Street"; //set the street for the gym
+    firstgym.gymStreet = @"Pickering Street"; //set a street name for the gym
     firstgym.coordinate = ImplexusGym.center; //set its location by using longitude and latitude
     
     [_GymMapView addAnnotation:firstgym]; //add the gym as pin
     
     
-    
+    // adding the location for Pure Gym to show it on the map
     MKCoordinateRegion PureGym = { {0.0, 0.0}, {0.0, 0.0}};
     
     PureGym.center.longitude = -1.540059; //set the longitude
@@ -55,13 +55,13 @@
     GymPins *secondgym = [[GymPins alloc] init]; //create object for the second gym to set its information
     
     secondgym.gymName = @"Pure Gym"; //set gym name
-    secondgym.gymStreet = @"Cloth Hall Street"; //set the street for the gym
+    secondgym.gymStreet = @"Cloth Hall Street"; //set a street name for the gym
     secondgym.coordinate = PureGym.center; //set its location by using longitude and latitude
     
     [_GymMapView addAnnotation:secondgym]; //add the gym as pin
     
     
-    
+    // adding the location for Siprit Gym to show it on the map
     MKCoordinateRegion SipritGym = { {0.0, 0.0}, {0.0, 0.0}};
     
     SipritGym.center.longitude = -1.557779; //set the longitude
@@ -75,13 +75,13 @@
     GymPins *thirdgym = [[GymPins alloc] init]; //create object for the third gym to set its information
     
     thirdgym.gymName = @"The Siprit Gym"; //set gym name
-    thirdgym.gymStreet = @"Wellington Street"; //set the street for the gym
+    thirdgym.gymStreet = @"Wellington Street"; //set a street name for the gym
     thirdgym.coordinate = SipritGym.center; //set its location by using longitude and latitude
     
     [_GymMapView addAnnotation:thirdgym]; //add the gym as pin
     
     
-    
+    // adding the location for Leodis Gym to show it on the map
     MKCoordinateRegion LeodisGym = { {0.0, 0.0}, {0.0, 0.0}};
     
     LeodisGym.center.longitude = -1.516406; //set the longitude
@@ -95,7 +95,7 @@
     GymPins *fourthgym = [[GymPins alloc] init]; //create object for the fourth gym to set its information
     
     fourthgym.gymName = @"The Leodis Gym"; //set gym name
-    fourthgym.gymStreet = @"Easy Road"; //set the street for the gym
+    fourthgym.gymStreet = @"Easy Road"; //set a street name for the gym
     fourthgym.coordinate = LeodisGym.center; //set its location by using longitude and latitude
     
     [_GymMapView addAnnotation:fourthgym]; //add the gym as pin

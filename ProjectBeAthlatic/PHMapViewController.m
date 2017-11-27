@@ -21,6 +21,27 @@
     // Do any additional setup after loading the view.
     
     
+    // adding the location for Phoenix Health and Wellbeing to show it on the map
+    MKCoordinateRegion PhoenixCenter = { {0.0, 0.0}, {0.0, 0.0}};
+    
+    PhoenixCenter.center.longitude = -1.550650; //set the longitude
+    PhoenixCenter.center.latitude = 53.800066; //set the latitude
+    
+    PhoenixCenter.span.latitudeDelta = 0.1f;
+    PhoenixCenter.span.longitudeDelta = 0.1f;
+    
+    [_PHMapView setRegion:PhoenixCenter animated:YES];
+    
+    PhysicalTherapyPins *firstPhysicalTherapyC = [[PhysicalTherapyPins alloc] init]; //create object for the first gym to set its information
+    
+    firstPhysicalTherapyC.PhysicalTherapyName = @"Phoenix Health and Wellbeing"; //set physical therapy center name
+    firstPhysicalTherapyC.PhysicalTherapyStreet = @"Beeston Road"; //set a street name for the physiscal therapy center
+    firstPhysicalTherapyC.coordinate = PhoenixCenter.center; //set its location by using longitude and latitude
+    
+    [_PHMapView addAnnotation:firstPhysicalTherapyC]; //add the physical therapy center as pin
+    
+    
+    
     self.Mylocation = [[CLLocationManager alloc] init]; //create an object for my location
     
     self.PHMapView.delegate = self; //tell the PHMapView to use a controller as its delegate
