@@ -9,6 +9,14 @@
 #import <Foundation/Foundation.h>
 #import "MapKit/MapKit.h"
 
-@interface PhysicalTherapyPins : NSObject
+@interface PhysicalTherapyPins : NSObject <MKAnnotation> {
+    NSString *PhysicalTherapyName;
+    NSString *PhysicalTherapyStreet;
+    CLLocationCoordinate2D coordinate;
+}
+
+@property (nonatomic, assign) CLLocationCoordinate2D coordinate;
+@property (nonatomic, copy) NSString *PhysicalTherapyName;
+@property (nonatomic, copy) NSString *PhysicalTherapyStreet;
 
 @end
