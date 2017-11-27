@@ -55,7 +55,7 @@
     GymPins *secondgym = [[GymPins alloc] init];
     
     secondgym.gymName = @"Pure Gym";
-    secondgym.gymStreet = @"Lovell Park Road";
+    secondgym.gymStreet = @"Cloth Hall Street";
     secondgym.coordinate = PureGym.center;
     
     [_GymMapView addAnnotation:secondgym];
@@ -220,12 +220,22 @@
     
     NSLog(@"Show direction to Siprit Gym"); // just for checking if it works
     
+    // use apple map, and set the longitude latitude
+    NSString *way = @"http://maps.apple.com/maps?daddr=53.796568,-1.557779";
+    //this command open URL in order to get the direction
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:way]];
+    
 }
 
 // this button shows direction to Leodis Gym
 - (IBAction)ToNuffieldGym:(id)sender {
     
     NSLog(@"Show direction to Leodis Gym"); // just for checking if it works
+    
+    // use apple map, and set the longitude latitude
+    NSString *way = @"http://maps.apple.com/maps?daddr=53.791590,-1.516406";
+    //this command open URL in order to get the direction
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:way]];
     
 }
 @end
