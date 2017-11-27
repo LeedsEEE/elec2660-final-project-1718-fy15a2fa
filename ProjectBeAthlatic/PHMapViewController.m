@@ -81,7 +81,7 @@
             
             NSLog(@"Standard Map"); // just for checking if it works
             
-           // _PHMapView.mapType = MKMapTypeStandard; // set the map to standard
+           _PHMapView.mapType = MKMapTypeStandard; // set the map to standard
             
             break; // break point to allow change map type
             
@@ -89,7 +89,7 @@
             
             NSLog(@"Satellite Map"); // just for checking if it works
             
-           // _PHMapView.mapType = MKMapTypeSatellite; // set the map to satellite
+           _PHMapView.mapType = MKMapTypeSatellite; // set the map to satellite
             
             break; // break point to allow change map type
             
@@ -97,7 +97,7 @@
             
             NSLog(@"Hybrid Map"); // just for checking if it works
             
-           // _PHMapView.mapType = MKMapTypeHybrid; // set the map to hybrid
+           _PHMapView.mapType = MKMapTypeHybrid; // set the map to hybrid
             
             break; // break point to allow change map type
         default:
@@ -106,24 +106,30 @@
     
 }
 
+#pragma mark buttons
+
+// this button shows direction to Phoenix Health and Wallbeing Center
 - (IBAction)ToPhoenixCenter:(id)sender {
     
     NSLog(@"Show direction to Phoenix Center"); // just for checking if it works
     
 }
 
+// this button shows direction to West Yorkshire Multiple Sclerosis Therapy Center
 - (IBAction)ToWYCenter:(id)sender {
     
     NSLog(@"Show direction to West YorkShire Center"); // just for checking if it works
     
 }
 
+// this button shows direction to The West Point Practice Center
 - (IBAction)ToWestPCenter:(id)sender {
     
     NSLog(@"Show direction to The West Point Center"); // just for checking if it works
     
 }
 
+// this button shows direction to PhysioWorld Center
 - (IBAction)ToPWCenter:(id)sender {
     
     NSLog(@"Show direction to PhysioWorld Center"); // just for checking if it works
