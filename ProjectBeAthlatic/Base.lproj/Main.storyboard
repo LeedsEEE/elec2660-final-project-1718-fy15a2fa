@@ -496,9 +496,9 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </mapView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ft-AA-qi5">
-                                <rect key="frame" x="16" y="526" width="144" height="30"/>
+                                <rect key="frame" x="16" y="526" width="166" height="30"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
-                                <state key="normal" title="Go to Phoenix center"/>
+                                <state key="normal" title="Go to Leeds Injury Clinic"/>
                                 <connections>
                                     <action selector="ToPhoenixCenter:" destination="LkZ-m2-HiV" eventType="touchUpInside" id="S2n-G6-l3A"/>
                                 </connections>
