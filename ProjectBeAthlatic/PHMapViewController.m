@@ -22,7 +22,7 @@
     
     
     // adding the location for The Leeds Sport Injury and Physiotherapy Clinic to show it on the map
-    MKCoordinateRegion LeedsClinic = { {0.0, 0.0}, {0.0, 0.0}}; 
+    MKCoordinateRegion LeedsClinic = { {0.0, 0.0}, {0.0, 0.0}};
     
     LeedsClinic.center.longitude = -1.576782; //set the longitude
     LeedsClinic.center.latitude = 53.821056; //set the latitude
@@ -83,6 +83,25 @@
     [_PHMapView addAnnotation:thirdPhysicalTherapyC]; //add the physical therapy center as pin
     
     
+    
+    // adding the location for PhysionWorld Leeds center to show it on the map
+        MKCoordinateRegion PhysioWorldLeeds = { {0.0, 0.0}, {0.0, 0.0}};
+    
+    PhysioWorldLeeds.center.longitude = -1.552551; //set the longitude
+    PhysioWorldLeeds.center.latitude = 53.780848; //set the latitude
+    
+    PhysioWorldLeeds.span.latitudeDelta = 0.1f;
+    PhysioWorldLeeds.span.longitudeDelta = 0.1f;
+    
+    [_PHMapView setRegion:PhysioWorldLeeds animated:YES];
+    
+    PhysicalTherapyPins *fourthPhysicalTherapyC = [[PhysicalTherapyPins alloc] init]; //create object for the first gym to set its information
+    
+    fourthPhysicalTherapyC.PhysicalTherapyName = @"PhysioWorld Leeds"; //set physical therapy center name
+    fourthPhysicalTherapyC.PhysicalTherapyStreet = @"Beeston Road"; //set a street name for the physiscal therapy center
+    fourthPhysicalTherapyC.coordinate = PhysioWorldLeeds.center; //set its location by using longitude and latitude
+    
+    [_PHMapView addAnnotation:fourthPhysicalTherapyC]; //add the physical therapy center as pin
     
     
     
