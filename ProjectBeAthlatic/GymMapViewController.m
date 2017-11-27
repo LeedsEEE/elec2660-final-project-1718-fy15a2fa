@@ -27,8 +27,8 @@
     ImplexusGym.center.longitude = -1.581800; //set the longitude
     ImplexusGym.center.latitude = 53.799068; //set the latitude
     
-    ImplexusGym.span.latitudeDelta = 1.0f;
-    ImplexusGym.span.longitudeDelta = 1.0f;
+    ImplexusGym.span.latitudeDelta = 0.1f;
+    ImplexusGym.span.longitudeDelta = 0.1f;
     
     [_GymMapView setRegion:ImplexusGym animated:YES];
     

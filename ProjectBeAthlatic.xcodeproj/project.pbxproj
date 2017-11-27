@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		610E9A7F1FCCB6E000766B4B /* PHMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 610E9A7E1FCCB6E000766B4B /* PHMapViewController.m */; };
 		6145D3721FC4063F0049CFEB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6145D3711FC4063F0049CFEB /* AppDelegate.m */; };
 		6145D3751FC4063F0049CFEB /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6145D3741FC4063F0049CFEB /* FirstViewController.m */; };
 		6145D3781FC4063F0049CFEB /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6145D3771FC4063F0049CFEB /* SecondViewController.m */; };
@@ -51,6 +52,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		610E9A7D1FCCB6E000766B4B /* PHMapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PHMapViewController.h; sourceTree = "<group>"; };
+		610E9A7E1FCCB6E000766B4B /* PHMapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PHMapViewController.m; sourceTree = "<group>"; };
 		6145D36D1FC4063F0049CFEB /* ProjectBeAthlatic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectBeAthlatic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6145D3701FC4063F0049CFEB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6145D3711FC4063F0049CFEB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -183,6 +186,8 @@
 				61E180CB1FCC4D5700425551 /* GymMapViewController.m */,
 				61E180D21FCC741200425551 /* GymPins.h */,
 				61E180D31FCC741200425551 /* GymPins.m */,
+				610E9A7D1FCCB6E000766B4B /* PHMapViewController.h */,
+				610E9A7E1FCCB6E000766B4B /* PHMapViewController.m */,
 				6145D37C1FC4063F0049CFEB /* Assets.xcassets */,
 				6145D37E1FC4063F0049CFEB /* LaunchScreen.storyboard */,
 				6145D3811FC4063F0049CFEB /* Info.plist */,
@@ -362,6 +367,7 @@
 				6145D3831FC4063F0049CFEB /* main.m in Sources */,
 				61E180D41FCC741200425551 /* GymPins.m in Sources */,
 				6145D3B01FC4143E0049CFEB /* MaleData.m in Sources */,
+				610E9A7F1FCCB6E000766B4B /* PHMapViewController.m in Sources */,
 				61AAB7701FC4841900AFC62A /* MetricViewController.m in Sources */,
 				61E180CC1FCC4D5700425551 /* GymMapViewController.m in Sources */,
 				61E180C91FCC4D0E00425551 /* ThirdViewController.m in Sources */,
