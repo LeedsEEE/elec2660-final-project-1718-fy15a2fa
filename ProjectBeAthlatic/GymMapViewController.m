@@ -152,7 +152,7 @@
 }
 */
 
-#pragma mark segment control
+#pragma mark segmented control
 
 //this is segment control is added to change the map type
 - (IBAction)selectMapType:(id)sender {
