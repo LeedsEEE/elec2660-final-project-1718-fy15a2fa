@@ -42,6 +42,50 @@
     
     
     
+    // adding the location for Phoenix Health and Wellbeing to show it on the map
+    MKCoordinateRegion WestYorkshireTherapy = { {0.0, 0.0}, {0.0, 0.0}};
+    
+    WestYorkshireTherapy.center.longitude = -1.578856; //set the longitude
+    WestYorkshireTherapy.center.latitude = 53.782439; //set the latitude
+    
+    WestYorkshireTherapy.span.latitudeDelta = 0.1f;
+    WestYorkshireTherapy.span.longitudeDelta = 0.1f;
+    
+    [_PHMapView setRegion:PhoenixCenter animated:YES];
+    
+    PhysicalTherapyPins *secondPhysicalTherapyC = [[PhysicalTherapyPins alloc] init]; //create object for the first gym to set its information
+    
+    secondPhysicalTherapyC.PhysicalTherapyName = @"West Yorkshire Therapy Center"; //set physical therapy center name
+    secondPhysicalTherapyC.PhysicalTherapyStreet = @"Gelderd Lane"; //set a street name for the physiscal therapy center
+    secondPhysicalTherapyC.coordinate = WestYorkshireTherapy.center; //set its location by using longitude and latitude
+    
+    [_PHMapView addAnnotation:secondPhysicalTherapyC]; //add the physical therapy center as pin
+    
+    
+    
+    // adding the location for Phoenix Health and Wellbeing to show it on the map
+    MKCoordinateRegion TheWestPointPracticeLeeds = { {0.0, 0.0}, {0.0, 0.0}};
+    
+    TheWestPointPracticeLeeds.center.longitude = -1.578856; //set the longitude
+    TheWestPointPracticeLeeds.center.latitude = 53.782439; //set the latitude
+    
+    TheWestPointPracticeLeeds.span.latitudeDelta = 0.1f;
+    TheWestPointPracticeLeeds.span.longitudeDelta = 0.1f;
+    
+    [_PHMapView setRegion:PhoenixCenter animated:YES];
+    
+    PhysicalTherapyPins *secondPhysicalTherapyC = [[PhysicalTherapyPins alloc] init]; //create object for the first gym to set its information
+    
+    secondPhysicalTherapyC.PhysicalTherapyName = @"West Yorkshire Therapy Center"; //set physical therapy center name
+    secondPhysicalTherapyC.PhysicalTherapyStreet = @"Gelderd Lane"; //set a street name for the physiscal therapy center
+    secondPhysicalTherapyC.coordinate = WestYorkshireTherapy.center; //set its location by using longitude and latitude
+    
+    [_PHMapView addAnnotation:secondPhysicalTherapyC]; //add the physical therapy center as pin
+    
+    
+    
+    
+    
     self.Mylocation = [[CLLocationManager alloc] init]; //create an object for my location
     
     self.PHMapView.delegate = self; //tell the PHMapView to use a controller as its delegate
