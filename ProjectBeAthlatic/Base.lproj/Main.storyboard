@@ -495,26 +495,41 @@
                                     <segment title="Satellite"/>
                                     <segment title="Hybrid"/>
                                 </segments>
+                                <connections>
+                                    <action selector="selectMapType:" destination="xOz-O4-tM2" eventType="valueChanged" id="yTP-Rt-xPT"/>
+                                </connections>
                             </segmentedControl>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o8i-WN-3Nc">
                                 <rect key="frame" x="16" y="573" width="109" height="30"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                                 <state key="normal" title="Go to Pure Gym"/>
+                                <connections>
+                                    <action selector="ToPureGym:" destination="xOz-O4-tM2" eventType="touchUpInside" id="vBt-kI-imV"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bdU-Yy-R9z">
                                 <rect key="frame" x="16" y="527" width="104" height="30"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                                 <state key="normal" title="Go to The Gym"/>
+                                <connections>
+                                    <action selector="ToTheGym:" destination="xOz-O4-tM2" eventType="touchUpInside" id="ghT-Yy-cLg"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hqd-Ie-wzU">
                                 <rect key="frame" x="246" y="527" width="113" height="30"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                                 <state key="normal" title="Go to Siprit Gym"/>
+                                <connections>
+                                    <action selector="ToSipritGym:" destination="xOz-O4-tM2" eventType="touchUpInside" id="IVS-Uq-eL3"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WMh-B7-MR7">
                                 <rect key="frame" x="227" y="573" width="132" height="30"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                                 <state key="normal" title="Go to Nuffield Gym"/>
+                                <connections>
+                                    <action selector="ToNuffieldGym:" destination="xOz-O4-tM2" eventType="touchUpInside" id="ARQ-fj-wtN"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -532,6 +547,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="zto-4e-qyu"/>
                     </view>
+                    <connections>
+                        <outlet property="GymMapView" destination="sDg-Tm-SSU" id="XAQ-hr-Ooc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RLf-ab-kRK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -17,6 +17,21 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    self.Mylocation = [[CLLocationManager alloc] init];
+    
+    self.GymMapView.delegate = self;
+    self.Mylocation.delegate = self;
+    
+    [self.Mylocation requestWhenInUseAuthorization];
+    
+    self.GymMapView.showsUserLocation = YES;
+    
+    CLLocation *MeOnMap = self.Mylocation.location;
+    CLLocationCoordinate2D MyCoordinates = MeOnMap.coordinate;
+    self.GymMapView.region = MKCoordinateRegionMake(MyCoordinates, MKCoordinateSpanMake(0.02, 0.02));
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -34,4 +49,18 @@
 }
 */
 
+- (IBAction)selectMapType:(id)sender {
+}
+
+- (IBAction)ToTheGym:(id)sender {
+}
+
+- (IBAction)ToPureGym:(id)sender {
+}
+
+- (IBAction)ToSipritGym:(id)sender {
+}
+
+- (IBAction)ToNuffieldGym:(id)sender {
+}
 @end
