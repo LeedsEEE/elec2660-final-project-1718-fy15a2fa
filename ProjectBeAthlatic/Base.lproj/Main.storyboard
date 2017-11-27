@@ -499,21 +499,33 @@
                                 <rect key="frame" x="16" y="526" width="144" height="30"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                                 <state key="normal" title="Go to Phoenix center"/>
+                                <connections>
+                                    <action selector="ToPhoenixCenter:" destination="LkZ-m2-HiV" eventType="touchUpInside" id="S2n-G6-l3A"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YpE-Rx-X5R">
                                 <rect key="frame" x="16" y="573" width="192" height="30"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                                 <state key="normal" title="Go to West Yorkshire center"/>
+                                <connections>
+                                    <action selector="ToWYCenter:" destination="LkZ-m2-HiV" eventType="touchUpInside" id="Zo5-Ha-sTV"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fwj-A5-Abd">
                                 <rect key="frame" x="213" y="526" width="146" height="30"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                                 <state key="normal" title="Go to The West Point"/>
+                                <connections>
+                                    <action selector="ToWestPCenter:" destination="LkZ-m2-HiV" eventType="touchUpInside" id="J8A-2M-epJ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="voC-6D-6jw">
                                 <rect key="frame" x="233" y="573" width="126" height="30"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                                 <state key="normal" title="Go to PhysioWorld"/>
+                                <connections>
+                                    <action selector="ToPWCenter:" destination="LkZ-m2-HiV" eventType="touchUpInside" id="TEg-KV-MWZ"/>
+                                </connections>
                             </button>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="mny-8h-AO8">
                                 <rect key="frame" x="92" y="80" width="191" height="29"/>
@@ -523,6 +535,9 @@
                                     <segment title="Satellite"/>
                                     <segment title="Hybrid"/>
                                 </segments>
+                                <connections>
+                                    <action selector="selecteMapTypes:" destination="LkZ-m2-HiV" eventType="valueChanged" id="ChA-4w-71D"/>
+                                </connections>
                             </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -540,6 +555,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="asW-GI-1ws"/>
                     </view>
+                    <connections>
+                        <outlet property="PHMapView" destination="tPT-3T-TUg" id="sla-J7-hku"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UFX-eX-krS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

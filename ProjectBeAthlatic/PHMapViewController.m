@@ -34,4 +34,18 @@
 }
 */
 
+- (IBAction)selecteMapTypes:(id)sender {
+}
+
+- (IBAction)ToPhoenixCenter:(id)sender {
+}
+
+- (IBAction)ToWYCenter:(id)sender {
+}
+
+- (IBAction)ToWestPCenter:(id)sender {
+}
+
+- (IBAction)ToPWCenter:(id)sender {
+}
 @end
