@@ -233,5 +233,10 @@
     
     NSLog(@"Show direction to PhysioWorld Center"); // just for checking if it works
     
+    // use apple map, and set the longitude latitude
+    NSString *way = @"http://maps.apple.com/maps?daddr=53.780848,-1.552551";
+    //this command open URL in order to get the direction
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:way]];
+    
 }
 @end
