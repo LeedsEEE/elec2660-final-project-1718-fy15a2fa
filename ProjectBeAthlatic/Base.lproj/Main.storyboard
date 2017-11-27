@@ -482,13 +482,51 @@
                     <view key="view" contentMode="scaleToFill" id="bFd-Nc-DhO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="tc0-Fo-FUu">
+                                <rect key="frame" x="92" y="80" width="191" height="29"/>
+                                <segments>
+                                    <segment title="Map"/>
+                                    <segment title="Satellite"/>
+                                    <segment title="Hybrid"/>
+                                </segments>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o8i-WN-3Nc">
+                                <rect key="frame" x="16" y="573" width="109" height="30"/>
+                                <state key="normal" title="Go to Pure Gym"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bdU-Yy-R9z">
+                                <rect key="frame" x="16" y="527" width="104" height="30"/>
+                                <state key="normal" title="Go to The Gym"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hqd-Ie-wzU">
+                                <rect key="frame" x="246" y="527" width="113" height="30"/>
+                                <state key="normal" title="Go to Siprit Gym"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WMh-B7-MR7">
+                                <rect key="frame" x="227" y="573" width="132" height="30"/>
+                                <state key="normal" title="Go to Nuffield Gym"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="zto-4e-qyu" firstAttribute="trailing" secondItem="WMh-B7-MR7" secondAttribute="trailing" constant="16" id="1gw-L3-d9s"/>
+                            <constraint firstItem="WMh-B7-MR7" firstAttribute="top" secondItem="hqd-Ie-wzU" secondAttribute="bottom" constant="16" id="7Da-4f-mbd"/>
+                            <constraint firstItem="zto-4e-qyu" firstAttribute="trailing" secondItem="hqd-Ie-wzU" secondAttribute="trailing" constant="16" id="MNf-DN-KX6"/>
+                            <constraint firstItem="bdU-Yy-R9z" firstAttribute="leading" secondItem="zto-4e-qyu" secondAttribute="leading" constant="16" id="Skf-RU-XvO"/>
+                            <constraint firstItem="tc0-Fo-FUu" firstAttribute="top" secondItem="zto-4e-qyu" secondAttribute="top" constant="16" id="XuU-uS-gdC"/>
+                            <constraint firstItem="o8i-WN-3Nc" firstAttribute="leading" secondItem="zto-4e-qyu" secondAttribute="leading" constant="16" id="ccL-sQ-TXq"/>
+                            <constraint firstItem="zto-4e-qyu" firstAttribute="bottom" secondItem="WMh-B7-MR7" secondAttribute="bottom" constant="15" id="cdD-VR-0b6"/>
+                            <constraint firstItem="tc0-Fo-FUu" firstAttribute="centerX" secondItem="zto-4e-qyu" secondAttribute="centerX" id="e3S-JL-1vP"/>
+                            <constraint firstItem="zto-4e-qyu" firstAttribute="bottom" secondItem="o8i-WN-3Nc" secondAttribute="bottom" constant="15" id="ecl-TL-R0X"/>
+                            <constraint firstItem="o8i-WN-3Nc" firstAttribute="top" secondItem="bdU-Yy-R9z" secondAttribute="bottom" constant="16" id="uVr-ug-P8W"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="zto-4e-qyu"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RLf-ab-kRK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2382" y="1851"/>
+            <point key="canvasLocation" x="2381.5999999999999" y="1850.824587706147"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
