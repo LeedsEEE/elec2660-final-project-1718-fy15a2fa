@@ -207,6 +207,12 @@
     
     NSLog(@"Show direction to Pure Gym"); // just for checking if it works
     
+    // use apple map, and set the longitude latitude
+    NSString *way = @"http://maps.apple.com/maps?daddr=53.795568,-1.540059";
+    //this command open URL in order to get the direction
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:way]];
+    
+    
 }
 
 // this button shows direction to Siprit Gym
