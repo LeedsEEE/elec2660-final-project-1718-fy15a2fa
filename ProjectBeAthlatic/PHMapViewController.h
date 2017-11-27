@@ -20,7 +20,8 @@
 
 - (IBAction)selecteMapTypes:(id)sender; // segemnt control in order to the map type (action
 
-- (IBAction)ToPhoenixCenter:(id)sender; // button shows the route to the Pheonix center (action)
+//by mistake I wrote the Phoenix Center but the correct one is Leeds Sport Injury Clinic
+- (IBAction)ToPhoenixCenter:(id)sender; // button shows the route to Leeds Sport Injury Clinic (action)
 - (IBAction)ToWYCenter:(id)sender; // button shows the route to the WestYorkshire center (action)
 - (IBAction)ToWestPCenter:(id)sender; // button shows the route to the West Point center (action)
 - (IBAction)ToPWCenter:(id)sender; // button shows the route to the PhysioWorld center (action)

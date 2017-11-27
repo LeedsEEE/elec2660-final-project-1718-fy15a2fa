@@ -192,10 +192,15 @@
 
 #pragma mark buttons
 
-// this button shows direction to Phoenix Health and Wallbeing Center
+// this button shows direction to Leeds Sport Injury Clinic and Wallbeing Center
 - (IBAction)ToPhoenixCenter:(id)sender {
     
-    NSLog(@"Show direction to Phoenix Center"); // just for checking if it works
+    NSLog(@"Show direction to Leeds Sport Injury Clinic"); // just for checking if it works
+    
+    // use apple map, and set the longitude latitude
+    NSString *way = @"http://maps.apple.com/maps?daddr=53.821056,-1.576782";
+    //this command open URL in order to get the direction
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:way]];
     
 }
 
