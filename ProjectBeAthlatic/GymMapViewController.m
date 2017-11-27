@@ -14,6 +14,8 @@
 
 @implementation GymMapViewController
 
+#pragma mark viewDidLoad method
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
@@ -34,12 +36,14 @@
     
 }
 
-
+#pragma mark didReciveMemoryWarning method
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+#pragma mark didUpdatedUserLocation method
 
 
 - (void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation; {
@@ -63,10 +67,12 @@
 }
 */
 
+#pragma mark segment control
+
 - (IBAction)selectMapType:(id)sender {
     
     switch (((UISegmentedControl *)sender).selectedSegmentIndex) {
-        case 0:
+        case 0: //first
             
             NSLog(@"Standard Map"); // just for checking if it works
             
@@ -92,6 +98,8 @@
     }
     
 }
+
+#pragma mark buttons
 
 - (IBAction)ToTheGym:(id)sender {
     
