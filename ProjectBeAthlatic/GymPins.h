@@ -11,12 +11,12 @@
 
 @interface GymPins : NSObject <MKAnnotation> {
     NSString *gymName;
-    NSString *gymPostcode;
+    NSString *gymStreet;
     CLLocationCoordinate2D coordinate;
 }
 
 @property (nonatomic, assign) CLLocationCoordinate2D coordinate;
 @property (nonatomic, copy) NSString *gymName;
-@property (nonatomic, copy) NSString *gymPostcode;
+@property (nonatomic, copy) NSString *gymStreet;
 
 @end

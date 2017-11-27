@@ -35,7 +35,7 @@
     GymPins *firstgym = [[GymPins alloc] init];
     
     firstgym.gymName = @"The Gym";
-    firstgym.gymPostcode = @"LJD";
+    firstgym.gymStreet = @"Pickering Street";
     firstgym.coordinate = ImplexusGym.center;
     
     [_GymMapView addAnnotation:firstgym];
@@ -55,7 +55,7 @@
     GymPins *secondgym = [[GymPins alloc] init];
     
     secondgym.gymName = @"Pure Gym";
-    secondgym.gymPostcode = @"LBt";
+    secondgym.gymStreet = @"Lovell Park Road";
     secondgym.coordinate = PureGym.center;
     
     [_GymMapView addAnnotation:secondgym];
@@ -75,7 +75,7 @@
     GymPins *thirdgym = [[GymPins alloc] init];
     
     thirdgym.gymName = @"The Siprit Gym";
-    thirdgym.gymPostcode = @"LAJ";
+    thirdgym.gymStreet = @"Wellington Street";
     thirdgym.coordinate = SipritGym.center;
     
     [_GymMapView addAnnotation:thirdgym];
@@ -95,7 +95,7 @@
     GymPins *fourthgym = [[GymPins alloc] init];
     
     fourthgym.gymName = @"The Siprit Gym";
-    fourthgym.gymPostcode = @"LSTL";
+    fourthgym.gymStreet = @"Easy Road";
     fourthgym.coordinate = LeodisGym.center;
     
     [_GymMapView addAnnotation:fourthgym];
