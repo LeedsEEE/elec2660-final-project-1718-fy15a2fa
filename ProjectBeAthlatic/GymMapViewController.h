@@ -20,10 +20,12 @@
 
 - (IBAction)selectMapType:(id)sender; // segemnt control in order to the map type (action)
 
-- (IBAction)ToTheGym:(id)sender; // button show the route to the gym (action)
+//by mistake I wrote the gym but the correct gym is implexus gym
+- (IBAction)ToTheGym:(id)sender; // button show the route to the Implexus gym (action)
 - (IBAction)ToPureGym:(id)sender; // button show the route to the pure gym (action)
 - (IBAction)ToSipritGym:(id)sender; // button show the route to the siprit gym (action)
-- (IBAction)ToNuffieldGym:(id)sender; //button show the route to the nuffield gym (action)
+//by mistake I wrote nuffield gym but the correct gym is Leodis gym
+- (IBAction)ToNuffieldGym:(id)sender; //button show the route to the Leodis gym (action)
 
 
 

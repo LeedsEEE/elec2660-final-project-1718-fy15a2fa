@@ -24,92 +24,92 @@
     
     MKCoordinateRegion ImplexusGym = { {0.0, 0.0}, {0.0, 0.0}};
     
-    ImplexusGym.center.longitude = -1.581800; //implexus gym
-    ImplexusGym.center.latitude = 53.799068;
+    ImplexusGym.center.longitude = -1.581800; //set the longitude
+    ImplexusGym.center.latitude = 53.799068; //set the latitude
     
     ImplexusGym.span.latitudeDelta = 1.0f;
     ImplexusGym.span.longitudeDelta = 1.0f;
     
     [_GymMapView setRegion:ImplexusGym animated:YES];
     
-    GymPins *firstgym = [[GymPins alloc] init];
+    GymPins *firstgym = [[GymPins alloc] init]; //create object for the first gym to set its information
     
-    firstgym.gymName = @"The Gym";
-    firstgym.gymStreet = @"Pickering Street";
-    firstgym.coordinate = ImplexusGym.center;
+    firstgym.gymName = @"The Implexus Gym"; //set gym name
+    firstgym.gymStreet = @"Pickering Street"; //set the street for the gym
+    firstgym.coordinate = ImplexusGym.center; //set its location by using longitude and latitude
     
-    [_GymMapView addAnnotation:firstgym];
+    [_GymMapView addAnnotation:firstgym]; //add the gym as pin
     
     
     
     MKCoordinateRegion PureGym = { {0.0, 0.0}, {0.0, 0.0}};
     
-    PureGym.center.longitude = -1.540059;
-    PureGym.center.latitude = 53.795568;
+    PureGym.center.longitude = -1.540059; //set the longitude
+    PureGym.center.latitude = 53.795568; //set the latitude
     
     PureGym.span.latitudeDelta = 0.1f;
     PureGym.span.longitudeDelta = 0.1f;
     
     [_GymMapView setRegion:PureGym animated:YES];
     
-    GymPins *secondgym = [[GymPins alloc] init];
+    GymPins *secondgym = [[GymPins alloc] init]; //create object for the second gym to set its information
     
-    secondgym.gymName = @"Pure Gym";
-    secondgym.gymStreet = @"Cloth Hall Street";
-    secondgym.coordinate = PureGym.center;
+    secondgym.gymName = @"Pure Gym"; //set gym name
+    secondgym.gymStreet = @"Cloth Hall Street"; //set the street for the gym
+    secondgym.coordinate = PureGym.center; //set its location by using longitude and latitude
     
-    [_GymMapView addAnnotation:secondgym];
+    [_GymMapView addAnnotation:secondgym]; //add the gym as pin
     
     
     
     MKCoordinateRegion SipritGym = { {0.0, 0.0}, {0.0, 0.0}};
     
-    SipritGym.center.longitude = -1.557779;
-    SipritGym.center.latitude = 53.796568;
+    SipritGym.center.longitude = -1.557779; //set the longitude
+    SipritGym.center.latitude = 53.796568; //set the latitude
     
     SipritGym.span.latitudeDelta = 0.1f;
     SipritGym.span.longitudeDelta = 0.1f;
     
     [_GymMapView setRegion:SipritGym animated:YES];
     
-    GymPins *thirdgym = [[GymPins alloc] init];
+    GymPins *thirdgym = [[GymPins alloc] init]; //create object for the third gym to set its information
     
-    thirdgym.gymName = @"The Siprit Gym";
-    thirdgym.gymStreet = @"Wellington Street";
-    thirdgym.coordinate = SipritGym.center;
+    thirdgym.gymName = @"The Siprit Gym"; //set gym name
+    thirdgym.gymStreet = @"Wellington Street"; //set the street for the gym
+    thirdgym.coordinate = SipritGym.center; //set its location by using longitude and latitude
     
-    [_GymMapView addAnnotation:thirdgym];
+    [_GymMapView addAnnotation:thirdgym]; //add the gym as pin
     
     
     
     MKCoordinateRegion LeodisGym = { {0.0, 0.0}, {0.0, 0.0}};
     
-    LeodisGym.center.longitude = -1.516406; //leodis gym
-    LeodisGym.center.latitude = 53.791590;
+    LeodisGym.center.longitude = -1.516406; //set the longitude
+    LeodisGym.center.latitude = 53.791590; //set the latitude
     
     LeodisGym.span.latitudeDelta = 0.1f;
     LeodisGym.span.longitudeDelta = 0.1f;
     
     [_GymMapView setRegion:LeodisGym animated:YES];
     
-    GymPins *fourthgym = [[GymPins alloc] init];
+    GymPins *fourthgym = [[GymPins alloc] init]; //create object for the fourth gym to set its information
     
-    fourthgym.gymName = @"The Siprit Gym";
-    fourthgym.gymStreet = @"Easy Road";
-    fourthgym.coordinate = LeodisGym.center;
+    fourthgym.gymName = @"The Leodis Gym"; //set gym name
+    fourthgym.gymStreet = @"Easy Road"; //set the street for the gym
+    fourthgym.coordinate = LeodisGym.center; //set its location by using longitude and latitude
     
-    [_GymMapView addAnnotation:fourthgym];
+    [_GymMapView addAnnotation:fourthgym]; //add the gym as pin
     
     
     
-    self.Mylocation = [[CLLocationManager alloc] init];
+    self.Mylocation = [[CLLocationManager alloc] init]; //create an object for my location
     
-    self.GymMapView.delegate = self;
-    self.Mylocation.delegate = self;
+    self.GymMapView.delegate = self; //tell the GymMapView to use a controller as its delegate
+    self.Mylocation.delegate = self; //tell the Mylocation to use a controller as its delegate
     
-    [self.Mylocation requestWhenInUseAuthorization];
+    [self.Mylocation requestWhenInUseAuthorization]; // request to show my location on the map
     
-    self.GymMapView.showsUserLocation = YES;
+    self.GymMapView.showsUserLocation = YES; // show my location on the map
     
     CLLocation *MeOnMap = self.Mylocation.location;
     CLLocationCoordinate2D MyCoordinates = MeOnMap.coordinate;
