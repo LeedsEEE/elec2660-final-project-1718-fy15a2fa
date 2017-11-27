@@ -30,6 +30,7 @@
 		61E180CC1FCC4D5700425551 /* GymMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61E180CB1FCC4D5700425551 /* GymMapViewController.m */; };
 		61E180CF1FCC4F0700425551 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61E180CE1FCC4F0700425551 /* MapKit.framework */; };
 		61E180D11FCC4F1400425551 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61E180D01FCC4F1400425551 /* CoreLocation.framework */; };
+		61E180D41FCC741200425551 /* GymPins.m in Sources */ = {isa = PBXBuildFile; fileRef = 61E180D31FCC741200425551 /* GymPins.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +95,8 @@
 		61E180CB1FCC4D5700425551 /* GymMapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GymMapViewController.m; sourceTree = "<group>"; };
 		61E180CE1FCC4F0700425551 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		61E180D01FCC4F1400425551 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		61E180D21FCC741200425551 /* GymPins.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GymPins.h; sourceTree = "<group>"; };
+		61E180D31FCC741200425551 /* GymPins.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GymPins.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +181,8 @@
 				61E180C81FCC4D0E00425551 /* ThirdViewController.m */,
 				61E180CA1FCC4D5700425551 /* GymMapViewController.h */,
 				61E180CB1FCC4D5700425551 /* GymMapViewController.m */,
+				61E180D21FCC741200425551 /* GymPins.h */,
+				61E180D31FCC741200425551 /* GymPins.m */,
 				6145D37C1FC4063F0049CFEB /* Assets.xcassets */,
 				6145D37E1FC4063F0049CFEB /* LaunchScreen.storyboard */,
 				6145D3811FC4063F0049CFEB /* Info.plist */,
@@ -355,6 +360,7 @@
 				6145D3AA1FC412720049CFEB /* MaleViewController.m in Sources */,
 				6145D3B31FC42B230049CFEB /* FemaleTableViewController.m in Sources */,
 				6145D3831FC4063F0049CFEB /* main.m in Sources */,
+				61E180D41FCC741200425551 /* GymPins.m in Sources */,
 				6145D3B01FC4143E0049CFEB /* MaleData.m in Sources */,
 				61AAB7701FC4841900AFC62A /* MetricViewController.m in Sources */,
 				61E180CC1FCC4D5700425551 /* GymMapViewController.m in Sources */,

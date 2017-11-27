@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "MapKit/MapKit.h" //import MapKit in order to use it
 #import "CoreLocation/CoreLocation.h" //import CoreLocation in order to use it
+#import "GymPins.h" //import this class in order to get the data about the gyms
 
 // I set view controller to be Map View's delegate and Location Manager's delegate
 @interface GymMapViewController : UIViewController <MKMapViewDelegate, CLLocationManagerDelegate>
