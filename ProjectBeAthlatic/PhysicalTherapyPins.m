@@ -10,6 +10,6 @@
 
 @implementation PhysicalTherapyPins
 
-@synthesize PhysicalTherapyName,PhysicalTherapyStreet, coordinate;
+@synthesize title, subtitle, coordinate;
 
 @end

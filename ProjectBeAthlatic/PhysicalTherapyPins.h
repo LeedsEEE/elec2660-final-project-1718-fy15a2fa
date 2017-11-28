@@ -10,13 +10,13 @@
 #import "MapKit/MapKit.h"
 
 @interface PhysicalTherapyPins : NSObject <MKAnnotation> {
-    NSString *PhysicalTherapyName;
-    NSString *PhysicalTherapyStreet;
-    CLLocationCoordinate2D coordinate;
+    NSString *title; // represents a name of physical therapy center
+    NSString *subtitle; // represent a nearest street to a physical therapy center
+    CLLocationCoordinate2D coordinate; //represents the coordiante of physical therapy center
 }
 
-@property (nonatomic, assign) CLLocationCoordinate2D coordinate;
-@property (nonatomic, copy) NSString *PhysicalTherapyName;
-@property (nonatomic, copy) NSString *PhysicalTherapyStreet;
+@property (nonatomic, assign) CLLocationCoordinate2D coordinate; //represents the coordiante of physical therapy center
+@property (nonatomic, copy) NSString *title;  // represents a name of physical therapy center
+@property (nonatomic, copy) NSString *subtitle; // represent a nearest street to a gym
 
 @end

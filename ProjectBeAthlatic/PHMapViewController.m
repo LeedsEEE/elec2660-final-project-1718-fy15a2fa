@@ -27,15 +27,15 @@
     LeedsClinic.center.longitude = -1.576782; //set the longitude
     LeedsClinic.center.latitude = 53.821056; //set the latitude
     
-    LeedsClinic.span.latitudeDelta = 0.1f;
-    LeedsClinic.span.longitudeDelta = 0.1f;
+    LeedsClinic.span.latitudeDelta = 0.02f;
+    LeedsClinic.span.longitudeDelta = 0.02f;
     
     [_PHMapView setRegion:LeedsClinic animated:YES];
     
     PhysicalTherapyPins *firstPhysicalTherapyC = [[PhysicalTherapyPins alloc] init]; //create object for the first gym to set its information
     
-    firstPhysicalTherapyC.PhysicalTherapyName = @"Leeds Sport injury Clinic"; //set physical therapy center name
-    firstPhysicalTherapyC.PhysicalTherapyStreet = @"Shire Oak Street"; //set a street name for the physiscal therapy center
+    firstPhysicalTherapyC.title = @"Leeds Sport injury Clinic"; //set physical therapy center name
+    firstPhysicalTherapyC.subtitle = @"Shire Oak Street"; //set a street name for the physiscal therapy center (appears when pin is cliked)
     firstPhysicalTherapyC.coordinate = LeedsClinic.center; //set its location by using longitude and latitude
     
     [_PHMapView addAnnotation:firstPhysicalTherapyC]; //add the physical therapy center as pin
@@ -48,15 +48,15 @@
     WestYorkshireTherapy.center.longitude = -1.578856; //set the longitude
     WestYorkshireTherapy.center.latitude = 53.782439; //set the latitude
     
-    WestYorkshireTherapy.span.latitudeDelta = 0.1f;
-    WestYorkshireTherapy.span.longitudeDelta = 0.1f;
+    WestYorkshireTherapy.span.latitudeDelta = 0.02f;
+    WestYorkshireTherapy.span.longitudeDelta = 0.02f;
     
     [_PHMapView setRegion:WestYorkshireTherapy animated:YES];
     
     PhysicalTherapyPins *secondPhysicalTherapyC = [[PhysicalTherapyPins alloc] init]; //create object for the first gym to set its information
     
-    secondPhysicalTherapyC.PhysicalTherapyName = @"West Yorkshire Therapy Center"; //set physical therapy center name
-    secondPhysicalTherapyC.PhysicalTherapyStreet = @"Gelderd Lane"; //set a street name for the physiscal therapy center
+    secondPhysicalTherapyC.title = @"West Yorkshire Therapy Center"; //set physical therapy center name
+    secondPhysicalTherapyC.subtitle = @"Gelderd Lane"; //set a street name for the physiscal therapy center (appears when pin is cliked)
     secondPhysicalTherapyC.coordinate = WestYorkshireTherapy.center; //set its location by using longitude and latitude
     
     [_PHMapView addAnnotation:secondPhysicalTherapyC]; //add the physical therapy center as pin
@@ -69,15 +69,15 @@
     TheWestPointPracticeLeeds.center.longitude = -1.556010; //set the longitude
     TheWestPointPracticeLeeds.center.latitude = 53.797345; //set the latitude
     
-    TheWestPointPracticeLeeds.span.latitudeDelta = 0.1f;
-    TheWestPointPracticeLeeds.span.longitudeDelta = 0.1f;
+    TheWestPointPracticeLeeds.span.latitudeDelta = 0.02f;
+    TheWestPointPracticeLeeds.span.longitudeDelta = 0.02f;
     
     [_PHMapView setRegion:TheWestPointPracticeLeeds animated:YES];
     
     PhysicalTherapyPins *thirdPhysicalTherapyC = [[PhysicalTherapyPins alloc] init]; //create object for the first gym to set its information
     
-    thirdPhysicalTherapyC.PhysicalTherapyName = @"The West Point Practice"; //set physical therapy center name
-    thirdPhysicalTherapyC.PhysicalTherapyStreet = @"Wellington Street"; //set a street name for the physiscal therapy center
+    thirdPhysicalTherapyC.title = @"The West Point Practice"; //set physical therapy center name
+    thirdPhysicalTherapyC.subtitle = @"Wellington Street"; //set a street name for the physiscal therapy center (appears when pin is cliked)
     thirdPhysicalTherapyC.coordinate = TheWestPointPracticeLeeds.center; //set its location by using longitude and latitude
     
     [_PHMapView addAnnotation:thirdPhysicalTherapyC]; //add the physical therapy center as pin
@@ -90,15 +90,15 @@
     PhysioWorldLeeds.center.longitude = -1.552551; //set the longitude
     PhysioWorldLeeds.center.latitude = 53.780848; //set the latitude
     
-    PhysioWorldLeeds.span.latitudeDelta = 0.1f;
-    PhysioWorldLeeds.span.longitudeDelta = 0.1f;
+    PhysioWorldLeeds.span.latitudeDelta = 0.02f;
+    PhysioWorldLeeds.span.longitudeDelta = 0.02f;
     
     [_PHMapView setRegion:PhysioWorldLeeds animated:YES];
     
     PhysicalTherapyPins *fourthPhysicalTherapyC = [[PhysicalTherapyPins alloc] init]; //create object for the first gym to set its information
     
-    fourthPhysicalTherapyC.PhysicalTherapyName = @"PhysioWorld Leeds"; //set physical therapy center name
-    fourthPhysicalTherapyC.PhysicalTherapyStreet = @"Beeston Road"; //set a street name for the physiscal therapy center
+    fourthPhysicalTherapyC.title = @"PhysioWorld Leeds"; //set physical therapy center name
+    fourthPhysicalTherapyC.subtitle = @"Beeston Road"; //set a street name for the physiscal therapy center (appears when pin is cliked)
     fourthPhysicalTherapyC.coordinate = PhysioWorldLeeds.center; //set its location by using longitude and latitude
     
     [_PHMapView addAnnotation:fourthPhysicalTherapyC]; //add the physical therapy center as pin

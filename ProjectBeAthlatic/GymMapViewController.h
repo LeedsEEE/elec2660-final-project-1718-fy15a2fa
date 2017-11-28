@@ -22,8 +22,10 @@
 
 //by mistake I wrote the gym but the correct gym is implexus gym
 - (IBAction)ToTheGym:(id)sender; // button shows the route to the Implexus gym (action)
+//by mistake I wrote pure gym but the correct gym is motive8 north
 - (IBAction)ToPureGym:(id)sender; // button shows the route to the pure gym (action)
-- (IBAction)ToSipritGym:(id)sender; // button shows the route to the siprit gym (action)
+//by mistake I wrote the siprit gym but the correct gym is The Edge
+- (IBAction)ToSipritGym:(id)sender; // button shows the route to The Edge (action)
 //by mistake I wrote nuffield gym but the correct gym is Leodis gym
 - (IBAction)ToNuffieldGym:(id)sender; //button shows the route to the Leodis gym (action)
 

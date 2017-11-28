@@ -9,14 +9,14 @@
 #import <Foundation/Foundation.h>
 #import "MapKit/MapKit.h"
 
-@interface GymPins : NSObject <MKAnnotation> {
-    NSString *gymName;
-    NSString *gymStreet;
-    CLLocationCoordinate2D coordinate;
+@interface GymPins : NSObject <MKAnnotation> { // use this in order to add them to the pins
+    NSString *title; // represents name of a gym
+    NSString *subtitle; // represent a nearest street to a gym
+    CLLocationCoordinate2D coordinate; // represents coordinate of a gym
 }
 
-@property (nonatomic, assign) CLLocationCoordinate2D coordinate;
-@property (nonatomic, copy) NSString *gymName;
-@property (nonatomic, copy) NSString *gymStreet;
+@property (nonatomic, assign) CLLocationCoordinate2D coordinate; // represents coordinate of a gym
+@property (nonatomic, copy) NSString *title;  // represents name of a gym
+@property (nonatomic, copy) NSString *subtitle; // represent a nearest street to a gym
 
 @end

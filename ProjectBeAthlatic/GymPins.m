@@ -11,6 +11,6 @@
 
 @implementation GymPins
 
-@synthesize gymName, gymStreet, coordinate;
+@synthesize title, subtitle, coordinate;
 
 @end
