@@ -15,8 +15,12 @@
     CLLocationCoordinate2D coordinate; // represents coordinate of a gym
 }
 
+
+
 @property (nonatomic, assign) CLLocationCoordinate2D coordinate; // represents coordinate of a gym
 @property (nonatomic, copy) NSString *title;  // represents name of a gym
 @property (nonatomic, copy) NSString *subtitle; // represent a nearest street to a gym
+
+
 
 @end

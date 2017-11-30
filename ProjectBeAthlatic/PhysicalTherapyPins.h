@@ -15,8 +15,12 @@
     CLLocationCoordinate2D coordinate; //represents the coordiante of physical therapy center
 }
 
+
+
 @property (nonatomic, assign) CLLocationCoordinate2D coordinate; //represents the coordiante of physical therapy center
 @property (nonatomic, copy) NSString *title;  // represents a name of physical therapy center
 @property (nonatomic, copy) NSString *subtitle; // represent a nearest street to a gym
+
+
 
 @end
