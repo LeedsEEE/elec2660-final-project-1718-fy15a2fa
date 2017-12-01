@@ -26,6 +26,14 @@
     self.TimeMaleLabel.text = self.MaleData.TimeMale; //show time
     self.DiscriptionMaleLabel.text = self.MaleData.DiscriptionMale; //show discription
     
+    // use if statement for each workouts in order to add the image
+    // if statements depend here on the name of the workout
+   /* if ([self.MaleData.NameWorkoutMale isEqualToString:@"ggg"]) { // check the workout by its name
+        
+        self.MaleImage.image = [UIImage imageNamed:@""]; //adding the iamge by using imageNamed
+        
+    }*/
+    
 }
 
 - (void)didReceiveMemoryWarning {

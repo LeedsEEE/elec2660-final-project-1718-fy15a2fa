@@ -276,6 +276,10 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g9B-2A-4vS">
+                                <rect key="frame" x="67" y="440" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="dJA-up-faq"/>
@@ -283,6 +287,7 @@
                     <connections>
                         <outlet property="DiscriptionMaleLabel" destination="MeV-ss-AiP" id="yFs-TN-WGK"/>
                         <outlet property="LevelMaleLabel" destination="1RZ-Sg-a8D" id="BNY-fq-89X"/>
+                        <outlet property="MaleImage" destination="g9B-2A-4vS" id="efF-Sc-7u2"/>
                         <outlet property="TimeMaleLabel" destination="yLD-Wo-bmq" id="1tK-K4-vZi"/>
                     </connections>
                 </viewController>
@@ -497,7 +502,7 @@
                             </mapView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ft-AA-qi5">
                                 <rect key="frame" x="16" y="526" width="166" height="30"/>
-                                <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Go to Leeds Injury Clinic"/>
                                 <connections>
                                     <action selector="ToPhoenixCenter:" destination="LkZ-m2-HiV" eventType="touchUpInside" id="S2n-G6-l3A"/>
@@ -505,7 +510,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YpE-Rx-X5R">
                                 <rect key="frame" x="16" y="573" width="192" height="30"/>
-                                <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Go to West Yorkshire center"/>
                                 <connections>
                                     <action selector="ToWYCenter:" destination="LkZ-m2-HiV" eventType="touchUpInside" id="Zo5-Ha-sTV"/>
@@ -513,7 +518,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fwj-A5-Abd">
                                 <rect key="frame" x="213" y="526" width="146" height="30"/>
-                                <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Go to The West Point"/>
                                 <connections>
                                     <action selector="ToWestPCenter:" destination="LkZ-m2-HiV" eventType="touchUpInside" id="J8A-2M-epJ"/>
@@ -521,7 +526,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="voC-6D-6jw">
                                 <rect key="frame" x="233" y="573" width="126" height="30"/>
-                                <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Go to PhysioWorld"/>
                                 <connections>
                                     <action selector="ToPWCenter:" destination="LkZ-m2-HiV" eventType="touchUpInside" id="TEg-KV-MWZ"/>
@@ -529,7 +534,7 @@
                             </button>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="mny-8h-AO8">
                                 <rect key="frame" x="92" y="80" width="191" height="29"/>
-                                <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <segments>
                                     <segment title="Map"/>
                                     <segment title="Satellite"/>
@@ -577,7 +582,7 @@
                             </mapView>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="tc0-Fo-FUu">
                                 <rect key="frame" x="92" y="80" width="191" height="29"/>
-                                <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <segments>
                                     <segment title="Map"/>
                                     <segment title="Satellite"/>
@@ -589,7 +594,7 @@
                             </segmentedControl>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o8i-WN-3Nc">
                                 <rect key="frame" x="16" y="573" width="141" height="30"/>
-                                <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Go to Motive8 North"/>
                                 <connections>
                                     <action selector="ToPureGym:" destination="xOz-O4-tM2" eventType="touchUpInside" id="vBt-kI-imV"/>
@@ -597,7 +602,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bdU-Yy-R9z">
                                 <rect key="frame" x="16" y="527" width="138" height="30"/>
-                                <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Go to Implexus Gym"/>
                                 <connections>
                                     <action selector="ToTheGym:" destination="xOz-O4-tM2" eventType="touchUpInside" id="ghT-Yy-cLg"/>
@@ -605,7 +610,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hqd-Ie-wzU">
                                 <rect key="frame" x="252" y="527" width="107" height="30"/>
-                                <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Go to The Edge"/>
                                 <connections>
                                     <action selector="ToSipritGym:" destination="xOz-O4-tM2" eventType="touchUpInside" id="IVS-Uq-eL3"/>
@@ -613,7 +618,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WMh-B7-MR7">
                                 <rect key="frame" x="237" y="573" width="122" height="30"/>
-                                <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Go to Leodis Gym"/>
                                 <connections>
                                     <action selector="ToNuffieldGym:" destination="xOz-O4-tM2" eventType="touchUpInside" id="ARQ-fj-wtN"/>

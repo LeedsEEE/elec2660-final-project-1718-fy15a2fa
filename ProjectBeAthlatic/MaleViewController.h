@@ -11,14 +11,14 @@
 
 @interface MaleViewController : UIViewController
 
-//show level of workout
+//show a level of workout
 @property (weak, nonatomic) IBOutlet UILabel *LevelMaleLabel;
-//show time of workout
+//show a time of workout
 @property (weak, nonatomic) IBOutlet UILabel *TimeMaleLabel;
-//show discription of workout
+//show a discription of workout
 @property (weak, nonatomic) IBOutlet UILabel *DiscriptionMaleLabel;
-
-
+// show an image of workout
+@property (weak, nonatomic) IBOutlet UIImageView *MaleImage;
 
 // create a property in order to create an object in the implementation
 @property (strong, nonatomic) MaleProperties *MaleData;
