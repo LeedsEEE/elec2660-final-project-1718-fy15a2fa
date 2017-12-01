@@ -186,12 +186,17 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="X3P-cp-Fys">
+                                <rect key="frame" x="67" y="448" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="ZSC-B1-t4X"/>
                     </view>
                     <connections>
                         <outlet property="DiscriptionFemaleLabel" destination="M8e-Rm-Z10" id="4Np-F5-9DY"/>
+                        <outlet property="FemaleImage" destination="X3P-cp-Fys" id="HPd-KE-qzv"/>
                         <outlet property="LevelFemaleLabel" destination="x1i-aB-iPt" id="p3c-sJ-jUD"/>
                         <outlet property="TimeFemaleLabel" destination="4rw-2G-bBT" id="pVi-Ap-ZmG"/>
                     </connections>

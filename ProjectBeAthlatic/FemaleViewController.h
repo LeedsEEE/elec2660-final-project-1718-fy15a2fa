@@ -11,13 +11,14 @@
 
 @interface FemaleViewController : UIViewController
 
-//show level of workout
+//show a level of workout
 @property (weak, nonatomic) IBOutlet UILabel *LevelFemaleLabel;
-//show time of workout
+//show a time of workout
 @property (weak, nonatomic) IBOutlet UILabel *TimeFemaleLabel;
-//show discription of workout
+//show a discription of workout
 @property (weak, nonatomic) IBOutlet UILabel *DiscriptionFemaleLabel;
-
+// show an image of workout
+@property (weak, nonatomic) IBOutlet UIImageView *FemaleImage;
 
 
 // create a property in order to create an object in the implementation
