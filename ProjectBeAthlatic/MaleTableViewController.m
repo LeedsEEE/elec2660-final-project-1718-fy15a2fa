@@ -218,6 +218,21 @@
     
 }
 
+#pragma mark willDisplayHeaderView
+
+// this helps to set the background and text color for each header (shoudlers, arms, chest, legs and ABS)
+- (void)tableView:(UITableView *)tableView willDisplayHeaderView:(UIView *)view forSection:(NSInteger)section
+{
+    
+    // create onject in order to allow me to the background and text clor
+    UITableViewHeaderFooterView *Myheader = (UITableViewHeaderFooterView*) view;
+    
+    Myheader.contentView.backgroundColor = [UIColor blackColor]; //set the background color
+    [Myheader.textLabel setTextColor:[UIColor whiteColor]]; //set the text color
+    
+}
+
+
 
 /*
 // Override to support conditional editing of the table view.
