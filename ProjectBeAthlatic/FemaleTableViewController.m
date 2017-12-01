@@ -182,6 +182,59 @@
     return cell; //return cell in order to get all the information that required in the cell
 }
 
+#pragma mark willDisplayCell
+
+// this method helps to  set the background color for each cell in the section
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    
+    // I used if and else if statement in order to set the background color for the cells in each section
+    if (indexPath.section == 0) { // shoulders section
+        
+        // this code helps to set the odd cells to white, and even cells to yellow
+        cell.backgroundColor = ([indexPath row]%2)?[UIColor yellowColor]:[UIColor whiteColor];
+        
+    } else if (indexPath.section == 1) { // arms section
+        
+        // this code helps to set the odd cells to yellow, and even cells to whit
+        cell.backgroundColor = ([indexPath row]%2)?[UIColor whiteColor]:[UIColor yellowColor];
+        
+    } else if (indexPath.section == 2) { // legs section
+        
+        // this code helps to set the odd cells to white, and even cells to yellow
+        cell.backgroundColor = ([indexPath row]%2)?[UIColor yellowColor]:[UIColor whiteColor];
+        
+    } else if (indexPath.section == 3) { // chest section
+        
+        // this code helps to set the odd cells to yellow, and even cells to whit
+        cell.backgroundColor = ([indexPath row]%2)?[UIColor whiteColor]:[UIColor yellowColor];
+        
+    } else { // ABS section
+        
+        // this code helps to set the odd cells to white, and even cells to yellow
+        cell.backgroundColor = ([indexPath row]%2)?[UIColor yellowColor]:[UIColor whiteColor];
+        
+    }
+    
+    
+    
+}
+
+#pragma mark willDisplayHeaderView
+
+// this helps to set the background and text color for each header (shoudlers, arms, chest, legs and ABS)
+- (void)tableView:(UITableView *)tableView willDisplayHeaderView:(UIView *)view forSection:(NSInteger)section
+{
+    
+    // create onject in order to allow me to the background and text clor
+    UITableViewHeaderFooterView *Myheader = (UITableViewHeaderFooterView*) view;
+    
+    Myheader.contentView.backgroundColor = [UIColor blackColor]; //set the background color
+    [Myheader.textLabel setTextColor:[UIColor whiteColor]]; //set the text color
+    
+}
+
+
 
 /*
 // Override to support conditional editing of the table view.
