@@ -18,6 +18,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    #pragma mark connected labels
     
     //creating an object in order to display that recieved data on the labels
     //I create an this object in viewDidLoad to ensure it will updates as soon as possible
@@ -26,6 +27,8 @@
     self.TimeMaleLabel.text = self.MaleData.TimeMale; //show time
     self.DiscriptionMaleLabel.text = self.MaleData.DiscriptionMale; //show discription
     
+    #pragma mark images for shoulders workouts
+    
     // use if statement for each workouts in order to add the image
     // if statements depend here on the name of the workout
    /* if ([self.MaleData.NameWorkoutMale isEqualToString:@"ggg"]) { // check the workout by its name
@@ -33,6 +36,14 @@
         self.MaleImage.image = [UIImage imageNamed:@""]; //adding the iamge by using imageNamed
         
     }*/
+    
+    #pragma mark images for arms workouts
+    
+    #pragma mark images for legs workouts
+    
+    #pragma mark images for chest workouts
+    
+    #pragma mark images for ABS workouts
     
 }
 
