@@ -32,11 +32,19 @@
         www.TimeMale = @"4 minutes"; //set the time of workout
         www.DiscriptionMale = @"fjkjsdfk gjdklahf hdaufh hshd dushuis hsusf shusy suishisiu hisiu sius hgur suis his shsis shiuss pfjsoio fsius oisie hro g sosioser"; //set the discription of workout
         
+        //create an object for walking in order to some properties to it such as level, time , discription and photo
+        //in addition, allocate memory for the workout
+        MaleProperties *ssw = [[MaleProperties alloc] init];
+        ssw.NameWorkoutMale = @"www"; //set workout name
+        ssw.LevelMale = @"Advanced"; //set the level of workout
+        ssw.TimeMale = @"4 minutes"; //set the time of workout
+        ssw.DiscriptionMale = @"fjkjsdfk gjdklahf hdaufh hshd dushuis hsusf shusy suishisiu hisiu sius hgur suis his shsis shiuss pfjsoio fsius oisie hro g sosioser"; //set the discription of workout
         
         #pragma mark add shoulders' workouts to the array
         
         //add the workouts into the shoulders array by using addObject function
         [self.ShouldersMale addObject:www]; //This workout goes into (INDEX 0)
+        [self.ShouldersMale addObject:ssw]; //This workout goes into (INDEX 0)
         
         
         
