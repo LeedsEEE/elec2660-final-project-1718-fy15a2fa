@@ -15,10 +15,10 @@
 @property (weak, nonatomic) IBOutlet UILabel *LevelMaleLabel;
 //show a time of workout
 @property (weak, nonatomic) IBOutlet UILabel *TimeMaleLabel;
-//show a discription of workout
-@property (weak, nonatomic) IBOutlet UILabel *DiscriptionMaleLabel;
 // show an image of workout
 @property (weak, nonatomic) IBOutlet UIImageView *MaleImage;
+// shows a discription of workout
+@property (weak, nonatomic) IBOutlet UITextView *DiscriptionMaleLabell;
 
 // create a property in order to create an object in the implementation
 @property (strong, nonatomic) MaleProperties *MaleData;

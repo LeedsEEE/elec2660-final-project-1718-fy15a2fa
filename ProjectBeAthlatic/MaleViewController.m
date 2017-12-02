@@ -25,7 +25,7 @@
     //when the viewcontroller opens
     self.LevelMaleLabel.text = self.MaleData.LevelMale; //show level
     self.TimeMaleLabel.text = self.MaleData.TimeMale; //show time
-    self.DiscriptionMaleLabel.text = self.MaleData.DiscriptionMale; //show discription
+    self.DiscriptionMaleLabell.text = self.MaleData.DiscriptionMale; //show discription
     
     #pragma mark images for shoulders workouts
     
