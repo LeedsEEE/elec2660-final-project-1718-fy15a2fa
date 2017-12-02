@@ -22,6 +22,8 @@
     //creating an object for male's workouts in order to get access to get access to all stored workouts and data
     self.WorkoutForMale = [[MaleData alloc] init];
     
+    self.navigationItem.title = @"Workouts For Male"; //add a title
+    
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
