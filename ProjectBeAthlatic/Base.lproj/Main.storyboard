@@ -903,6 +903,21 @@
                         </barButtonItem>
                     </navigationItem>
                     <size key="freeformSize" width="375" height="1000"/>
+                    <connections>
+                        <outlet property="MyAim" destination="kPo-Sj-m1D" id="NNJ-Bd-f0r"/>
+                        <outlet property="MyHeight" destination="0Lx-dD-Bhm" id="e6Q-dS-1j2"/>
+                        <outlet property="MyName" destination="mvm-1c-56g" id="P9H-3X-EfF"/>
+                        <outlet property="MyWeight" destination="PrL-S1-hQM" id="1CW-O1-z26"/>
+                        <outlet property="MyWorkout" destination="Ahd-1p-cgt" id="cPI-C5-doQ"/>
+                        <outlet property="PPAdvice" destination="L8N-DH-Xfm" id="5G6-uB-Nzh"/>
+                        <outlet property="PPEmail" destination="Qy9-Gb-lls" id="riw-if-bpy"/>
+                        <outlet property="PPName" destination="blf-9V-wbu" id="dOM-Pf-hm9"/>
+                        <outlet property="PPPhone" destination="JPj-VZ-PjJ" id="Mjb-C2-mkQ"/>
+                        <outlet property="PTAdvice" destination="Lel-BX-iIu" id="GvR-q9-COB"/>
+                        <outlet property="PTEmail" destination="sbU-Mn-Vxb" id="iWV-or-xEQ"/>
+                        <outlet property="PTName" destination="IcY-cZ-jxV" id="oFw-xw-WTA"/>
+                        <outlet property="PTPhone" destination="9xt-PS-iAi" id="K79-RP-crH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pfa-Ey-qyw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
