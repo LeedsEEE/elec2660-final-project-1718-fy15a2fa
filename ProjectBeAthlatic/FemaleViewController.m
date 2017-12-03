@@ -31,11 +31,13 @@
     
     // use if statement for each workouts in order to add the image
     // if statements depend here on the name of the workout
-   /*  if ([self.FemaleData.NameWorkoutFemale isEqualToString:@"ggg"]) { // check the workout by its name
+     if ([self.FemaleData.NameWorkoutFemale isEqualToString:@"ggg"]) { // check the workout by its name
      
      self.FemaleImage.image = [UIImage imageNamed:@""]; //adding the iamge by using imageNamed
+         
+     self.navigationItem.title = @"Standing Dumbbell Fly"; //add a title
      
-     } */
+     } 
     
     #pragma mark images for arms workouts
     
