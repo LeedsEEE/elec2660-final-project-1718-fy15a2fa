@@ -14,7 +14,7 @@
 
 @implementation MetricViewController
 
-#pragma mark viewDidLoad method
+#pragma mark View Method
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -33,14 +33,14 @@
     
 }
 
-#pragma mark didRecieveMemoryWarning method
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark titleForRow forComponent method
+#pragma mark Title for Row and for Component Method
 
 //this method is used in order to set the titles for each row and component such as numbers and symbols
 - (NSString *)pickerView:(UIPickerView *)pickerView
@@ -104,7 +104,7 @@
     
 }
 
-#pragma mark didSelectedRowinComponent mehtod
+#pragma mark Selected Row Mehtod
 
 //this mehtod is used in order to some operations such as calculating BMI value and finding BMI category
 - (void)pickerView:(UIPickerView *)pickerView
@@ -180,7 +180,7 @@
     
 }
 
-#pragma mark numberOfComponentsInPickerView
+#pragma mark Number of Components in PickerView
 
 //this mehtod is used to set the number of components
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView; {
@@ -198,7 +198,7 @@
     
 }
 
-#pragma mark numberOfRowsInComponent method
+#pragma mark Number of Rows in Component Method
 
 // this mehtod is used in order to set the number rows in each component
 - (NSInteger)pickerView:(UIPickerView *)pickerView

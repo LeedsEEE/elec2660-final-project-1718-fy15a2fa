@@ -14,7 +14,7 @@
 
 @implementation GymMapViewController
 
-#pragma mark viewDidLoad method
+#pragma mark View method
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -121,14 +121,14 @@
     
 }
 
-#pragma mark didReciveMemoryWarning method
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark didUpdatedUserLocation method
+#pragma mark  Updated User Location Method
 
 //this mehtod allows to update my location on the map
 - (void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation; {
@@ -155,7 +155,7 @@
 }
 */
 
-#pragma mark segmented control
+#pragma mark Segmented Control
 
 //this is segment control is added to change the map type
 - (IBAction)selectMapType:(id)sender {
@@ -191,7 +191,7 @@
     
 }
 
-#pragma mark buttons
+#pragma mark buttons to Show Directions
 
 // this button shows direction to Implexus Gym
 - (IBAction)ToTheGym:(id)sender {
