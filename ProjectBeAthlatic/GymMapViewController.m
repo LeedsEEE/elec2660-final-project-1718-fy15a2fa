@@ -21,6 +21,9 @@
     // Do any additional setup after loading the view.
     
     
+    self.navigationItem.title = @"Gym Map"; //add a title
+    
+    
     // adding the location for the Implexus Gym to show it on the map
     MKCoordinateRegion ImplexusGym = { {0.0, 0.0}, {0.0, 0.0}};
     

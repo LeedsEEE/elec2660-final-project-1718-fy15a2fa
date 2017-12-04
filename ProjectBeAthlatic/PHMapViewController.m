@@ -21,6 +21,9 @@
     // Do any additional setup after loading the view.
     
     
+    self.navigationItem.title = @"Physical Therapy Centers Map"; //add a title
+    
+    
     // adding the location for The Leeds Sport Injury and Physiotherapy Clinic to show it on the map
     MKCoordinateRegion LeedsClinic = { {0.0, 0.0}, {0.0, 0.0}};
     
