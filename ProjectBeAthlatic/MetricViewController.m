@@ -28,7 +28,7 @@
     self.MetricWeightPicker.delegate = self;
     self.MetricWeightPicker.dataSource = self;
     
-    self.navigationItem.title = @"Metric Units"; //add a title
+    self.navigationItem.title = @"Metric Calculator"; //add a title
 
     
 }

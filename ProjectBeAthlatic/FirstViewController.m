@@ -26,13 +26,13 @@
     [super awakeFromNib];
     
     //Let the buttons in the nagivationn appear in black color
-    [[UINavigationBar appearance] setTintColor:[UIColor blackColor]];
+    [[UINavigationBar appearance] setTintColor:[UIColor blueColor]];
     
     //Let the navigation bar appears in red color.
     [[UINavigationBar appearance] setBarTintColor:[UIColor yellowColor]];
     
     //Let the text (title) apears in black color
-    [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor blackColor]}];
+    [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor blueColor]}];
     
 }
 

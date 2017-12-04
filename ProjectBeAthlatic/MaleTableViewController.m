@@ -14,7 +14,7 @@
 
 @implementation MaleTableViewController
 
-#pragma mark viewDidLoad method
+#pragma mark View  method
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -31,14 +31,14 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
-#pragma mark didReceiveMemoryWarning method
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark header for each body parts
+#pragma mark Header for Sctions
 
 //this method is used in order to add headrs to each body parts
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section; {
@@ -76,7 +76,7 @@
     return HeaderMale; // return HeaderFemale in order to get the titles
 }
 
-#pragma mark numberOfSectionsInTableView
+#pragma mark Number of Sections Method
 
 //this method is used to set the number of sections in the table view
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -84,7 +84,7 @@
     return 5; // return 5 in order to get 5 sections in the table view
 }
 
-#pragma mark numberOfRowsInSection
+#pragma mark Number of Rows in Section
 
 //this mehtod is used in order to set the number of rows in section
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -123,7 +123,7 @@
     return numberOfWorkout; // numberOfWorkout in order to get the right number of rows in each section
 }
 
-#pragma mark cellForRowAtIndexPath
+#pragma mark Cells Details
 
 /* uncomment this method because it provides the data source with a cell to use
  change the identifier name to MaleCell in order to update the workout in each body parts */
@@ -182,7 +182,7 @@
     return cell; //return cell in order to get all the information that required in the cell
 }
 
-#pragma mark willDisplayCell
+#pragma mark Color of Cells
 
 // this method helps to  set the background color for each cell in the section
 - (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -220,7 +220,7 @@
     
 }
 
-#pragma mark willDisplayHeaderView
+#pragma mark Color of Headers
 
 // this helps to set the background and text color for each header (shoudlers, arms, chest, legs and ABS)
 - (void)tableView:(UITableView *)tableView willDisplayHeaderView:(UIView *)view forSection:(NSInteger)section
@@ -229,7 +229,7 @@
     // create onject in order to allow me to the background and text clor
     UITableViewHeaderFooterView *Myheader = (UITableViewHeaderFooterView*) view;
     
-    Myheader.contentView.backgroundColor = [UIColor blackColor]; //set the background color
+    Myheader.contentView.backgroundColor = [UIColor blueColor]; //set the background color
     [Myheader.textLabel setTextColor:[UIColor whiteColor]]; //set the text color
     
 }
