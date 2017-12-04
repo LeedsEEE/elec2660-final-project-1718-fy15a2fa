@@ -27,6 +27,8 @@
     //tell the MetricWeightPicker to use a controller as its delegate and data source
     self.MetricWeightPicker.delegate = self;
     self.MetricWeightPicker.dataSource = self;
+    
+    self.navigationItem.title = @"Metric Units"; //add a title
 
     
 }

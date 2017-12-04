@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--First-->
+        <!--Workouts-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
                 <viewController id="9pv-A4-QxB" customClass="FirstViewController" sceneMemberID="viewController">
@@ -18,39 +18,44 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CHOOSE YOUR GENDER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="evp-9i-eAi">
-                                <rect key="frame" x="16" y="87" width="343" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CHOOSE YOUR GENDER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="evp-9i-eAi">
+                                <rect key="frame" x="76.5" y="88" width="222.5" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N8l-On-vnM">
-                                <rect key="frame" x="16" y="155" width="343" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Male"/>
-                                <connections>
-                                    <segue destination="Fkt-uo-u1g" kind="show" id="mwU-41-VMO"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pl8-Vw-4Y7">
-                                <rect key="frame" x="163" y="235" width="49" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pl8-Vw-4Y7">
+                                <rect key="frame" x="163" y="232" width="49" height="30"/>
                                 <state key="normal" title="Famale"/>
                                 <connections>
                                     <segue destination="XIb-Sa-Yez" kind="show" id="zs7-Re-Jlg"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N8l-On-vnM">
+                                <rect key="frame" x="171" y="162" width="33" height="30"/>
+                                <state key="normal" title="Male"/>
+                                <connections>
+                                    <segue destination="Fkt-uo-u1g" kind="show" id="mwU-41-VMO"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="evp-9i-eAi" firstAttribute="centerX" secondItem="PQr-Ze-W5v" secondAttribute="centerX" id="50c-fh-K5x"/>
+                            <constraint firstItem="pl8-Vw-4Y7" firstAttribute="centerX" secondItem="PQr-Ze-W5v" secondAttribute="centerX" id="JFA-is-YAF"/>
+                            <constraint firstItem="pl8-Vw-4Y7" firstAttribute="top" secondItem="N8l-On-vnM" secondAttribute="bottom" constant="40" id="Tup-aA-dY7"/>
+                            <constraint firstItem="evp-9i-eAi" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" constant="24" id="VEt-Uc-p1G"/>
+                            <constraint firstItem="N8l-On-vnM" firstAttribute="top" secondItem="evp-9i-eAi" secondAttribute="bottom" constant="50" id="X9S-0B-iFB"/>
+                            <constraint firstItem="N8l-On-vnM" firstAttribute="centerX" secondItem="PQr-Ze-W5v" secondAttribute="centerX" id="aGL-aW-eme"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Workouts" image="first" id="acW-dT-cKf"/>
                     <navigationItem key="navigationItem" id="Hg7-t1-nCn"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1591" y="-574"/>
+            <point key="canvasLocation" x="1589.5999999999999" y="-574.36281859070471"/>
         </scene>
         <!--Female Table View Controller-->
         <scene sceneID="XPy-05-dxI">
@@ -339,7 +344,7 @@
             </objects>
             <point key="canvasLocation" x="825" y="844"/>
         </scene>
-        <!--Second-->
+        <!--BMI Calculator-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
                 <viewController id="8rJ-Kc-sve" customClass="SecondViewController" sceneMemberID="viewController">
@@ -347,34 +352,40 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CHOOSE UNIT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SoS-zR-rXD">
-                                <rect key="frame" x="16" y="85" width="343" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CHOOSE UNIT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SoS-zR-rXD">
+                                <rect key="frame" x="121.5" y="89" width="132" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oAv-af-IMr">
-                                <rect key="frame" x="165" y="170" width="44" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oAv-af-IMr">
+                                <rect key="frame" x="165" y="162" width="44" height="30"/>
                                 <state key="normal" title="Metric"/>
                                 <connections>
                                     <segue destination="5f2-ow-o54" kind="show" id="Dal-la-1gP"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zBM-Qd-4uZ">
-                                <rect key="frame" x="16" y="254" width="343" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Impertial"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zBM-Qd-4uZ">
+                                <rect key="frame" x="159.5" y="232" width="55" height="30"/>
+                                <state key="normal" title="Imperial"/>
                                 <connections>
                                     <segue destination="TmC-A6-Bkd" kind="show" id="tcY-gP-Zdt"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="oAv-af-IMr" firstAttribute="centerX" secondItem="O1u-W8-tvY" secondAttribute="centerX" id="44l-ZN-Wp0"/>
+                            <constraint firstItem="zBM-Qd-4uZ" firstAttribute="top" secondItem="oAv-af-IMr" secondAttribute="bottom" constant="40" id="A2w-Ee-5Ad"/>
+                            <constraint firstItem="oAv-af-IMr" firstAttribute="centerX" secondItem="O1u-W8-tvY" secondAttribute="centerX" id="UQt-6N-Yhd"/>
+                            <constraint firstItem="zBM-Qd-4uZ" firstAttribute="centerX" secondItem="O1u-W8-tvY" secondAttribute="centerX" id="VfD-kE-693"/>
+                            <constraint firstItem="oAv-af-IMr" firstAttribute="top" secondItem="SoS-zR-rXD" secondAttribute="bottom" constant="49" id="X1c-A6-N9Q"/>
+                            <constraint firstItem="SoS-zR-rXD" firstAttribute="top" secondItem="O1u-W8-tvY" secondAttribute="top" constant="25" id="lct-gd-nJD"/>
+                            <constraint firstItem="SoS-zR-rXD" firstAttribute="centerX" secondItem="O1u-W8-tvY" secondAttribute="centerX" id="uLQ-XK-eLG"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="BMI Calculator" image="second" id="cPa-gy-q4n"/>
                     <navigationItem key="navigationItem" id="hKG-x4-Uxn"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
@@ -440,11 +451,11 @@
             </objects>
             <point key="canvasLocation" x="2381.5999999999999" y="1199.5502248875564"/>
         </scene>
-        <!--Item-->
+        <!--Map-->
         <scene sceneID="2vL-iw-ZFb">
             <objects>
                 <navigationController id="DPK-d3-p7Q" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="slJ-Ut-W6G"/>
+                    <tabBarItem key="tabBarItem" title="Map" id="slJ-Ut-W6G"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0Yp-PF-CH0">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -578,11 +589,11 @@
             </objects>
             <point key="canvasLocation" x="2382" y="2530"/>
         </scene>
-        <!--Item-->
+        <!--Profile-->
         <scene sceneID="RZc-tZ-P9l">
             <objects>
                 <navigationController id="IX3-7f-nhb" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="K5n-9i-fnl"/>
+                    <tabBarItem key="tabBarItem" title="Profile" id="K5n-9i-fnl"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ipj-hW-gDe">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>

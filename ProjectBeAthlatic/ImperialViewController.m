@@ -28,6 +28,8 @@
     self.ImperialWeightPicker.delegate = self;
     self.ImperialWeightPicker.dataSource = self;
     
+    self.navigationItem.title = @"Imperial Units"; //add a title
+    
 }
 
 #pragma mark didRecieveMemoryWarning method
