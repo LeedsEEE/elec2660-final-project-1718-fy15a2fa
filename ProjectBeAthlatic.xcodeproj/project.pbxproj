@@ -96,6 +96,7 @@
 		619F680E1FC60B1900561FCF /* ImperialViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImperialViewController.m; sourceTree = "<group>"; };
 		61AAB76E1FC4841900AFC62A /* MetricViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MetricViewController.h; sourceTree = "<group>"; };
 		61AAB76F1FC4841900AFC62A /* MetricViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MetricViewController.m; sourceTree = "<group>"; };
+		61BA12031FD60F82003C08A8 /* LaunchIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaunchIcon.png; sourceTree = "<group>"; };
 		61C549341FD48A1E005A2E34 /* FourthViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FourthViewController.h; sourceTree = "<group>"; };
 		61C549351FD48A1E005A2E34 /* FourthViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FourthViewController.m; sourceTree = "<group>"; };
 		61E180C71FCC4D0E00425551 /* ThirdViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
@@ -199,6 +200,7 @@
 				61C549341FD48A1E005A2E34 /* FourthViewController.h */,
 				61C549351FD48A1E005A2E34 /* FourthViewController.m */,
 				6145D37C1FC4063F0049CFEB /* Assets.xcassets */,
+				61BA12031FD60F82003C08A8 /* LaunchIcon.png */,
 				6145D37E1FC4063F0049CFEB /* LaunchScreen.storyboard */,
 				6145D3811FC4063F0049CFEB /* Info.plist */,
 				6145D3821FC4063F0049CFEB /* main.m */,
