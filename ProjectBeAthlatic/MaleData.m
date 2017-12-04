@@ -25,6 +25,7 @@
         self.ShouldersMale = [NSMutableArray array];
         
         // All shoulfer's workouts for male are taken from mensfitness.com
+        //https://www.mensfitness.com/training/workout-routines/30-best-shoulder-exercises-all-time/slideshow
         
         //create an object for a workout in order to some properties to it such as level, time , discription and photo
         //in addition, allocate memory for the workout

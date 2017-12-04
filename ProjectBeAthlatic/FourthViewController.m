@@ -18,6 +18,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    self.navigationItem.title = @"Profile"; //add a title
+    
     NSUserDefaults *oneSaved = [NSUserDefaults standardUserDefaults];
     NSString *oneLoad = [oneSaved objectForKey:@"SaveMyName"];
     [_MyName setText: oneLoad];
