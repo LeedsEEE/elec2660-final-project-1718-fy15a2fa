@@ -84,6 +84,7 @@
         self.ArmsMale = [NSMutableArray array];
         
         // All arms' workouts for male are taken from mensfitness.com
+        //https://www.mensfitness.com/training/workout-routines/30-best-arms-exercises-all-time
         
         //create an object for a workout in order to some properties to it such as level, time , discription and photo
         //in addition, allocate memory for the workout
@@ -142,6 +143,7 @@
         self.LegsMale = [NSMutableArray array];
         
         // All legs' workouts for male are taken from mensfitness.com
+        // https://www.mensfitness.com/training/workout-routines/30-best-legs-exercises-all-time
         
         //create an object for a workout in order to some properties to it such as level, time , discription and photo
         //in addition, allocate memory for the workout
@@ -201,6 +203,7 @@
         self.ChestMale = [NSMutableArray array];
         
         // All chest's workouts for male are taken from mensfitness.com
+        // https://www.mensfitness.com/training/build-muscle/30-minute-chest-workout
         
         //create an object for a workout in order to some properties to it such as level, time , discription and photo
         //in addition, allocate memory for the workout
@@ -260,6 +263,7 @@
         self.ABSMale = [NSMutableArray array];
         
         // All ABS's workouts for male are taken from mensfitness.com
+        // https://www.mensfitness.com/training/workout-routines/30-best-abs-exercises-all-time
         
         //create an object for a workout in order to some properties to it such as level, time , discription and photo
         //in addition, allocate memory for the workout

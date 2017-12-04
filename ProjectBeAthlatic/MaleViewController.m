@@ -29,6 +29,9 @@
     
     #pragma mark images for shoulders workouts
     
+    // All pictures for shoulfer's workouts for male are taken from mensfitness.com
+    //https://www.mensfitness.com/training/workout-routines/30-best-shoulder-exercises-all-time/slideshow
+    
     // use if statement for each workouts in order to add the image
     // if statements depend here on the name of the workout
    if ([self.MaleData.NameWorkoutMale isEqualToString:@"Face Pull"]) { // check the workout by its name
@@ -72,6 +75,9 @@
     }
     
     #pragma mark images for arms workouts
+    
+    // All pictures for arms' workouts for male are taken from mensfitness.com
+    //https://www.mensfitness.com/training/workout-routines/30-best-arms-exercises-all-time
     
     // use if statement for each workouts in order to add the image
     // if statements depend here on the name of the workout
@@ -117,6 +123,9 @@
     
     #pragma mark images for legs workouts
     
+    // All pictures for legs' workouts for male are taken from mensfitness.com
+    // https://www.mensfitness.com/training/workout-routines/30-best-legs-exercises-all-time
+    
     // use if statement for each workouts in order to add the image
     // if statements depend here on the name of the workout
     if ([self.MaleData.NameWorkoutMale isEqualToString:@"Bulgarian Split Squat"]) { // check the workout by its name
@@ -161,6 +170,9 @@
     
     #pragma mark images for chest workouts
     
+    // All pictures for chest's workouts for male are taken from mensfitness.com
+    // https://www.mensfitness.com/training/build-muscle/30-minute-chest-workout
+    
     // use if statement for each workouts in order to add the image
     // if statements depend here on the name of the workout
     if ([self.MaleData.NameWorkoutMale isEqualToString:@"Dumbbell Overhead Press"]) { // check the workout by its name
@@ -204,6 +216,9 @@
     }
     
     #pragma mark images for ABS workouts
+    
+    // All ABS's workouts for male are taken from mensfitness.com
+    // https://www.mensfitness.com/training/workout-routines/30-best-abs-exercises-all-time
     
     // use if statement for each workouts in order to add the image
     // if statements depend here on the name of the workout

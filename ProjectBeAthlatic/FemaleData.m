@@ -25,6 +25,7 @@
         self.ShouldersFemale = [NSMutableArray array];
         
         // All shoulder's workouts for female are taken form WomenHealth.com
+        // https://www.womenshealthmag.com/fitness/the-best-shoulder-workout
         
         //create an object for a workout in order to some properties to it such as level, time , discription and photo
         //in addition, allocate memory for the workout
@@ -84,6 +85,7 @@
         self.ArmsFeamle = [NSMutableArray array];
         
         // All arm's workouts for female are taken form WomensHealthandFitness.com
+        // http://www.womenshealthandfitness.com.au/fitness/workouts/1051-6-exercises-for-toned-arms?showall=&limitstart=
         
         //create an object for a workout in order to some properties to it such as level, time , discription and photo
         //in addition, allocate memory for the workout
@@ -143,6 +145,7 @@
         self.LegsFemale = [NSMutableArray array];
         
         // All leg's workouts for female are taken form WomenHealth.com
+        // https://www.womenshealthmag.com/fitness/best-leg-exercises/slide/3
         
         //create an object for a workout in order to some properties to it such as level, time , discription and photo
         //in addition, allocate memory for the workout
@@ -202,6 +205,7 @@
         self.ChestFemale = [NSMutableArray array];
         
         // All chest's workouts for female are taken form WomensHealthandFitness.com
+        // http://www.womenshealthandfitness.com.au/fitness/workouts/180-10-ways-to-boost-your-bust?showall=&limitstart=
         
         //create an object for a workout in order to some properties to it such as level, time , discription and photo
         //in addition, allocate memory for the workout
@@ -261,6 +265,7 @@
         self.ABSFemale = [NSMutableArray array];
         
         // All ABS's workouts for female are taken form WomensHealthandFitness.com
+        // http://www.womenshealthandfitness.com.au/fitness/workouts/1029-5-extreme-ab-workouts?showall=&limitstart=
         
         //create an object for a workout in order to some properties to it such as level, time , discription and photo
         //in addition, allocate memory for the workout
