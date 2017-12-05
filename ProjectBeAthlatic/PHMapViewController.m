@@ -199,10 +199,41 @@
     
     NSLog(@"Show direction to Leeds Sport Injury Clinic"); // just for checking if it works
     
-    // use apple map, and set the longitude latitude
-    NSString *way = @"http://maps.apple.com/maps?daddr=53.821056,-1.576782";
-    //this command open URL in order to get the direction
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:way]];
+    
+    // I added UIAlertController in order to the user chance to cancel finding the route for one of the gyms
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Do you want to go to Leeds Sport Injury Clinic and Wallbeing Center?" message:@"Press OK to go" preferredStyle:UIAlertControllerStyleAlert];
+    
+    // create cancel button in the UIAlertController
+    UIAlertAction *cancelAction = [UIAlertAction
+                                   actionWithTitle:@"Cancel"
+                                   style:UIAlertActionStyleCancel
+                                   handler:^(UIAlertAction *action){
+                                       
+                                       NSLog(@"Cancel"); //Using NSLog to check if cancel action work
+                                       
+                                   }];
+    
+    // create OK button in the UIAlertController
+    UIAlertAction *OKAction = [UIAlertAction
+                               actionWithTitle:@"OK"
+                               style:UIAlertActionStyleDefault
+                               handler:^(UIAlertAction *action) {
+                                   
+                                   NSLog(@"OK"); //Using NSLog to check if OK action work
+                                   
+                                   
+                                   // use apple map, and set the longitude latitude
+                                   NSString *way = @"http://maps.apple.com/maps?daddr=53.821056,-1.576782";
+                                   //this command open URL in order to get the direction
+                                   [[UIApplication sharedApplication] openURL:[NSURL URLWithString:way]];
+                                   
+                               }];
+    
+    [alertController addAction:cancelAction]; // add cancel action to UIAlertController
+    [alertController addAction:OKAction]; // add OK action to UIAlertController
+    [self presentViewController:alertController animated:YES completion:nil]; // show the alet to the users
+    
+   
     
 }
 
@@ -211,10 +242,41 @@
     
     NSLog(@"Show direction to West YorkShire Center"); // just for checking if it works
     
-    // use apple map, and set the longitude latitude
-    NSString *way = @"http://maps.apple.com/maps?daddr=53.782439,-1.578856";
-    //this command open URL in order to get the direction
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:way]];
+    
+    // I added UIAlertController in order to the user chance to cancel finding the route for one of the gyms
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Do you want to go to West Yorkshire Multiple Sclerosis Therapy Center?" message:@"Press OK to go" preferredStyle:UIAlertControllerStyleAlert];
+    
+    // create cancel button in the UIAlertController
+    UIAlertAction *cancelAction = [UIAlertAction
+                                   actionWithTitle:@"Cancel"
+                                   style:UIAlertActionStyleCancel
+                                   handler:^(UIAlertAction *action){
+                                       
+                                       NSLog(@"Cancel"); //Using NSLog to check if cancel action work
+                                       
+                                   }];
+    
+    // create OK button in the UIAlertController
+    UIAlertAction *OKAction = [UIAlertAction
+                               actionWithTitle:@"OK"
+                               style:UIAlertActionStyleDefault
+                               handler:^(UIAlertAction *action) {
+                                   
+                                   NSLog(@"OK"); //Using NSLog to check if OK action work
+                                   
+                                   
+                                   // use apple map, and set the longitude latitude
+                                   NSString *way = @"http://maps.apple.com/maps?daddr=53.782439,-1.578856";
+                                   //this command open URL in order to get the direction
+                                   [[UIApplication sharedApplication] openURL:[NSURL URLWithString:way]];
+                                   
+                               }];
+    
+    [alertController addAction:cancelAction]; // add cancel action to UIAlertController
+    [alertController addAction:OKAction]; // add OK action to UIAlertController
+    [self presentViewController:alertController animated:YES completion:nil]; // show the alet to the users
+    
+    
     
 }
 
@@ -223,10 +285,41 @@
     
     NSLog(@"Show direction to The West Point Center"); // just for checking if it works
     
-    // use apple map, and set the longitude latitude
-    NSString *way = @"http://maps.apple.com/maps?daddr=53.797345,-1.556010";
-    //this command open URL in order to get the direction
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:way]];
+    
+    // I added UIAlertController in order to the user chance to cancel finding the route for one of the gyms
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Do you want to go to The West Point Practice Center?" message:@"Press OK to go" preferredStyle:UIAlertControllerStyleAlert];
+    
+    // create cancel button in the UIAlertController
+    UIAlertAction *cancelAction = [UIAlertAction
+                                   actionWithTitle:@"Cancel"
+                                   style:UIAlertActionStyleCancel
+                                   handler:^(UIAlertAction *action){
+                                       
+                                       NSLog(@"Cancel"); //Using NSLog to check if cancel action work
+                                       
+                                   }];
+    
+    // create OK button in the UIAlertController
+    UIAlertAction *OKAction = [UIAlertAction
+                               actionWithTitle:@"OK"
+                               style:UIAlertActionStyleDefault
+                               handler:^(UIAlertAction *action) {
+                                   
+                                   NSLog(@"OK"); //Using NSLog to check if OK action work
+                                   
+                                   
+                                   // use apple map, and set the longitude latitude
+                                   NSString *way = @"http://maps.apple.com/maps?daddr=53.797345,-1.556010";
+                                   //this command open URL in order to get the direction
+                                   [[UIApplication sharedApplication] openURL:[NSURL URLWithString:way]];
+                                   
+                               }];
+    
+    [alertController addAction:cancelAction]; // add cancel action to UIAlertController
+    [alertController addAction:OKAction]; // add OK action to UIAlertController
+    [self presentViewController:alertController animated:YES completion:nil]; // show the alet to the users
+    
+    
     
 }
 
@@ -235,10 +328,41 @@
     
     NSLog(@"Show direction to PhysioWorld Center"); // just for checking if it works
     
-    // use apple map, and set the longitude latitude
-    NSString *way = @"http://maps.apple.com/maps?daddr=53.780848,-1.552551";
-    //this command open URL in order to get the direction
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:way]];
+    
+    // I added UIAlertController in order to the user chance to cancel finding the route for one of the gyms
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Do you want to go to PhysioWorld Center?" message:@"Press OK to go" preferredStyle:UIAlertControllerStyleAlert];
+    
+    // create cancel button in the UIAlertController
+    UIAlertAction *cancelAction = [UIAlertAction
+                                   actionWithTitle:@"Cancel"
+                                   style:UIAlertActionStyleCancel
+                                   handler:^(UIAlertAction *action){
+                                       
+                                       NSLog(@"Cancel"); //Using NSLog to check if cancel action work
+                                       
+                                   }];
+    
+    // create OK button in the UIAlertController
+    UIAlertAction *OKAction = [UIAlertAction
+                               actionWithTitle:@"OK"
+                               style:UIAlertActionStyleDefault
+                               handler:^(UIAlertAction *action) {
+                                   
+                                   NSLog(@"OK"); //Using NSLog to check if OK action work
+                                   
+                                   
+                                   // use apple map, and set the longitude latitude
+                                   NSString *way = @"http://maps.apple.com/maps?daddr=53.780848,-1.552551";
+                                   //this command open URL in order to get the direction
+                                   [[UIApplication sharedApplication] openURL:[NSURL URLWithString:way]];
+                                   
+                               }];
+    
+    [alertController addAction:cancelAction]; // add cancel action to UIAlertController
+    [alertController addAction:OKAction]; // add OK action to UIAlertController
+    [self presentViewController:alertController animated:YES completion:nil]; // show the alet to the users
+    
+   
     
 }
 @end

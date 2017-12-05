@@ -199,23 +199,26 @@
     NSLog(@"Show direction to Implexus Gym"); // just for checking if it works
     
     
+    // I added UIAlertController in order to the user chance to cancel finding the route for one of the gyms
     UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Do you want to go to Implexus Gym ?" message:@"Press OK to go" preferredStyle:UIAlertControllerStyleAlert];
     
+    // create cancel button in the UIAlertController
     UIAlertAction *cancelAction = [UIAlertAction
                                    actionWithTitle:@"Cancel"
                                    style:UIAlertActionStyleCancel
                                    handler:^(UIAlertAction *action){
                                        
-                                       NSLog(@"Cancel");
+                                       NSLog(@"Cancel"); //Using NSLog to check if cancel action work
                                        
                                    }];
     
+    // create OK button in the UIAlertController
     UIAlertAction *OKAction = [UIAlertAction
                                actionWithTitle:@"OK"
                                style:UIAlertActionStyleDefault
                                handler:^(UIAlertAction *action) {
                                    
-                                   NSLog(@"OK");
+                                   NSLog(@"OK"); //Using NSLog to check if OK action work
                                    
                                   
                                    // use apple map, and set the longitude latitude
@@ -225,9 +228,9 @@
                                    
                                }];
     
-    [alertController addAction:cancelAction];
-    [alertController addAction:OKAction];
-    [self presentViewController:alertController animated:YES completion:nil];
+    [alertController addAction:cancelAction]; // add cancel action to UIAlertController
+    [alertController addAction:OKAction]; // add OK action to UIAlertController
+    [self presentViewController:alertController animated:YES completion:nil]; // show the alet to the users
     
     
 }
@@ -238,23 +241,26 @@
     NSLog(@"Show direction to Motive8 North"); // just for checking if it works
     
     
+    // I added UIAlertController in order to the user chance to cancel finding the route for one of the gyms
     UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Do you want to go to Motive8 North Gym ?" message:@"Press OK to go" preferredStyle:UIAlertControllerStyleAlert];
     
+    // create cancel button in the UIAlertController
     UIAlertAction *cancelAction = [UIAlertAction
                                    actionWithTitle:@"Cancel"
                                    style:UIAlertActionStyleCancel
                                    handler:^(UIAlertAction *action){
                                        
-                                       NSLog(@"Cancel");
+                                       NSLog(@"Cancel"); //Using NSLog to check if cancel action work
                                        
                                    }];
     
+    // create OK button in the UIAlertController
     UIAlertAction *OKAction = [UIAlertAction
                                actionWithTitle:@"OK"
                                style:UIAlertActionStyleDefault
                                handler:^(UIAlertAction *action) {
                                    
-                                   NSLog(@"OK");
+                                   NSLog(@"OK"); //Using NSLog to check if OK action work
                                    
                                    
                                    // use apple map, and set the longitude latitude
@@ -264,9 +270,9 @@
                                    
                                }];
     
-    [alertController addAction:cancelAction];
-    [alertController addAction:OKAction];
-    [self presentViewController:alertController animated:YES completion:nil];
+    [alertController addAction:cancelAction]; // add cancel action to UIAlertController
+    [alertController addAction:OKAction]; // add OK action to UIAlertController
+    [self presentViewController:alertController animated:YES completion:nil]; // show the alet to the users
     
     
     
@@ -279,23 +285,26 @@
     NSLog(@"Show direction to The Edge"); // just for checking if it works
     
     
+    // I added UIAlertController in order to the user chance to cancel finding the route for one of the gyms
     UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Do you want to go to The Edge ?" message:@"Press OK to go" preferredStyle:UIAlertControllerStyleAlert];
     
+    // create cancel button in the UIAlertController
     UIAlertAction *cancelAction = [UIAlertAction
                                    actionWithTitle:@"Cancel"
                                    style:UIAlertActionStyleCancel
                                    handler:^(UIAlertAction *action){
                                        
-                                       NSLog(@"Cancel");
+                                       NSLog(@"Cancel"); //Using NSLog to check if cancel action work
                                        
                                    }];
     
+    // create OK button in the UIAlertController
     UIAlertAction *OKAction = [UIAlertAction
                                actionWithTitle:@"OK"
                                style:UIAlertActionStyleDefault
                                handler:^(UIAlertAction *action) {
                                    
-                                   NSLog(@"OK");
+                                   NSLog(@"OK"); //Using NSLog to check if OK action work
                                    
                                    
                                    // use apple map, and set the longitude latitude
@@ -305,9 +314,9 @@
                                    
                                }];
     
-    [alertController addAction:cancelAction];
-    [alertController addAction:OKAction];
-    [self presentViewController:alertController animated:YES completion:nil];
+    [alertController addAction:cancelAction]; // add cancel action to UIAlertController
+    [alertController addAction:OKAction]; // add OK action to UIAlertController
+    [self presentViewController:alertController animated:YES completion:nil]; // show the alet to the users
     
     
     
@@ -318,24 +327,26 @@
     
     NSLog(@"Show direction to Leodis Gym"); // just for checking if it works
     
-    
+    // I added UIAlertController in order to the user chance to cancel finding the route for one of the gyms
     UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Do you want to go to The Leodis Gym ?" message:@"Press OK to go" preferredStyle:UIAlertControllerStyleAlert];
     
+    // create cancel button in the UIAlertController
     UIAlertAction *cancelAction = [UIAlertAction
                                    actionWithTitle:@"Cancel"
                                    style:UIAlertActionStyleCancel
                                    handler:^(UIAlertAction *action){
                                        
-                                       NSLog(@"Cancel");
+                                       NSLog(@"Cancel"); //Using NSLog to check if cancel action work
                                        
                                    }];
     
+    // create OK button in the UIAlertController
     UIAlertAction *OKAction = [UIAlertAction
                                actionWithTitle:@"OK"
                                style:UIAlertActionStyleDefault
                                handler:^(UIAlertAction *action) {
                                    
-                                   NSLog(@"OK");
+                                   NSLog(@"OK"); //Using NSLog to check if OK action work
                                    
                                    
                                    // use apple map, and set the longitude latitude
@@ -345,9 +356,9 @@
                                    
                                }];
     
-    [alertController addAction:cancelAction];
-    [alertController addAction:OKAction];
-    [self presentViewController:alertController animated:YES completion:nil];
+    [alertController addAction:cancelAction]; // add cancel action to UIAlertController
+    [alertController addAction:OKAction]; // add OK action to UIAlertController
+    [self presentViewController:alertController animated:YES completion:nil]; // show the alet to the users
     
     
     
