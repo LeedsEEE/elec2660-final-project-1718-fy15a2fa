@@ -18,7 +18,8 @@
 // show an image of workout
 @property (weak, nonatomic) IBOutlet UIImageView *MaleImage;
 // shows a discription of workout
-@property (weak, nonatomic) IBOutlet UITextView *DiscriptionMaleLabell;
+@property (weak, nonatomic) IBOutlet UILabel *DiscriptionMalleLLabel;
+
 
 // create a property in order to create an object in the implementation
 @property (strong, nonatomic) MaleProperties *MaleData;

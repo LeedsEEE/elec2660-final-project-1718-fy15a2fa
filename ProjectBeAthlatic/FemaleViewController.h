@@ -18,7 +18,7 @@
 // show an image of workout
 @property (weak, nonatomic) IBOutlet UIImageView *FemaleImage;
 //show a discription of workout
-@property (weak, nonatomic) IBOutlet UITextView *DiscriptionFemaleLbell;
+@property (weak, nonatomic) IBOutlet UILabel *DiscriptionFFemaleLL;
 
 
 // create a property in order to create an object in the implementation
