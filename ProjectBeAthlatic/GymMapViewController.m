@@ -198,10 +198,37 @@
     
     NSLog(@"Show direction to Implexus Gym"); // just for checking if it works
     
-    // use apple map, and set the longitude latitude
-    NSString *way = @"http://maps.apple.com/maps?daddr=53.799068,-1.581800";
-    //this command open URL in order to get the direction
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:way]];
+    
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Do you want to go to Implexus Gym ?" message:@"Press OK to go" preferredStyle:UIAlertControllerStyleAlert];
+    
+    UIAlertAction *cancelAction = [UIAlertAction
+                                   actionWithTitle:@"Cancel"
+                                   style:UIAlertActionStyleCancel
+                                   handler:^(UIAlertAction *action){
+                                       
+                                       NSLog(@"Cancel");
+                                       
+                                   }];
+    
+    UIAlertAction *OKAction = [UIAlertAction
+                               actionWithTitle:@"OK"
+                               style:UIAlertActionStyleDefault
+                               handler:^(UIAlertAction *action) {
+                                   
+                                   NSLog(@"OK");
+                                   
+                                  
+                                   // use apple map, and set the longitude latitude
+                                   NSString *way = @"http://maps.apple.com/maps?daddr=53.799068,-1.581800";
+                                   //this command open URL in order to get the direction
+                                   [[UIApplication sharedApplication] openURL:[NSURL URLWithString:way]];
+                                   
+                               }];
+    
+    [alertController addAction:cancelAction];
+    [alertController addAction:OKAction];
+    [self presentViewController:alertController animated:YES completion:nil];
+    
     
 }
 
@@ -210,10 +237,38 @@
     
     NSLog(@"Show direction to Motive8 North"); // just for checking if it works
     
-    // use apple map, and set the longitude latitude
-    NSString *way = @"http://maps.apple.com/maps?daddr=53.795568,-1.540059";
-    //this command open URL in order to get the direction
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:way]];
+    
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Do you want to go to Motive8 North Gym ?" message:@"Press OK to go" preferredStyle:UIAlertControllerStyleAlert];
+    
+    UIAlertAction *cancelAction = [UIAlertAction
+                                   actionWithTitle:@"Cancel"
+                                   style:UIAlertActionStyleCancel
+                                   handler:^(UIAlertAction *action){
+                                       
+                                       NSLog(@"Cancel");
+                                       
+                                   }];
+    
+    UIAlertAction *OKAction = [UIAlertAction
+                               actionWithTitle:@"OK"
+                               style:UIAlertActionStyleDefault
+                               handler:^(UIAlertAction *action) {
+                                   
+                                   NSLog(@"OK");
+                                   
+                                   
+                                   // use apple map, and set the longitude latitude
+                                   NSString *way = @"http://maps.apple.com/maps?daddr=53.795568,-1.540059";
+                                   //this command open URL in order to get the direction
+                                   [[UIApplication sharedApplication] openURL:[NSURL URLWithString:way]];
+                                   
+                               }];
+    
+    [alertController addAction:cancelAction];
+    [alertController addAction:OKAction];
+    [self presentViewController:alertController animated:YES completion:nil];
+    
+    
     
     
 }
@@ -223,10 +278,38 @@
     
     NSLog(@"Show direction to The Edge"); // just for checking if it works
     
-    // use apple map, and set the longitude latitude
-    NSString *way = @"http://maps.apple.com/maps?daddr=53.796568,-1.557779";
-    //this command open URL in order to get the direction
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:way]];
+    
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Do you want to go to The Edge ?" message:@"Press OK to go" preferredStyle:UIAlertControllerStyleAlert];
+    
+    UIAlertAction *cancelAction = [UIAlertAction
+                                   actionWithTitle:@"Cancel"
+                                   style:UIAlertActionStyleCancel
+                                   handler:^(UIAlertAction *action){
+                                       
+                                       NSLog(@"Cancel");
+                                       
+                                   }];
+    
+    UIAlertAction *OKAction = [UIAlertAction
+                               actionWithTitle:@"OK"
+                               style:UIAlertActionStyleDefault
+                               handler:^(UIAlertAction *action) {
+                                   
+                                   NSLog(@"OK");
+                                   
+                                   
+                                   // use apple map, and set the longitude latitude
+                                   NSString *way = @"http://maps.apple.com/maps?daddr=53.796568,-1.557779";
+                                   //this command open URL in order to get the direction
+                                   [[UIApplication sharedApplication] openURL:[NSURL URLWithString:way]];
+                                   
+                               }];
+    
+    [alertController addAction:cancelAction];
+    [alertController addAction:OKAction];
+    [self presentViewController:alertController animated:YES completion:nil];
+    
+    
     
 }
 
@@ -235,10 +318,38 @@
     
     NSLog(@"Show direction to Leodis Gym"); // just for checking if it works
     
-    // use apple map, and set the longitude latitude
-    NSString *way = @"http://maps.apple.com/maps?daddr=53.791590,-1.516406";
-    //this command open URL in order to get the direction
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:way]];
+    
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Do you want to go to The Leodis Gym ?" message:@"Press OK to go" preferredStyle:UIAlertControllerStyleAlert];
+    
+    UIAlertAction *cancelAction = [UIAlertAction
+                                   actionWithTitle:@"Cancel"
+                                   style:UIAlertActionStyleCancel
+                                   handler:^(UIAlertAction *action){
+                                       
+                                       NSLog(@"Cancel");
+                                       
+                                   }];
+    
+    UIAlertAction *OKAction = [UIAlertAction
+                               actionWithTitle:@"OK"
+                               style:UIAlertActionStyleDefault
+                               handler:^(UIAlertAction *action) {
+                                   
+                                   NSLog(@"OK");
+                                   
+                                   
+                                   // use apple map, and set the longitude latitude
+                                   NSString *way = @"http://maps.apple.com/maps?daddr=53.791590,-1.516406";
+                                   //this command open URL in order to get the direction
+                                   [[UIApplication sharedApplication] openURL:[NSURL URLWithString:way]];;
+                                   
+                               }];
+    
+    [alertController addAction:cancelAction];
+    [alertController addAction:OKAction];
+    [self presentViewController:alertController animated:YES completion:nil];
+    
+    
     
 }
 @end
