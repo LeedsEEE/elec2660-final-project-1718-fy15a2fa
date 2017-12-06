@@ -9,6 +9,9 @@
 #import <Foundation/Foundation.h>
 #import "MapKit/MapKit.h"
 
+//I toke this small part from Jaffrey App Channel on youtube
+//https://www.youtube.com/watch?v=sKnHZQPtpjE
+
 @interface GymPins : NSObject <MKAnnotation> { // use this in order to add them to the pins
     NSString *title; // represents name of a gym
     NSString *subtitle; // represent a nearest street to a gym

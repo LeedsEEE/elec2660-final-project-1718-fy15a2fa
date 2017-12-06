@@ -33,6 +33,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *PPEmail; // physical therapist's email. (outlet)
 @property (weak, nonatomic) IBOutlet UITextField *PPAdvice; // physical therapist's advice (outlet)
 
+// create property for the backgrond
 - (IBAction)Mybackground:(id)sender;
 
 

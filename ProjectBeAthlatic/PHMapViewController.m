@@ -24,12 +24,16 @@
     self.navigationItem.title = @"Physical Therapy Centers Map"; //add a title
     
     
+    // I chose four of the best physical therapy centers in Leeds, and I made sure that all of them in approximately in the center of Leeds near my residence (LS1 2FH)
+    
+    
     // adding the location for The Leeds Sport Injury and Physiotherapy Clinic to show it on the map
     MKCoordinateRegion LeedsClinic = { {0.0, 0.0}, {0.0, 0.0}};
     
     LeedsClinic.center.longitude = -1.576782; //set the longitude
     LeedsClinic.center.latitude = 53.821056; //set the latitude
     
+    // making span on latitude and longtidue
     LeedsClinic.span.latitudeDelta = 0.02f;
     LeedsClinic.span.longitudeDelta = 0.02f;
     
@@ -51,6 +55,7 @@
     WestYorkshireTherapy.center.longitude = -1.578856; //set the longitude
     WestYorkshireTherapy.center.latitude = 53.782439; //set the latitude
     
+    // making span on latitude and longtidue
     WestYorkshireTherapy.span.latitudeDelta = 0.02f;
     WestYorkshireTherapy.span.longitudeDelta = 0.02f;
     
@@ -72,6 +77,7 @@
     TheWestPointPracticeLeeds.center.longitude = -1.556010; //set the longitude
     TheWestPointPracticeLeeds.center.latitude = 53.797345; //set the latitude
     
+    // making span on latitude and longtidue
     TheWestPointPracticeLeeds.span.latitudeDelta = 0.02f;
     TheWestPointPracticeLeeds.span.longitudeDelta = 0.02f;
     
@@ -93,6 +99,7 @@
     PhysioWorldLeeds.center.longitude = -1.552551; //set the longitude
     PhysioWorldLeeds.center.latitude = 53.780848; //set the latitude
     
+    // making span on latitude and longtidue
     PhysioWorldLeeds.span.latitudeDelta = 0.02f;
     PhysioWorldLeeds.span.longitudeDelta = 0.02f;
     

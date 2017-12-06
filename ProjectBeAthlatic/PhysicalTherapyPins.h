@@ -9,6 +9,9 @@
 #import <Foundation/Foundation.h>
 #import "MapKit/MapKit.h"
 
+//I toke this small part from Jaffrey App Channel on youtube
+//https://www.youtube.com/watch?v=sKnHZQPtpjE
+
 @interface PhysicalTherapyPins : NSObject <MKAnnotation> {
     NSString *title; // represents a name of physical therapy center
     NSString *subtitle; // represent a nearest street to a physical therapy center

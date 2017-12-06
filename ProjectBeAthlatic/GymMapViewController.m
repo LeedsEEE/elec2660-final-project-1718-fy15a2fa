@@ -24,12 +24,17 @@
     self.navigationItem.title = @"Gym Map"; //add a title
     
     
+    // I chose four of the best gyms in Leeds, and I made sure that all of them in approximately in the center of Leeds near my residence (LS1 2FH)
+    // my residence's longitude is(-1.554237) and latitude is (53.798416)
+    
+    
     // adding the location for the Implexus Gym to show it on the map
     MKCoordinateRegion ImplexusGym = { {0.0, 0.0}, {0.0, 0.0}};
     
     ImplexusGym.center.longitude = -1.581800; //set the longitude
     ImplexusGym.center.latitude = 53.799068; //set the latitude
     
+    // making span on latitude and longtidue
     ImplexusGym.span.latitudeDelta = 0.02f;
     ImplexusGym.span.longitudeDelta = 0.02f;
     
@@ -50,6 +55,7 @@
     MotiveNorth.center.longitude = -1.553990; //set the longitude
     MotiveNorth.center.latitude = 53.791053; //set the latitude
     
+    // making span on latitude and longtidue
     MotiveNorth.span.latitudeDelta = 0.02f;
     MotiveNorth.span.longitudeDelta = 0.02f;
     
@@ -70,6 +76,7 @@
     TheEdge.center.longitude = -1.553392; //set the longitude
     TheEdge.center.latitude = 53.804216; //set the latitude
     
+    // making span on latitude and longtidue
     TheEdge.span.latitudeDelta = 0.02f;
     TheEdge.span.longitudeDelta = 0.02f;
     
@@ -90,6 +97,7 @@
     LeodisGym.center.longitude = -1.516406; //set the longitude
     LeodisGym.center.latitude = 53.791590; //set the latitude
     
+    // making span on latitude and longtidue
     LeodisGym.span.latitudeDelta = 0.02f;
     LeodisGym.span.longitudeDelta = 0.02f;
     
