@@ -18,7 +18,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    //the launch screen image and tab bar icons are taken from iconfinder.com
+    //the launch screen image, app icon and tab bar icons are taken from iconfinder.com
     //https://www.iconfinder.com
     
     self.navigationItem.title = @"Workouts"; //add a title
