@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FourthViewController : UIViewController
+@interface FourthViewController : UIViewController <UITextFieldDelegate>
 
 // buttons to save and delete the information
 - (IBAction)SavedButton:(UIButton *)sender; // save the text in the text fields (action)
@@ -33,6 +33,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *PPEmail; // physical therapist's email. (outlet)
 @property (weak, nonatomic) IBOutlet UITextField *PPAdvice; // physical therapist's advice (outlet)
 
+- (IBAction)Mybackground:(id)sender;
 
 
 

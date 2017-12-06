@@ -299,4 +299,87 @@
     
     
 }
+
+
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    
+    [textField resignFirstResponder];
+    
+    return YES;
+    
+}
+
+
+
+- (IBAction)Mybackground:(id)sender {
+    
+    NSLog(@"Background is pressed");
+    
+    if ([self.MyName isFirstResponder]) {
+        [self.MyName resignFirstResponder];
+    }
+    
+    
+    if ([self.MyWeight isFirstResponder]) {
+        [self.MyWeight resignFirstResponder];
+    }
+    
+    
+    if ([self.MyHeight isFirstResponder]) {
+        [self.MyHeight resignFirstResponder];
+    }
+    
+    
+    if ([self.MyAim isFirstResponder]) {
+        [self.MyAim resignFirstResponder];
+    }
+    
+    
+    if ([self.MyWorkout isFirstResponder]) {
+        [self.MyWorkout resignFirstResponder];
+    }
+    
+    
+    if ([self.PTName isFirstResponder]) {
+        [self.PTName resignFirstResponder];
+    }
+    
+    
+    if ([self.PTPhone isFirstResponder]) {
+        [self.PTPhone resignFirstResponder];
+    }
+    
+    
+    if ([self.PTEmail isFirstResponder]) {
+        [self.PTEmail resignFirstResponder];
+    }
+    
+    
+    if ([self.PTAdvice isFirstResponder]) {
+        [self.PTAdvice resignFirstResponder];
+    }
+    
+    
+    if ([self.PPName isFirstResponder]) {
+        [self.PPName resignFirstResponder];
+    }
+    
+    
+    if ([self.PPPhone isFirstResponder]) {
+        [self.PPPhone resignFirstResponder];
+    }
+    
+    
+    if ([self.PPEmail isFirstResponder]) {
+        [self.PPEmail resignFirstResponder];
+    }
+    
+    
+    if ([self.PPAdvice isFirstResponder]) {
+        [self.PPAdvice resignFirstResponder];
+    }
+    
+    
+}
 @end
