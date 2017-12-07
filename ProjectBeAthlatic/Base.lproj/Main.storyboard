@@ -45,7 +45,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="evp-9i-eAi" firstAttribute="centerX" secondItem="PQr-Ze-W5v" secondAttribute="centerX" id="50c-fh-K5x"/>
                             <constraint firstItem="pl8-Vw-4Y7" firstAttribute="centerX" secondItem="PQr-Ze-W5v" secondAttribute="centerX" id="JFA-is-YAF"/>
@@ -156,7 +156,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                         <constraints>
                                             <constraint firstItem="nue-bV-Qg7" firstAttribute="centerX" secondItem="PWC-p0-LZA" secondAttribute="centerX" id="4QR-Rl-ai4"/>
                                             <constraint firstItem="9re-5H-p1A" firstAttribute="top" secondItem="nue-bV-Qg7" secondAttribute="bottom" constant="20" id="7qM-Ks-4zr"/>
@@ -256,7 +256,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                         <constraints>
                                             <constraint firstItem="T1P-3q-K7f" firstAttribute="leading" secondItem="2cm-3d-iBU" secondAttribute="leading" constant="16" id="0Ke-uT-Jql"/>
                                             <constraint firstItem="X3P-cp-Fys" firstAttribute="top" secondItem="T1P-3q-K7f" secondAttribute="bottom" constant="18" id="1Mv-HM-YJT"/>
@@ -429,7 +429,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                         <constraints>
                                             <constraint firstItem="yLD-Wo-bmq" firstAttribute="leading" secondItem="96E-5m-UDN" secondAttribute="leading" constant="68" id="4UI-PQ-wwt"/>
                                             <constraint firstItem="1RZ-Sg-a8D" firstAttribute="centerX" secondItem="rhY-g9-9G3" secondAttribute="centerX" constant="-0.5" id="6Oo-hO-O8b"/>
@@ -573,7 +573,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="oAv-af-IMr" firstAttribute="centerX" secondItem="O1u-W8-tvY" secondAttribute="centerX" id="44l-ZN-Wp0"/>
                             <constraint firstItem="zBM-Qd-4uZ" firstAttribute="top" secondItem="oAv-af-IMr" secondAttribute="bottom" constant="40" id="A2w-Ee-5Ad"/>
@@ -637,7 +637,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                         <constraints>
                                             <constraint firstItem="A31-YX-8Rd" firstAttribute="top" secondItem="ZDt-JY-eJ4" secondAttribute="bottom" constant="10" id="4Uz-Gl-Phm"/>
                                             <constraint firstItem="fKs-tE-EEe" firstAttribute="centerX" secondItem="qWy-uw-1hm" secondAttribute="centerX" id="BqG-WH-Rc7"/>
@@ -737,7 +737,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="pj2-Od-RnD" firstAttribute="top" secondItem="9rq-CS-b63" secondAttribute="top" constant="24" id="E8w-au-hY6"/>
                             <constraint firstItem="vJs-7C-gBA" firstAttribute="centerX" secondItem="9rq-CS-b63" secondAttribute="centerX" id="QWp-7b-d8o"/>
@@ -1079,7 +1079,7 @@
                                                 </connections>
                                             </textField>
                                         </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                         <constraints>
                                             <constraint firstItem="Lel-BX-iIu" firstAttribute="top" secondItem="sbU-Mn-Vxb" secondAttribute="bottom" constant="10" id="2uT-jc-u8H"/>
                                             <constraint firstItem="sbU-Mn-Vxb" firstAttribute="top" secondItem="9xt-PS-iAi" secondAttribute="bottom" constant="9" id="30f-Zu-WMl"/>

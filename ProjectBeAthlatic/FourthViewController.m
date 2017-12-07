@@ -20,6 +20,16 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    
+    
+    // I have used scroll view in this view controller in order to allow the users the elements when they hold the devices
+    // in different positions, and it works well in this view controller
+    
+    // IMPORANT NOTE FOR DR. DAVID AND DR. JAMES
+    
+    // [NOTE] sometimes the scroll view take longer time than usual to scroll down becuase there sre a lot of elelemnts
+    // in this view controller
+    // Also, sometimes you have to scroll many times in order to reach the bottom of the viewcontroller
     self.navigationItem.title = @"Profile"; //add a title
     
     //download the user's name that saved

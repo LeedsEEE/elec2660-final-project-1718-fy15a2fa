@@ -191,27 +191,27 @@
     // I used if and else if statement in order to set the background color for the cells in each section
     if (indexPath.section == 0) { // shoulders section
         
-        // this code helps to set the odd cells to white, and even cells to yellow
-        cell.backgroundColor = ([indexPath row]%2)?[UIColor yellowColor]:[UIColor whiteColor];
+        // this code helps to set the odd cells to group color, and even cells to yellow
+        cell.backgroundColor = ([indexPath row]%2)?[UIColor yellowColor]:[UIColor groupTableViewBackgroundColor];
         
     } else if (indexPath.section == 1) { // arms section
         
-        // this code helps to set the odd cells to yellow, and even cells to whit
-        cell.backgroundColor = ([indexPath row]%2)?[UIColor whiteColor]:[UIColor yellowColor];
+        // this code helps to set the odd cells to yellow, and even cells to group color
+        cell.backgroundColor = ([indexPath row]%2)?[UIColor groupTableViewBackgroundColor]:[UIColor yellowColor];
         
     } else if (indexPath.section == 2) { // legs section
         
-        // this code helps to set the odd cells to white, and even cells to yellow
-        cell.backgroundColor = ([indexPath row]%2)?[UIColor yellowColor]:[UIColor whiteColor];
+        // this code helps to set the odd cells to group color, and even cells to yellow
+        cell.backgroundColor = ([indexPath row]%2)?[UIColor yellowColor]:[UIColor groupTableViewBackgroundColor];
         
     } else if (indexPath.section == 3) { // chest section
         
-        // this code helps to set the odd cells to yellow, and even cells to whit
-        cell.backgroundColor = ([indexPath row]%2)?[UIColor whiteColor]:[UIColor yellowColor];
+        // this code helps to set the odd cells to yellow, and even cells to group color
+        cell.backgroundColor = ([indexPath row]%2)?[UIColor groupTableViewBackgroundColor]:[UIColor yellowColor];
         
     } else { // ABS section
         
-        // this code helps to set the odd cells to white, and even cells to yellow
+        // this code helps to set the odd cells to group color, and even cells to yellow
         cell.backgroundColor = ([indexPath row]%2)?[UIColor yellowColor]:[UIColor whiteColor];
         
     }

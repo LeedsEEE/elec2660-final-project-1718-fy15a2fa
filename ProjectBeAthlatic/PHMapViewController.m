@@ -25,6 +25,7 @@
     
     
     // I chose four of the best physical therapy centers in Leeds, and I made sure that all of them in approximately in the center of Leeds near my residence (LS1 2FH)
+    // my residence's longitude is(-1.554237) and latitude is (53.798416)
     
     
     // adding the location for The Leeds Sport Injury and Physiotherapy Clinic to show it on the map

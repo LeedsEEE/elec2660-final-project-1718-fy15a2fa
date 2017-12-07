@@ -20,6 +20,9 @@
     
     #pragma mark connected labels
     
+    // I have used scroll view in this view controller in order to allow the users the elements when they hold the devices
+    // in different positions, and it works well in this view controller
+    
     //creating an object in order to display that recieved data on the labels
     //I create an this object in viewDidLoad to ensure it will updates as soon as possible
     //when the viewcontroller opens
