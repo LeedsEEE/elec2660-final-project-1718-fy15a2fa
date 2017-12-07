@@ -211,8 +211,8 @@
         
     } else { // ABS section
         
-        // this code helps to set the odd cells to group color, and even cells to yellow
-        cell.backgroundColor = ([indexPath row]%2)?[UIColor yellowColor]:[UIColor whiteColor];
+        // this code helps to set the odd cells to group color, and even cells to group color
+        cell.backgroundColor = ([indexPath row]%2)?[UIColor yellowColor]:[UIColor groupTableViewBackgroundColor];
         
     }
     

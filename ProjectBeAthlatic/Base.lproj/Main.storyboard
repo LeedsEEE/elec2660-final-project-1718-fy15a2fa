@@ -862,7 +862,7 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ox8-64-YkC">
                                 <rect key="frame" x="0.0" y="64" width="375" height="887"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h6q-pu-yFA" userLabel="Content View" customClass="UIControl">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h6q-pu-yFA" userLabel="Content View">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="884.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Information" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NXt-xc-Lxt">
@@ -1154,9 +1154,6 @@
                                             <constraint firstItem="PrL-S1-hQM" firstAttribute="leading" secondItem="lgj-sM-I4g" secondAttribute="trailing" constant="109" id="yen-30-hVg"/>
                                             <constraint firstItem="a8b-w3-SOm" firstAttribute="top" secondItem="ooO-y4-a21" secondAttribute="bottom" constant="19" id="zbY-If-eQx"/>
                                         </constraints>
-                                        <connections>
-                                            <action selector="Mybackground:" destination="RqR-9n-WYv" eventType="touchUpInside" id="E4l-LW-qwP"/>
-                                        </connections>
                                     </view>
                                 </subviews>
                                 <constraints>

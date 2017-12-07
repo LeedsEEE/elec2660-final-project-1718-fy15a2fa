@@ -25,11 +25,7 @@
     // I have used scroll view in this view controller in order to allow the users the elements when they hold the devices
     // in different positions, and it works well in this view controller
     
-    // IMPORANT NOTE FOR DR. DAVID AND DR. JAMES
-    
-    // [NOTE] sometimes the scroll view take longer time than usual to scroll down becuase there sre a lot of elelemnts
-    // in this view controller
-    // Also, sometimes you have to scroll many times in order to reach the bottom of the viewcontroller
+   
     self.navigationItem.title = @"Profile"; //add a title
     
     //download the user's name that saved
@@ -372,76 +368,4 @@
 }
 
 
-// this method let the user hides the keyboard when they clik on the background
-- (IBAction)Mybackground:(id)sender {
-    
-    NSLog(@"Background is pressed"); // to check if the method works well
-    
-    // hide the name's keyboard when background is pressed
-    if ([self.MyName isFirstResponder]) {
-        [self.MyName resignFirstResponder];
-    }
-    
-    // hide the weight's keyboard when background is pressed
-    if ([self.MyWeight isFirstResponder]) {
-        [self.MyWeight resignFirstResponder];
-    }
-    
-    // hide the height's keyboard when background is pressed
-    if ([self.MyHeight isFirstResponder]) {
-        [self.MyHeight resignFirstResponder];
-    }
-    
-    // hide the aim's keyboard when background is pressed
-    if ([self.MyAim isFirstResponder]) {
-        [self.MyAim resignFirstResponder];
-    }
-    
-    // hide the workout's keyboard when background is pressed
-    if ([self.MyWorkout isFirstResponder]) {
-        [self.MyWorkout resignFirstResponder];
-    }
-    
-    // hide the name's keyboard when background is pressed
-    if ([self.PTName isFirstResponder]) {
-        [self.PTName resignFirstResponder];
-    }
-    
-    // hide the phone's keyboard when background is pressed
-    if ([self.PTPhone isFirstResponder]) {
-        [self.PTPhone resignFirstResponder];
-    }
-    
-    // hide the email's keyboard when background is pressed
-    if ([self.PTEmail isFirstResponder]) {
-        [self.PTEmail resignFirstResponder];
-    }
-    
-    // hide the advice's keyboard when background is pressed
-    if ([self.PTAdvice isFirstResponder]) {
-        [self.PTAdvice resignFirstResponder];
-    }
-    
-    // hide the name's keyboard when background is pressed
-    if ([self.PPName isFirstResponder]) {
-        [self.PPName resignFirstResponder];
-    }
-    
-    // hide the phone's keyboard when background is pressed
-    if ([self.PPPhone isFirstResponder]) {
-        [self.PPPhone resignFirstResponder];
-    }
-    
-    // hide the email's keyboard when background is pressed
-    if ([self.PPEmail isFirstResponder]) {
-        [self.PPEmail resignFirstResponder];
-    }
-    
-    // hide the advice's keyboard when background is pressed
-    if ([self.PPAdvice isFirstResponder]) {
-        [self.PPAdvice resignFirstResponder];
-    }
-    
-    
-}
 @end
