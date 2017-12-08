@@ -61,7 +61,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1589.5999999999999" y="-574.36281859070471"/>
+            <point key="canvasLocation" x="1590" y="-448"/>
         </scene>
         <!--Female Table View Controller-->
         <scene sceneID="XPy-05-dxI">
@@ -109,7 +109,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fpt-WA-lu0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2382" y="-108"/>
+            <point key="canvasLocation" x="2382" y="-49"/>
         </scene>
         <!--Metric View Controller-->
         <scene sceneID="AbN-LR-xDF">
@@ -202,7 +202,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d8d-NB-XkE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4201" y="400"/>
+            <point key="canvasLocation" x="5265" y="400"/>
         </scene>
         <!--Female View Controller-->
         <scene sceneID="cTd-60-N6m">
@@ -327,7 +327,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zdd-tt-iqy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3350" y="-109"/>
+            <point key="canvasLocation" x="4121" y="-49"/>
         </scene>
         <!--Male Table View Controller-->
         <scene sceneID="ACA-Xn-t24">
@@ -519,7 +519,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ATl-U5-lhi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="825" y="-574"/>
+            <point key="canvasLocation" x="825" y="-448"/>
         </scene>
         <!--BMI Calculator-->
         <scene sceneID="fGk-QY-P0R">
@@ -683,7 +683,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fay-e5-nFc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4201" y="1216"/>
+            <point key="canvasLocation" x="5265" y="1212"/>
         </scene>
         <!--Map-->
         <scene sceneID="2vL-iw-ZFb">
@@ -988,7 +988,7 @@
                                                     <outlet property="delegate" destination="RqR-9n-WYv" id="Zju-lL-N4l"/>
                                                 </connections>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Aim" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kPo-Sj-m1D">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Aim of Training" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kPo-Sj-m1D">
                                                 <rect key="frame" x="176" y="170" width="183" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -997,7 +997,7 @@
                                                     <outlet property="delegate" destination="RqR-9n-WYv" id="iJb-Hg-ADU"/>
                                                 </connections>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Workout" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ahd-1p-cgt">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Workout Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ahd-1p-cgt">
                                                 <rect key="frame" x="176" y="206" width="183" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
