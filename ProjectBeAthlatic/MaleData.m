@@ -182,7 +182,7 @@
         MaleProperties *BarbellCalfRaise = [[MaleProperties alloc] init];
         BarbellCalfRaise.NameWorkoutMale = @"Barbell Calf Raise"; //set workout name
         BarbellCalfRaise.LevelMale = @"Advanced"; //set the level of workout
-        BarbellCalfRaise.TimeMale = @"1 minutes"; //set the time of workout
+        BarbellCalfRaise.TimeMale = @"2 minutes"; //set the time of workout
         BarbellCalfRaise.DiscriptionMale = @"Place a block, step, or weight plate on the floor. Grasp a barbell and hold it on the backs of your shoulders, as in a squat. Place your toes on the block so your calves are stretched, but make sure you can maintain balance. Raise your heels to come up onto the balls of your feet."; //set the discription of workout
         
         
