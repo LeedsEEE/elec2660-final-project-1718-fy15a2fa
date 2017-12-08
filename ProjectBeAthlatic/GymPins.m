@@ -11,6 +11,9 @@
 
 @implementation GymPins
 
+//I toke this small part from Jaffrey App Channel on youtube
+//https://www.youtube.com/watch?v=sKnHZQPtpjE
+
 @synthesize title, subtitle, coordinate;
 
 @end

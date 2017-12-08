@@ -27,6 +27,9 @@
     // I chose four of the best physical therapy centers in Leeds, and I made sure that all of them in approximately in the center of Leeds near my residence (LS1 2FH)
     // my residence's longitude is(-1.554237) and latitude is (53.798416)
     
+    //I toke this small part about pins from Jaffrey App Channel on youtube
+    //https://www.youtube.com/watch?v=sKnHZQPtpjE
+    
     
     // adding the location for The Leeds Sport Injury and Physiotherapy Clinic to show it on the map
     MKCoordinateRegion LeedsClinic = { {0.0, 0.0}, {0.0, 0.0}};
@@ -229,6 +232,9 @@
                                    
                                    NSLog(@"OK"); //Using NSLog to check if OK action work
                                    
+                                   //I toke this small part from Jaffrey App Channel on youtube
+                                   //https://www.youtube.com/watch?v=A-_m-zIzc2M
+                                   
                                    
                                    // use apple map, and set the longitude latitude
                                    NSString *way = @"http://maps.apple.com/maps?daddr=53.821056,-1.576782";
@@ -271,6 +277,9 @@
                                handler:^(UIAlertAction *action) {
                                    
                                    NSLog(@"OK"); //Using NSLog to check if OK action work
+                                   
+                                   //I toke this small part from Jaffrey App Channel on youtube
+                                   //https://www.youtube.com/watch?v=A-_m-zIzc2M
                                    
                                    
                                    // use apple map, and set the longitude latitude
@@ -315,6 +324,9 @@
                                    
                                    NSLog(@"OK"); //Using NSLog to check if OK action work
                                    
+                                   //I toke this small part from Jaffrey App Channel on youtube
+                                   //https://www.youtube.com/watch?v=A-_m-zIzc2M
+                                   
                                    
                                    // use apple map, and set the longitude latitude
                                    NSString *way = @"http://maps.apple.com/maps?daddr=53.797345,-1.556010";
@@ -357,6 +369,9 @@
                                handler:^(UIAlertAction *action) {
                                    
                                    NSLog(@"OK"); //Using NSLog to check if OK action work
+                                   
+                                   //I toke this small part from Jaffrey App Channel on youtube
+                                   //https://www.youtube.com/watch?v=A-_m-zIzc2M
                                    
                                    
                                    // use apple map, and set the longitude latitude
